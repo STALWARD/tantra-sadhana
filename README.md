@@ -2,7 +2,11 @@
 
 This project is using latest app routing.
 
-Download the files and open in vs code and run 'npm install'.
+Download the files and open in vs code and
+run in terminal:
+
+```bash
+npm install
 
 In root directory create a .env file. In .env file add two secret-keys that is 
 MY_EMAIL= your gmail.com
@@ -14,13 +18,7 @@ Now, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
