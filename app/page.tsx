@@ -8,9 +8,7 @@ import Testimonial from "@/components/Testimonial"
 import Newsletter from "@/components/Subscribe";
 import Mudra from "@/components/Mudra"
 import { Metadata } from 'next';
-
-
-
+import YoutubeVideo from "@/components/Video";
  
 export const metadata: Metadata = {
   title: 'Home',
@@ -25,6 +23,7 @@ export default function Home() {
       <Features />
       <Mentor />
       <Testimonial />
+      <YoutubeVideo />
       <Faq />
       <Mudra />
       <Newsletter />
