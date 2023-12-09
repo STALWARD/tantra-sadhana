@@ -8,7 +8,7 @@ import Testimonial from "@/components/Testimonial"
 import Newsletter from "@/components/Subscribe";
 import Mudra from "@/components/Mudra"
 import { Metadata } from 'next';
-import Video from "@/components/Video";
+
 
 
  
