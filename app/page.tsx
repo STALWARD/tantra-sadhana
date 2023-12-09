@@ -24,7 +24,6 @@ export default function Home() {
       <Guide />
       <Features />
       <Mentor />
-      <Video />
       <Testimonial />
       <Faq />
       <Mudra />
