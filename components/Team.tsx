@@ -20,7 +20,7 @@ const postData: DataType[] = [
     {
         profession: 'Vastu, Palm-reader Expert',
         name: 'Subhas Kaushik',
-        imgSrc: '/assets/mentor/subhas.png',
+        imgSrc: '/assets/mentor/Subhas.png',
     },
     {
         profession: 'Astro Guru',
