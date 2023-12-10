@@ -34,7 +34,7 @@ const Hero = () => {
         <div className="flex flex-col w-full gap-3 sm:flex-row ">
           <Link
             href="https://www.kaulbhaskar.com/profile"
-            className=" bg-green-50 px-8 py-4 rounded-md text-white transition-all hover:bg-black"
+            className=" bg-black px-8 py-4 rounded-md text-white transition-all hover:bg-gold hover:text-black"
             >
             KNOW <strong>KAULBHASKAR</strong> GURU JI
           </Link>
