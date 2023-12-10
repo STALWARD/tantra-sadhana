@@ -58,8 +58,8 @@ module.exports = {
 
       },
       backgroundImage: {
-        'bg-img-1': "url('/img-1.png')",
-        'bg-img-2': "url('/img-2.png')",
+        'bg-img-1': "url('/img-1.jpg')",
+        'bg-img-2': "url('/img-2.jpg')",
         'feature-bg': "url('/feature-bg.png')",
         'contact-bg': "url('/contact-us-hero-cover@2x-1.png')",
         'pattern': "url('/pattern.png')",
