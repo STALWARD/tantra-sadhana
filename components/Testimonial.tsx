@@ -66,7 +66,7 @@ export default class MultipleItems extends Component {
                         slidesToShow: 3,
                         slidesToScroll: 1,
                         infinite: true,
-                        dots: false
+                        dots: true
                     }
                 },
                 {
@@ -75,7 +75,7 @@ export default class MultipleItems extends Component {
                         slidesToShow: 2,
                         slidesToScroll: 1,
                         infinite: true,
-                        dots: false
+                        dots: true
                     }
                 },
                 {
@@ -91,9 +91,9 @@ export default class MultipleItems extends Component {
         };
 
         return (
-            <div className=" pt-40 pb-10 sm:pb-32 lg:py-32" id="testimonial">
+            <div className=" pt-40 pb-10 sm:pb-32 lg:py-32 bg-gold" id="testimonial">
                 <div className='mx-auto max-w-7xl sm:py-4 lg:px-8'>
-                <h2 className="1h-82 text-6xl text-midnightblue md:text-55xl text-center md:text-start font-semibold"> What Our Lovely <br />Client Says ?</h2>
+                <h2 className="1h-82 text-6xl text-black md:text-55xl text-center md:text-start font-semibold"> What Our Lovely <br />Client Says ?</h2>
                     <Slider {...settings}>
                         {postData.map((items, i) => (
                             <div key={i}>
