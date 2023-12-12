@@ -21,11 +21,11 @@ export default function Home() {
       <Camp />
       <Guide />
       <Features />
-      <Mentor />
-      <Testimonial />
       <YoutubeVideo />
-      <Faq />
       <Mudra />
+      <Mentor />
+      <Faq />
+      <Testimonial />     
       <Newsletter />
     </>
   )
