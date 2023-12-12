@@ -87,8 +87,8 @@ export default class MultipleItems extends Component {
             // centerMode: true,
             slidesToScroll: 1,
             arrows: false,
-            autoplay: false,
-            speed: 500,
+            autoplay: true,
+            speed: 5000,
             cssEase: "linear",
             responsive: [
                 {
@@ -97,7 +97,7 @@ export default class MultipleItems extends Component {
                         slidesToShow: 2,
                         slidesToScroll: 1,
                         infinite: true,
-                        dots: false
+                        dots: true
                     }
                 },
                 {
@@ -106,7 +106,7 @@ export default class MultipleItems extends Component {
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         infinite: true,
-                        dots: false
+                        dots: true
                     }
                 }
             ]
@@ -114,9 +114,21 @@ export default class MultipleItems extends Component {
 
         return (
             <div id="courses">
+			<div className="flexCenter max-container relative w-full mt-10" >
+        		<Image
+          			src='/Universe.webp'
+          			alt='image'  
+          			width={1440}
+          			height={580}
+          			className="w-auto h-screen object-cover object-center 2xl:rounded-s-xl"
+        		/>
+                <h1 className="absolute text-4xl text-center text-white justify-center font-bold mb-80 pageHeader">Services</h1>     		
+                <h2 className="absolute text-2xl text-center text-gold justify-center font-semibold mb-40 pageHeader">Strategic Tantra advice and tailored solutions</h2>
+				<p className="absolute text-xl text-center text-white justify-center font-simple mt-80 p-20 pageHeader">We offer spiritual guidance and education to those seeking to deepen their understanding of Tantric teachings. </p>
+			</div>
                 <div className='mx-auto max-w-7xl bg-gold rounded-md sm:py-8 px-4 lg:px-8 mt-5'>
                     <div className="sm:flex justify-between items-center">
-                        <h1 className=" text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0 ">Popular Services</h1>
+                        <h2 className=" text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0 ">Popular Services</h2>
                     </div>
 
                     <Slider {...settings}>
@@ -163,6 +175,7 @@ export default class MultipleItems extends Component {
                         ))}
                     </Slider>
                 </div>
+
             </div>
 
         );
