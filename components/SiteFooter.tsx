@@ -88,7 +88,7 @@ const Footer = () => {
                     <Image src={'/twitter.svg'} alt="logo" width={24} height={24} />
                   </Link>
                   <Link href="https://www.youtube.com/@kaulbhaskar/videos" target="_blank" rel="noopener noreferrer">
-                    <Image src={'/youtube.svg'} alt="logo" width={24} height={24} />
+                    <Image src={'/youtube.webp'} alt="logo" width={24} height={24} />
                   </Link>
                   <Link href="https://www.linkedin.com/in/kaul-bhaskar-006a12234/" target="_blank" rel="noopener noreferrer">
                     <Image src={'/Linkedin.svg'} alt="logo" width={24} height={24} />
