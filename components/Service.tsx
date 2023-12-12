@@ -120,7 +120,7 @@ export default class MultipleItems extends Component {
           			alt='image'  
           			width={1440}
           			height={580}
-          			className="w-auto h-screen object-cover object-center 2xl:rounded-s-xl"
+          			className="w-screen h-screen object-cover object-center 2xl:rounded-s-xl"
         		/>
                 <h1 className="absolute text-4xl text-center text-white justify-center font-bold mb-80 pageHeader">Services</h1>     		
                 <h2 className="absolute text-2xl text-center text-gold justify-center font-semibold mb-40 pageHeader">Strategic Tantra advice and tailored solutions</h2>
