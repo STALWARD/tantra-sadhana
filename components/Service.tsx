@@ -124,7 +124,7 @@ export default class MultipleItems extends Component {
         		/>
                 <h1 className="absolute text-4xl text-center text-white justify-center font-bold mb-80 pageHeader">Services</h1>     		
                 <h2 className="absolute text-2xl text-center text-gold justify-center font-semibold mb-40 pageHeader">Strategic Tantra advice and tailored solutions</h2>
-				<p className="absolute text-xl text-center text-white justify-center font-simple mt-80 p-20 pageHeader">We offer spiritual guidance and education to those seeking to deepen their understanding of Tantric teachings. Through blog posts, videos and other resources, we provide an accessible platform for individuals to learn about Tantra </p>
+				<p className="absolute text-xl text-center text-white justify-center font-simple mt-80 p-20 pageHeader"> Through blog posts, videos and other resources, we provide an accessible platform for individuals to learn about Tantra and its various practices as well as for performing Tantric Rituals. </p>
 			</div>
                 <div className='mx-auto max-w-7xl bg-gold rounded-md sm:py-8 px-4 lg:px-8 mt-5'>
                     <div className="sm:flex justify-between items-center">
