@@ -63,7 +63,7 @@ module.exports = {
         'feature-bg': "url('/feature-bg.png')",
         'contact-bg': "url('/contact-us-hero-cover@2x-1.png')",
         'pattern': "url('/pattern.webp')",
-        'pattern-2': "url('/pattern-bg.webp')",
+        'pattern-2': "url('/Homepage.webp')",
       },
       screens: {
         xs: '400px',
