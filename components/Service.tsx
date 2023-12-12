@@ -114,7 +114,7 @@ export default class MultipleItems extends Component {
 
         return (
             <div id="courses">
-			<div className=" relative flex w-full mt-10" >
+			<div className=" relative flex  flexCenter w-full mt-10" >
         		<Image
           			src='/Universe.webp'
           			alt='image'  
