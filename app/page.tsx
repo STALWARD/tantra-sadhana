@@ -6,15 +6,18 @@ import Faq from "@/components/Faq";
 import Mentor from "@/components/Team";
 import Testimonial from "@/components/Testimonial"
 import Newsletter from "@/components/Subscribe";
-import Mudra from "@/components/Mudra"
+import Mudra from "@/components/Mudra";
+import dynamic from "next/dynamic";
 import { Metadata } from 'next';
-import YoutubeVideo from "@/components/Video";
+
  
 export const metadata: Metadata = {
   title: 'Home',
 }
 
 export default function Home() {
+   const YoutubeVideo = dynamic(() => import("@/components/Video"),
+ );
   return (
     <>
       <Hero />
