@@ -38,7 +38,7 @@ const Guide = () => {
             <div className='flex w-full flex-col'>
               <div className="flexBetween w-full">
 
-                <p className="bold-16 text-gold">Learn Sri Vidya, Kaul Tantra etc.</p>
+                <p className="bold-16 text-red">Learn Sri Vidya, Kaul Tantra etc.</p>
               </div>
               <p className="bold-20 mt-2">By KAULBHASKAR GURU Ji</p>
             </div>
