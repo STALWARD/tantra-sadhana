@@ -45,7 +45,7 @@ const Guide = () => {
 
             <div className='flex w-full flex-col'>
               <p className="bold-20 text-red">Tantra Puja & Rituals </p>
-              <h5 className="bold-20 mt-2 whitespace-nowrap">By real Masters</h5>
+              <h3 className="bold-20 mt-2 whitespace-nowrap">By real Masters</h3>
             </div>
 
           </div>
