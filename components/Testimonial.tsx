@@ -48,7 +48,7 @@ export default class MultipleItems extends Component {
 
     render() {
         const settings = {
-            dots: true,
+            dots: false,
             dotsClass: "slick-dots",
             infinite: true,
             slidesToShow: 3,
@@ -66,7 +66,7 @@ export default class MultipleItems extends Component {
                         slidesToShow: 3,
                         slidesToScroll: 1,
                         infinite: true,
-                        dots: true
+                        dots: false
                     }
                 },
                 {
@@ -75,7 +75,7 @@ export default class MultipleItems extends Component {
                         slidesToShow: 2,
                         slidesToScroll: 1,
                         infinite: true,
-                        dots: true
+                        dots: false
                     }
                 },
                 {
