@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 lg:flex-row">
       <div className="flexCenter max-container absolute object-cover" >
         <Image
-          src='/chakra.png'
+          src='/hero-bg.webp'
           alt='yoga'  
           width={600}
           height={600}
