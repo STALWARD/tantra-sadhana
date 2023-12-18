@@ -16,13 +16,13 @@ const Guide = () => {
         </div>
       </div>
 
-      <div className="flexCenter max-container relative w-full">
+      <div className="flexCenter max-container relative">
         <Image 
-          src="/boat.jpg"
+          src="/boat.webp"
           alt="boat"
-          width={1440}
-          height={580}
-          className="w-full object-cover object-center 2xl:rounded-5xl"
+          width={500}
+          height={500}
+          className="w-screen h-screen object-cover object-center 2xl:rounded-5xl"
         />
 
         <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[5%] lg:top-20">
