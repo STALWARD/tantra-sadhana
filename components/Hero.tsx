@@ -64,7 +64,7 @@ const Hero = () => {
             <p className="regular-16 block text-gray-20">Whats App</p>
             <p className="bold-20 text-white">9934418459</p>
             <p className="regular-16 block text-gray-20">E-mail:</p>
-            <p className="bold-16 text-white">admin@tantrasadhana.org</p>
+            <p className="bold-16 text-white">kaultantra@gmail.com</p>
           </div>
         </div>
       </div>
