@@ -98,12 +98,12 @@ export default class MultipleItems extends Component {
                         {postData.map((items, i) => (
                             <div key={i}>
                                 <div className={`bg-white m-4 p-5 my-40 relative ${i % 2 ? 'middleDiv' : 'testimonial-shadow'}`}>
-                                    <h4 className='text-base font-normal text-black my-4'>{items.comment}</h4>
+                                    <h3 className='text-base font-normal text-black my-4'>{items.comment}</h3>
                                     <hr style={{ color: "#D7D5D5" }} />
                                     <div className="flex justify-between">
                                         <div>
-                                            <h3 className='text-lg font-medium text-darkbrown pt-4 pb-2'>{items.name}</h3>
-                                            <h3 className='text-sm font-normal text-lightgray pb-2'>{items.profession}</h3>
+                                            <h4 className='text-lg font-medium text-darkbrown pt-4 pb-2'>{items.name}</h4>
+                                            <h4 className='text-sm font-normal text-lightgray pb-2'>{items.profession}</h4>
                                         </div>
                                         <div className="flex">
                                             <StarIcon width={20} className="text-gold" />
