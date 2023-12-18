@@ -34,8 +34,7 @@ export default function Contact() {
           </div>
           <div className="mb-5 mt-5 md:mt-0 text-center" >
             <h2 className="text-xl font-bold text-black">Contact</h2>
-            <p className="text-md md:text-lg font-semibold text-red">Email(admin): admin@tantrasadhana.org</p>
-            <p className="text-md md:text-lg font-semibold text-red">Email(Guru Ji): kaulbhaskar@tantrasadhana.org</p>
+            <p className="text-md md:text-lg font-semibold text-red">Email: kaultantra@gmail.com</p>
             <p className="text-md md:text-lg font-semibold text-red">Tel: +91-9934418459</p>
           </div>
         </div>
