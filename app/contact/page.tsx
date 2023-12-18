@@ -45,10 +45,10 @@ export default function Contact() {
           <h2 className="text-2xl font-semibold mb-10">{contactMeText.title}</h2>
           <p className="text-xl font-normal mb-2" >{contactMeText.body}</p>
           <Image
-          	src='/contact-form-image.png'
+          	src='/contact-form-image.webp'
           	alt='contact-image'  
-          	width={1440}
-          	height={580}
+          	width={500}
+          	height={500}
           	className="w-auto h-auto object-cover object-center 2xl:rounded-s-xl"
         	/>
         </div>
