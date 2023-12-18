@@ -54,18 +54,11 @@ const Footer = () => {
                   WhatsApp
                 </Link>
                 <Link
-                  href="mailto:admin@tantrasadhana.org"
+                  href="mailto:kaultantra@gmail.com"
                   target="_blank" rel="noopener noreferrer"
                   className=" text-black "
                   >
                   Email:admin
-                </Link>
-                <Link
-                  href="mailto:kaulbhaskar@tantrasadhana.org"
-                  target="_blank" rel="noopener noreferrer"
-                  className=" text-black "
-                  >
-                  Email:Guru Ji
                 </Link>
                 <Link
                   href="tel:+919934418459"
