@@ -34,7 +34,7 @@ export default function YouTubeFrame() {
         		<div className="relative flex item-center justify-center mb-20 ">
           			<Link
            				href="https://www.youtube.com/@kaulbhaskar/videos"target="_blank" rel="noopener noreferrer"
-            			className=" bg-green-50 px-8 py-4 rounded-md text-white transition-all hover:bg-black"
+            			className=" bg-black px-8 py-4 rounded-md text-white transition-all hover:bg-gold hover:text-black"
             			>
             			Click for <strong>More Videos</strong>
           			</Link>
