@@ -37,7 +37,7 @@ const About = () => {
 				</div>
 				<div className=' sm:mt-0  sm:w-2/3 w-full mt-6 ml-0 p-10'>
 					<h2 className='pb-20 text-2xl md:text-4xl text-bold text-center justify-center'> {aboutMeData.title}</h2>
-					<p className='text-lg text-simple text-justify '>Guru Ji, popularly known as <strong>KAULBHASKAR</strong>, is from the lineage of Sri <strong>Matsyendra Nath</strong> (also known as Machendra Nath) ji. A direct disciple of esteemed KAUL of Prayag, Sri <strong>KULBHUSHANANAND NATH</strong>, Guru Ji is basically an Urdhvamanayee Upasaka of MAHATRIPURSUNDARI. Sri Kaulbhaskar Ji, has spent more than 30 years painstakingly perfecting his practice of SRI VIDYA UPASANA of highly mysterious <strong>DAKSHINAMURTI SAMPRADAYA</strong>.</p>
+					<p className='text-lg text-simple text-justify '>Guru Ji, popularly known as <strong>KAULBHASKAR</strong>, is from the lineage of Sri <strong>Matsyendra Nath</strong> (also known as Machendra Nath) ji, one of <strong>84 Maha Siddhas</strong>. A direct disciple of esteemed KAUL of Prayag, Sri <strong>KULBHUSHANANAND NATH</strong>, Guru Ji is basically an Urdhvamanayee Upasaka of MAHATRIPURSUNDARI. Sri Kaulbhaskar Ji, an expert of <strong>KAUL MARGA</strong>, has spent more than 30 years painstakingly perfecting his practice of SRI VIDYA UPASANA of highly mysterious <strong>DAKSHINAMURTI SAMPRADAYA</strong>.</p>
 				</div>
 			</section>
 			<section className='w-full bg-black text-white p-10 h-full mt-5'>
