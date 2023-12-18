@@ -16,8 +16,8 @@ const About = () => {
         		<Image
           			src='/yoga.webp'
           			alt='yoga'  
-          			width={1440}
-          			height={580}
+          			width={500}
+          			height={500}
           			className="w-screen h-screen object-cover object-center 2xl:rounded-s-xl"
         		/>
         		<h1 className="absolute text-4xl text-center text-black justify-center font-bold mb-60 pageHeader">About</h1>
