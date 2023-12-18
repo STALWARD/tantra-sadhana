@@ -50,24 +50,24 @@ const About = () => {
 				<div className='flex lg:flex-row flex-col w-auto h-auto gap-5 mx-auto justify-center '>
 					<Image
 						priority={false}
-						width={500}
-						height={500}
+						width={350}
+						height={250}
 						aria-label={"image of S.BAKSHI"}
 						alt={"S.BAKSHI"}
 						src={"/about/S.BAKSHI.webp"}
 						className="w-auto h-auto"/>
 					<Image
 						priority={false}
-						width={500}
-						height={500}
+						width={350}
+						height={250}
 						aria-label={"image of PRATIK"}
 						alt={"PRATIK"}
 						src={"/about/PRATIK.webp"}
 						className="w-auto h-auto"/>
 					<Image
 						priority={false}
-						width={500}
-						height={500}
+						width={350}
+						height={250}
 						aria-label={"image of SUBHAS"}
 						alt={"SUBHAS"}
 						src={"/about/SUBHAS.webp"}
