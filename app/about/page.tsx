@@ -18,7 +18,7 @@ const About = () => {
           			alt='yoga'  
           			width={500}
           			height={500}
-          			className="w-screen h-screen object-cover object-center 2xl:rounded-s-xl"
+          			className="w-screen h-auto object-cover object-center 2xl:rounded-s-xl"
         		/>
         		<h1 className="absolute text-4xl text-center text-black justify-center font-bold mb-60 pageHeader">About</h1>
 				<h2 className="absolute text-xl text-center text-black justify-center font-bold mt-60 p-20 pageHeader">We are experienced team of Experts in Tantra & Astrology. We offer spiritual guidance and education to those seeking to deepen their understanding of Tantric teachings. </h2>
