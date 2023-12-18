@@ -14,7 +14,7 @@ const About = () => {
 		<div className="flex flex-col w-11/12 content-center m-auto mt-10">
 			<div className="flexCenter max-container relative w-full" >
         		<Image
-          			src='/yoga.jpg'
+          			src='/yoga.webp'
           			alt='yoga'  
           			width={1440}
           			height={580}
