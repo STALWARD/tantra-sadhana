@@ -118,8 +118,8 @@ export default class MultipleItems extends Component {
         		<Image
           			src='/Universe.webp'
           			alt='image'  
-          			width={1440}
-          			height={580}
+          			width={500}
+          			height={500}
           			className="w-screen h-screen object-cover object-center 2xl:rounded-s-xl"
         		/>
                 <h1 className="absolute text-4xl text-center text-white justify-center font-bold mb-80 pageHeader">Services</h1>     		
