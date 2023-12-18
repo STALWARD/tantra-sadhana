@@ -5,4 +5,4 @@ date: "2022-10-09"
 
 ---
 
-![images/MANDAL.webp](/assets/blog/MANDAL.webp)
+![images/MANDAL.webp](/MANDAL.webp)
