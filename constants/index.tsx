@@ -12,7 +12,7 @@ export const aboutMeData = {
   title: "KAULBHASKAR GURU Ji",
   body: "Guru Ji, popularly known as KAULBHASKAR, is from the lineage of Sri Matsyendra Nath (also known as Machendra Nath) ji. A direct disciple of esteemed KAUL of Prayag, Sri KULBHUSHANANAND NATH, Guru Ji is basically an Urdhvamanayee Upasaka of MAHATRIPURSUNDARI. Sri Kaulbhaskar Ji, has spent more than 30 years painstakingly perfecting his practice of SRI VIDYA UPASANA of highly mysterious DAKSHINAMURTI SAMPRADAYA.",
   highlightedBody:
-  "Apart from spiritual guidance and education , WE can also help/guide you in performing various tantrik rituals by qualified experts. Just make a schedule with our Astrologers and judge the accuracy of their divine knowledge. Certainly ! our astrologers will out-perform other so called famous astrologers around you.",
+  "Apart from spiritual guidance and education , WE can also help you in performing various tantrik rituals by qualified experts. Just make a schedule with our Astrologers and judge the accuracy of their divine knowledge. Certainly ! our astrologers will out-perform other so called famous astrologers around you.",
   body2:
   "We are some of the experts in Tantra & Astrology",
 };
