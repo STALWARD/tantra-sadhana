@@ -43,7 +43,7 @@ const Subscribe: FC = () => {
                   />
                 </div>
                 <div>
-                  <button className='hover:bg-black hover:text-white rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-black outline-none'>
+                  <button className='hover:bg-purple-500 rounded-md bg-black py-3 px-8 text-base font-semibold text-white outline-none'>
                     Submit
                   </button>
                 </div>
