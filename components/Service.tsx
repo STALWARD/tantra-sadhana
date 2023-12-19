@@ -41,6 +41,22 @@ const postData: DataType[] = [
         rating: 4.7,
     },
     {
+        heading: 'SHULINI DURGA PRAYOGA',
+        heading2: 'As in SHARDA TILAKA',
+        name: "Protection from evil planets",
+        imgSrc: '/assets/services/shulini.webp',
+        price: 40000,
+        rating: 4.4,
+    },
+    {
+        heading: 'BATUKA BHAIRAV PRAYOGA',
+        heading2: 'A famous Prayoga',
+        name: "Deliverance from all hurdle",
+        imgSrc: '/assets/services/bhairav.webp',
+        price: 50000,
+        rating: 4.8,
+    },
+    {
         heading: 'BAGLAMUKHI',
         heading2: 'Famous Prayoga to abolish enemies!',
         name: "To win Elections,Litigations",
