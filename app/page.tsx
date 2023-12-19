@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-   const YoutubeVideo = dynamic(() => import("@/components/Video"),
+   const YouTubeFrame = dynamic(() => import("@/components/Video"),
  );
   return (
     <>
