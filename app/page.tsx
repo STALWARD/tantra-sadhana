@@ -10,14 +10,14 @@ import Mudra from "@/components/Mudra";
 import dynamic from "next/dynamic";
 import { Metadata } from 'next';
 
+const YouTubeFrame = dynamic(() => import("@/components/Video"));
+
  
 export const metadata: Metadata = {
   title: 'Home',
 }
 
 export default function Home() {
-   const YouTubeFrame = dynamic(() => import("@/components/Video"),
- );
   return (
     <>
       <Hero />
