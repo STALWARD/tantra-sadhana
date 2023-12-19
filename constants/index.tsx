@@ -18,7 +18,7 @@ export const aboutMeData = {
 };
 
 export const guideMeText = {
-  body: "Ignorance is the curse of God and knowledge is the wing wherewith we fly to the HEAVEN. Only with us you will no longer get lost and get lost again, because we already support when there is no support from anywhere. Even when there is complete darkness and darkness all around you, we are still standing to enlighten your path. Invite your friends, relatives and friends to have fun in the wilderness and darkness through the valley of life and reach the top of the mountain of success.",
+  body: "Ignorance is the curse of God and knowledge is the wing wherewith we fly to the HEAVEN. Only with us you will no longer get lost and get lost again, because we already support when there is no support from anywhere. Even when there is complete darkness and darkness all around you, we are still standing to enlighten your path. Come alongwith your friends and relatives to learn the art of Self-realization, as laid down in Tantra Scriptures.",
 };
   
 export const contactMeText = {
