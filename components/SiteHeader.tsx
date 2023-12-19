@@ -2,9 +2,11 @@
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "./Logo";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import dynamic from "next/dynamic";
+
+const Logo = dynamic(() => import('./Logo'))
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
