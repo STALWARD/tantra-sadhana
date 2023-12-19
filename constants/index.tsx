@@ -51,18 +51,18 @@ export const FEATURES = [
     " We provide complete solutions for all your's Tantra Puja and Rituals. Make a Schedule for Puja and Rituals with Our Experts."
   },
   {
-    title: 'Know your Destiny',
+    title: 'Astrology Services',
     icon: '/The_Sri_Yantra_in_diagrammatic_form.svg',
     variant: 'green',
     description:
-    'Know the effect of celestial bodies on you and your life. We, from your horoscope or palm or queries put, can say about your destiny. We provide remedial solutions for your better upliftment also.',
+    'Horoscope and Palm reading, Kerala Jyotish, Ashta Mangala Prashnam, Deva Prashnam, Tamboola Prashnam. We provide remedial solutions for Manglika Dosha, delayed marriage and progeny etc.'
   },
   {
     title: 'Gems, Talisman & Yantras',
     icon: '/The_Sri_Yantra_in_diagrammatic_form.svg',
     variant: 'green',
     description:
-    'We can provide consecrated Gems, Talisman and Rosary. For Sadhakas we can also arrange authentic and precise Meru/Kurma puja yantras, specially designed and consecrated by Sri Kaulbhaskar Guru Ji.',
+    'We can provide consecrated Gems, Talisman and Rosary. For Sadhakas we can also arrange authentic and precise Meru/Kurma puja yantras, specially designed and consecrated by Sri Kaulbhaskar Guru Ji.'
   },
 ];
   
