@@ -15,27 +15,27 @@ const postData: DataType[] = [
     {
         profession: 'Bala Siddha Upasaka',
         name: 'G. Vyas',
-        imgSrc: '/assets/mentor/khunda.png',
+        imgSrc: '/assets/mentor/khunda.webp',
     },
     {
         profession: 'Vastu, Palm-reader Expert',
         name: 'Subhas Kaushik',
-        imgSrc: '/assets/mentor/Subhas.png',
+        imgSrc: '/assets/mentor/Subhas.webp',
     },
     {
         profession: 'Astro Guru',
         name: 'S. Bakshi',
-        imgSrc: '/assets/mentor/S.Bakshi.png',
+        imgSrc: '/assets/mentor/S.Bakshi.webp',
     },
     {
         profession: 'Aghora Kali Upasaka',
         name: 'Pratikanand Nath',
-        imgSrc: '/assets/mentor/Pratik.png',
+        imgSrc: '/assets/mentor/Pratik.webp',
     },
     {
         profession: 'Yagyan Expert',
         name: 'Siddharth Maharaj',
-        imgSrc: '/assets/mentor/Siddharth.png',
+        imgSrc: '/assets/mentor/Siddharth.webp',
     },
 ]
 
