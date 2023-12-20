@@ -281,7 +281,7 @@ body {
 }
 
 .bg-imagee {
-    background-image: url('/assets/newsletter/bgFile.jpg');
+    background-image: url('/assets/newsletter/bgFile.webp');
     background-size: cover;
     border-radius: 20px;
 }
