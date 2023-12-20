@@ -165,7 +165,7 @@ body {
 
 .testimonialbg {
     background: linear-gradient(-60deg, #1CBEEE 29.34%, #1A21BC 107.98%);
-    /* background-image: url('/assets/newsletter/bgg.jpg'); */
+    /* background-image: url('/assets/newsletter/bgFile.webp'); */
     clip-path: polygon(100% 0, 100% 38%, 100% 100%, 0 100%, 0 20%);
 }
 
