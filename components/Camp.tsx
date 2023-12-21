@@ -23,8 +23,8 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
           />
         </div>
         <div className="flex flex-col gap-1">
-          <h2 className="bold-20 text-black">{title}</h2>
-          <p className="bold-14 text-black">{subtitle}</p>
+          <h2 className="bold-20 text-gold">{title}</h2>
+          <p className="bold-14 text-gold">{subtitle}</p>
         </div>
       </div>
 
@@ -41,7 +41,7 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
             />
           ))}
         </span>
-        <p className="bold-16 md:bold-20 text-black">{peopleJoined}</p>
+        <p className="bold-16 md:bold-20 text-white">{peopleJoined}</p>
       </div>
      </div>
     </div>
