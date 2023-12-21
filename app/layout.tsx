@@ -3,6 +3,7 @@ import './globals.css';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import ScrollToTop from '@/components/ScrollToTop';
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.tantrasadhana.org'),
@@ -89,6 +90,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+                  {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+            <GoogleAnalytics ga_id= 
+            {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+          ) : null}
         <SiteHeader />
           <main className="relative overflow-hidden">
             {children}
