@@ -6,18 +6,18 @@ const Hero = () => {
     <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 lg:flex-row">
       <div className="flexCenter max-container absolute object-cover" >
         <Image
-          src='/hero-bg.webp'
-          alt='yoga'  
+          src='/YANTRA.gif'
+          alt='sriyantra'  
           width={600}
           height={600}
           priority
           className="h-screen w-screen object-center"
         />
 			</div>
-      <div className="relative z-20 flex flex-1 flex-col xl:w-1/2 ">
+      <div className="relative z-20 flex flex-1 flex-col xl:w-1/2 ml-5 ">
        
-        <h1 className="bold-40 md:bold-52 lg:bold-88 ">TANTRA SADHANA</h1>
-        <p className="regular-16 mt-6 text-black xl:max-w-[520px]">
+        <h1 className="bold-40 md:bold-52 lg:bold-88 text-white ">TANTRA SADHANA</h1>
+        <p className="regular-16 mt-6 text-white xl:max-w-[520px]">
           We want to be on each of your journeys seeking the satisfaction of meeting with hidden masters of Tantra & Astrology. We can help you on an adventure around the world of Tantra in just a simple way.
         </p>
 
@@ -34,9 +34,9 @@ const Hero = () => {
             ))}
           </div>
 
-          <p className="bold-16 lg:bold-20 text-blue-70">
+          <p className="bold-16 lg:bold-20 text-gold">
             100+
-            <span className="regular-16 lg:regular-20 ml-1">Excellent Reviews</span>
+            <span className="regular-16 lg:regular-20 ml-1 text-white">Excellent Reviews</span>
           </p>
         </div>
 
