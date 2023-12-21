@@ -33,7 +33,6 @@ const Hero = () => {
               />
             ))}
           </div>
-
           <p className="bold-16 lg:bold-20 text-black">
             100+
             <span className="regular-16 lg:regular-20 ml-1 text-gold">Excellent Reviews</span>
