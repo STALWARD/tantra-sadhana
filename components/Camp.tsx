@@ -54,9 +54,9 @@ const Camp = () => {
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
         <CampSite
           backgroundImage="bg-bg-img-1"
-          title="Tantra Camp"
-          subtitle="Near Usgaon Dam, Maharastra"
-          peopleJoined="20+ Joined"
+          title="Chandi Yag"
+          subtitle="Trivandrum, Kerala"
+          peopleJoined="200+ Joined"
         />
         <CampSite 
           backgroundImage="bg-bg-img-2"
