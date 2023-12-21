@@ -41,7 +41,7 @@ export const FEATURES = [
     icon: '/zeimusu_Sri_Yantra.svg',
     variant: 'green',
     description:
-    'We teach Tantra, specially Sri Vidya and Kaul Marg to real knowledge seekers. We help in INITIATION & ORDINATION for deserving devotees.'
+    'We teach Tantra, specially Sri Vidya and Kaul Marg to real knowledge seekers. We help in INITIATION and ORDINATION SACRAMENTS for deserving devotees.'
   },
   {
     title: 'Tantra Puja & Ritual',
