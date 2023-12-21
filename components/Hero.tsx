@@ -11,7 +11,7 @@ const Hero = () => {
           width={600}
           height={600}
           priority
-          className="h-screen w-screen object-center"
+          className="h-screen w-screen object-center mr-5"
         />
       </div>
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2 ml-5 ">
