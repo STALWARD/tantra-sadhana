@@ -58,7 +58,7 @@ module.exports = {
 
       },
       backgroundImage: {
-        'bg-img-1': "url('/img-1.webp')",
+        'bg-img-1': "url('/img-4.webp')",
         'bg-img-2': "url('/img-2.webp')",
         'feature-bg': "url('/feature-bg.webp')",
         'contact-bg': "url('/contact-us-hero-cover@2x-1.png')",
