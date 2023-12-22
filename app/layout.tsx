@@ -90,10 +90,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-                  {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+        <Suspense>
+          {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
             <GoogleAnalytics ga_id= 
             {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
           ) : null}
+        </Suspense>
         <SiteHeader />
           <main className="relative overflow-hidden">
             {children}
