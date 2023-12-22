@@ -4,6 +4,7 @@ import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import ScrollToTop from '@/components/ScrollToTop';
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { Suspense } from 'react';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.tantrasadhana.org'),
