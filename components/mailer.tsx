@@ -90,7 +90,7 @@ const Mailer: FC = () => {
         </div>
 
         <div>
-          <button className='hover:shadow-form rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none'>
+          <button className='hover:shadow-form rounded-md bg-purple-500 hover:bg-black py-3 px-8 text-base font-semibold text-white outline-none'>
             Submit
           </button>
         </div>
