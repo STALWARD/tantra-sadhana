@@ -8,7 +8,7 @@ export default function Alert  ()  {
       )}
     >
         <>
-            KAULBHASKAR Guru Ji is in Mumbai.{' '}
+            <strong>KAULBHASKAR Guru Ji</strong> is in Mumbai.{' '}
             <a
                 href={`https://wa.me/+919934418459`}
                 target="_blank" rel="noopener noreferrer"
