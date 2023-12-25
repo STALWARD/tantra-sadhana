@@ -5,6 +5,7 @@ import SiteFooter from '@/components/SiteFooter';
 import ScrollToTop from '@/components/ScrollToTop';
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { Suspense } from 'react';
+import Alert from '@/components/alert';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.tantrasadhana.org'),
@@ -98,6 +99,7 @@ export default function RootLayout({
           ) : null}
         </Suspense>
         <SiteHeader />
+        <Alert />
           <main className="relative overflow-hidden">
             {children}
           </main>
