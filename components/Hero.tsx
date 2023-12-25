@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 lg:flex-row">
+    <section className="max-container padding-container flex flex-col gap-20 py-5 pb-32 md:gap-28 lg:py-10 lg:flex-row">
       <div className="flexCenter max-container absolute object-cover" >
         <Image
           src='/hero-bg.gif'
