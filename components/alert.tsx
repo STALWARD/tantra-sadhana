@@ -14,7 +14,7 @@ export default function Alert  ()  {
                 target="_blank" rel="noopener noreferrer"
                 className="underline text-red hover:text-success duration-200 transition-colors"
             >
-                available on What's App
+                Available on What's App
             </a>
         </>
     </div>
