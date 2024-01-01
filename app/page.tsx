@@ -14,7 +14,7 @@ const YouTubeFrame = dynamic(() => import("@/components/Video"));
 
  
 export const metadata: Metadata = {
-  title: 'Home',
+  title: 'KAUL TANTRA SADHANA # KAULBHASKAR',
 }
 
 export default function Home() {
