@@ -29,8 +29,8 @@ export default function Contact() {
             <p className="text-md md:text-lg font-semibold text-red">Sun: 10.00 AM - 04.00 PM</p>
           </div>
           <div className="mt-5 md:mt-0 text-center" >
-            <h2 className="text-xl font-bold text-black">Head Office</h2>
-            <p className="text-md md:text-lg font-semibold text-red">Patna,Bihar(IN)</p>
+            <h2 className="text-xl font-bold text-black">LOCATION</h2>
+            <p className="text-md md:text-lg font-semibold text-red">Mumbai, Maharastra(IN)</p>
           </div>
           <div className="mb-5 mt-5 md:mt-0 text-center" >
             <h2 className="text-xl font-bold text-black">Contact</h2>
@@ -38,6 +38,12 @@ export default function Contact() {
             <p className="text-md md:text-lg font-semibold text-red">Tel: +91-9934418459</p>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center mt-5">
+        <p className="flex text-xl md:text-2xl lg:text-4xl text-black font-bold ">Our Location on Map</p>
+      </div>
+      <div className="flex mt-5">
+        <iframe width="100%" height="500" scrolling="no" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=Saarthi%20Wefare%20Trust,%20Usgaon%20Waterfall,%20Maharastra+(My%20Location)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Calculate population in area</a></iframe>
       </div>
       <div className=" flex-row md:flex w-full content-center m-auto bg-grey-light p-10 gap-10">
         <div className="flex flex-col sm:w-1/2 w-full">
