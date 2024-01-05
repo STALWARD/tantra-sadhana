@@ -56,7 +56,7 @@ const Hero = () => {
               <p className="regular-16 text-black">Our Location</p>
               <Image src="/close.svg" alt="close" width={24} height={24} />
             </div>
-            <p className="bold-20 text-red">Patna, Bihar (IN)</p>
+            <p className="bold-20 text-red">Mumbai, Maharastra (IN)</p>
           </div>
 
           <div className="flex flex-col">
