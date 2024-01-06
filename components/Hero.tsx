@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="max-container padding-container flex flex-col gap-20 py-5 md:gap-28 lg:py-10 lg:flex-row">
       <div className="flexCenter max-container absolute object-cover" >
-      <video loop muted autoPlay playsInline className='relative flex h-screen w-screen object-cover mr-5'>
+      <video loop muted autoPlay playsInline className='relative flex h-screen w-screen object-cover md:mr-5'>
       <source src="/hero-bg.mp4"  />
       </video>
       </div>
