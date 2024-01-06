@@ -41,7 +41,7 @@ const Hero = () => {
 
         <div className="flex flex-col w-full gap-3 sm:flex-row ">
           <Link
-            href="https://www.kaulbhaskar.com/profile"
+            href="https://www.kaulbhaskar.com/profile" target="_blank" rel="noopener noreferrer"
             className=" bg-white px-8 py-4 rounded-xl text-black transition-all hover:bg-gold hover:text-black"
             >
             KNOW <strong>KAULBHASKAR</strong> GURU JI
