@@ -45,20 +45,20 @@ const Hero = () => {
       </div>
 
       <div className="relative flex flex-1 items-start">
-        <div className="relative z-20 flex w-[320px] flex-col gap-4 rounded-3xl bg-white px-4 py-4">
+        <div className="relative z-20 flex w-[320px] flex-col gap-4 rounded-3xl bg-black px-4 py-4">
           <div className="flex flex-col">
             <div className="flexBetween">
-              <p className="regular-16 text-black">Our Location</p>
+              <p className="regular-16 text-white">Our Location</p>
               <Image src="/close.svg" alt="close" width={24} height={24} />
             </div>
-            <p className="bold-20 text-black">Mumbai, Maharastra (IN)</p>
+            <p className="bold-20 text-white">Mumbai, Maharastra (IN)</p>
           </div>
 
           <div className="flex flex-col">
-            <p className="regular-16 block text-black">Whats App</p>
-            <p className="bold-20 text-black">9934418459</p>
-            <p className="regular-16 block text-black">E-mail:</p>
-            <p className="bold-16 text-black">kaultantra@gmail.com</p>
+            <p className="regular-16 block text-white">Whats App</p>
+            <p className="bold-20 text-white">9934418459</p>
+            <p className="regular-16 block text-white">E-mail:</p>
+            <p className="bold-16 text-white">kaultantra@gmail.com</p>
           </div>
         </div>
       </div>
