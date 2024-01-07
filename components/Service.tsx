@@ -131,7 +131,7 @@ export default class MultipleItems extends Component {
         return (
             <div id="courses">
 			<div className=" relative flex  flexCenter w-full mt-10" >
-      			<video loop muted autoPlay playsInline className='relative flex h-screen w-screen object-cover mr-5'>
+      			<video loop muted autoPlay playsInline className='relative flex h-screen w-screen object-cover'>
       			<source src="/service.mp4"  />
       			</video>
                 <h1 className="absolute text-4xl text-center text-white justify-center font-bold mb-80 pageHeader">Services</h1>     		
