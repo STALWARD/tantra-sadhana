@@ -11,6 +11,8 @@ const services = () => {
   return (
     <>
       <Service />
+    </>
+    <>
       <Faq />
     </>
   )
