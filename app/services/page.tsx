@@ -1,5 +1,6 @@
 import React from 'react'
 import Service from '@/components/Service'
+import Faq from '@/components/Faq'
 import { Metadata } from 'next';
 
 export const metadata:Metadata = {
@@ -11,6 +12,7 @@ const services = () => {
   return (
     <>
       <Service />
+      <Faq />
     </>
   )
 }
