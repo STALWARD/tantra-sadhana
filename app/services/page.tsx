@@ -12,9 +12,6 @@ const services = () => {
     <>
       <Service />
     </>
-    <>
-      <Faq />
-    </>
   )
 }
 
