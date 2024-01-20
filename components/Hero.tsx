@@ -13,7 +13,11 @@ const Hero = () => {
        
         <h1 className="bold-40 md:bold-52 lg:bold-88 text-white">TANTRA SADHANA</h1>
         <p className="regular-12 md:regular-14 lg:regular-16 mt-6 text-white xl:max-w-[520px]">
-          We want to be on each of your journeys seeking the satisfaction of meeting with hidden masters of Tantra & Astrology.<br />We can help you on an adventure around the world of Tantra in just a simple way.
+          देहोऽहमिति या बुद्धिर्विद्या सा प्रकीर्तिता।
+नाहं देहश्चिदात्मेति बुद्धिर्विद्येति भण्यते।।
+अविद्या संसृतेर्हेतु विद्या तस्या निवृत्तिका।
+तस्माद् यत्न: सदाकार्यो विद्याभ्यासे मुमुक्षुभि:।।
+<br />We can help you on an adventure around the world of Tantra in just a simple way.
         </p>
 
         <div className="my-11 flex flex-wrap gap-5">
