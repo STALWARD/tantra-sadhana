@@ -20,7 +20,7 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
             alt="map"
             width={28}
             height={28}
-          />
+            />
         </div>
         <div className="flex flex-col gap-1">
           <h2 className="bold-20 text-gold">{title}</h2>
@@ -57,12 +57,14 @@ const Camp = () => {
           title="Chandi Yag"
           subtitle="Trivandrum, Kerala"
           peopleJoined="200+ Joined"
+          priority
         />
         <CampSite 
           backgroundImage="bg-bg-img-2"
           title="Yoga Camp"
           subtitle="Somewhere in the Wilderness"
           peopleJoined="20+ Joined"
+          priority
         />
       </div>
 
