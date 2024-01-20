@@ -57,14 +57,12 @@ const Camp = () => {
           title="Chandi Yag"
           subtitle="Trivandrum, Kerala"
           peopleJoined="200+ Joined"
-          priority
         />
         <CampSite 
           backgroundImage="bg-bg-img-2"
           title="Yoga Camp"
           subtitle="Somewhere in the Wilderness"
           peopleJoined="20+ Joined"
-          priority
         />
       </div>
 
