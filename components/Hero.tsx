@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2 ml-5 ">
        
         <h1 className="bold-40 md:bold-52 lg:bold-88 text-white">TANTRA SADHANA</h1>
-        <p className="regular-16 mt-6 text-white xl:max-w-[520px]">
+        <p className="regular-12 md:regular-14 lg:regular-16 mt-6 text-white xl:max-w-[520px]">
           We want to be on each of your journeys seeking the satisfaction of meeting with hidden masters of Tantra & Astrology. We can help you on an adventure around the world of Tantra in just a simple way.
         </p>
 
