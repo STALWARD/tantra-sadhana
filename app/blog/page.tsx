@@ -8,7 +8,8 @@ export const metadata:Metadata = {
 };
 
 const Blog = () => {
-  const postMetadata = getPostMetadata();
+  const postMetadata = getPostMetadata().sort((a,b) =>
+  new Date(b.date).getTime() - new Date(a.date).getTime());
   const postPreviews = postMetadata.map((post) => (
     <PostPreview key={post.slug} {...post} />
   ));
