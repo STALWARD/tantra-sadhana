@@ -7,6 +7,7 @@ import Mentor from "@/components/Team";
 import Testimonial from "@/components/Testimonial"
 import Newsletter from "@/components/Subscribe";
 import Mudra from "@/components/Mudra";
+import Latest from "@/components/LatestPost";
 import dynamic from "next/dynamic";
 import { Metadata } from 'next';
 
@@ -27,6 +28,7 @@ export default function Home() {
       <YouTubeFrame />
       <Mudra />
       <Mentor />
+      <Latest />
       <Faq />
       <Testimonial />     
       <Newsletter />
