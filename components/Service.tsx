@@ -29,7 +29,7 @@ const postData: DataType[] = [
         heading2: 'A famous Prayoga',
         name: "Defensive and curative in abhicharas",
         imgSrc: '/assets/services/Pratyangira.png',
-        price: 55000,
+        price: 60000,
         rating: 4.8,
     },
     {
@@ -37,7 +37,7 @@ const postData: DataType[] = [
         heading2: 'A very popular Prayoga',
         name: "For Longevity and Good Health",
         imgSrc: '/assets/services/mahamrityunjaya.png',
-        price: 80000,
+        price: 90000,
         rating: 4.7,
     },
     {
@@ -69,7 +69,7 @@ const postData: DataType[] = [
         heading2: 'By pure tantric method',
         name: "One of the Jack-of-all Prayoga",
         imgSrc: '/assets/services/Shatchandi.png',
-        price: 200000,
+        price: 250000,
         rating: 4.8,
     },
     {
