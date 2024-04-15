@@ -17,14 +17,6 @@ const nextConfig = {
   },
 }
 
-const withBrotli = require('next-brotli') 
-const withGzip = require('next-gzip') 
-
-module.exports = withBrotli({ 
-compress: true, 
-})(withGzip({ 
-compress: true, 
-})) 
 module.exports = nextConfig
 
 
