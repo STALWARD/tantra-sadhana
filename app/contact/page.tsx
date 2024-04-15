@@ -43,7 +43,7 @@ export default function Contact() {
         <p className="flex text-xl md:text-2xl lg:text-4xl text-black font-bold ">Our Location on Map</p>
       </div>
       <div className="flex mt-5">
-        <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Saarthi%20Welfare%20Foundation%20Trust%20Tamboo%20Resort+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
+        <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Saarthi%20Welfare%20Foundation%20Trust%20Tamboo%20Resort+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
       </div>
       <div className=" flex-row md:flex w-full content-center m-auto bg-grey-light p-10 gap-10">
         <div className="flex flex-col sm:w-1/2 w-full">
