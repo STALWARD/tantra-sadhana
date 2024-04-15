@@ -25,6 +25,6 @@ compress: true,
 })(withGzip({ 
 compress: true, 
 })) 
-
+module.exports = nextConfig
 
 
