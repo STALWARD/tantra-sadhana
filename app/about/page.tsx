@@ -50,7 +50,7 @@ const About = () => {
 				<div className='flex lg:flex-row flex-col w-auto h-auto gap-5 mx-auto justify-center '>
 					<Image
 						priority={false}
-						width={350}
+						width={250}
 						height={250}
 						aria-label={"image of S.BAKSHI"}
 						alt={"S.BAKSHI"}
@@ -58,7 +58,7 @@ const About = () => {
 						className="w-auto h-auto"/>
 					<Image
 						priority={false}
-						width={350}
+						width={250}
 						height={250}
 						aria-label={"image of PRATIK"}
 						alt={"PRATIK"}
@@ -66,11 +66,19 @@ const About = () => {
 						className="w-auto h-auto"/>
 					<Image
 						priority={false}
-						width={350}
+						width={250}
 						height={250}
 						aria-label={"image of SUBHAS"}
 						alt={"SUBHAS"}
 						src={"/about/SUBHAS.webp"}
+					className="w-auto h-auto"/>
+					<Image
+						priority={false}
+						width={250}
+						height={250}
+						aria-label={"image of KIRAN"}
+						alt={"KIRAN"}
+						src={"/about/KIRAN.webp"}
 					className="w-auto h-auto"/>
 				</div>
 			</section>
