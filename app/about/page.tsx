@@ -51,7 +51,7 @@ const About = () => {
 					<Image
 						priority={false}
 						width={250}
-						height={350}
+						height={250}
 						aria-label={"image of S.BAKSHI"}
 						alt={"S.BAKSHI"}
 						src={"/about/S.BAKSHI.webp"}
@@ -59,7 +59,7 @@ const About = () => {
 					<Image
 						priority={false}
 						width={250}
-						height={350}
+						height={250}
 						aria-label={"image of PRATIK"}
 						alt={"PRATIK"}
 						src={"/about/PRATIK.webp"}
@@ -67,7 +67,7 @@ const About = () => {
 					<Image
 						priority={false}
 						width={250}
-						height={350}
+						height={250}
 						aria-label={"image of SUBHAS"}
 						alt={"SUBHAS"}
 						src={"/about/SUBHAS.webp"}
@@ -75,7 +75,7 @@ const About = () => {
 					<Image
 						priority={false}
 						width={250}
-						height={350}
+						height={250}
 						aria-label={"image of KIRAN"}
 						alt={"KIRAN"}
 						src={"/about/KIRAN.webp"}
