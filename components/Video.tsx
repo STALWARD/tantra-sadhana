@@ -117,33 +117,7 @@ export default function YouTubeFrame() {
 					src={"/images/PURNAGIRI.webp"}
 				/>
 				</div>
-								</div>
-					<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5'>
-				<Image
-					priority={false}
-					width={400}
-					height={400}
-					aria-label={"image of KAULBHASKAR"}
-					alt={"KAULBHASKAR"}
-					src={"/images/bkn1.webp"}
-				/>
-				<Image
-					priority={false}
-					width={400}
-					height={400}
-					aria-label={"image of KAULBHASKAR"}
-					alt={"KAULBHASKAR"}
-					src={"/images/bkn2.webp"}
-				/>
-				<Image
-					priority={false}
-					width={400}
-					height={400}
-					aria-label={"image of KAULBHASKAR"}
-					alt={"KAULBHASKAR"}
-					src={"/images/PURNAGIRI.webp"}
-				/>
-				</div>
+
 			</div>
 		</section>
 	); 
