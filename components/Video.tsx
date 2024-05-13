@@ -91,7 +91,7 @@ export default function YouTubeFrame() {
             		<Image onClick={onClick1} loading="lazy" src="/images/sriyantra.webp" alt="video image Thumbnail" width={500} height={390} className="shadow" />
         		</div>
 				</div>
-								<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5'>
+					<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5'>
 				<Image
 					priority={false}
 					width={400}
@@ -115,6 +115,33 @@ export default function YouTubeFrame() {
 					aria-label={"image of KAULBHASKAR"}
 					alt={"KAULBHASKAR"}
 					src={"/images/PURNAGIRI.webp"}
+				/>
+				</div>
+								</div>
+					<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5'>
+				<Image
+					priority={false}
+					width={400}
+					height={400}
+					aria-label={"image of KAULBHASKAR"}
+					alt={"KAULBHASKAR"}
+					src={"/images/mahakal.webp"}
+				/>
+				<Image
+					priority={false}
+					width={400}
+					height={400}
+					aria-label={"image of KAULBHASKAR"}
+					alt={"KAULBHASKAR"}
+					src={"/images/mahakal-2.webp"}
+				/>
+				<Image
+					priority={false}
+					width={400}
+					height={400}
+					aria-label={"image of KAULBHASKAR"}
+					alt={"KAULBHASKAR"}
+					src={"/images/bagla.webp"}
 				/>
 				</div>
 			</div>
