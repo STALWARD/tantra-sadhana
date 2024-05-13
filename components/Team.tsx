@@ -37,6 +37,11 @@ const postData: DataType[] = [
         name: 'Siddharth Maharaj',
         imgSrc: '/assets/mentor/Siddharth.webp',
     },
+        {
+        profession: 'Palmistry Researcher',
+        name: 'KIRAN SHARMA',
+        imgSrc: '/assets/mentor/Kiran-2.webp',
+    },
 ]
 
 // CAROUSEL SETTINGS
