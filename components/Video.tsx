@@ -117,7 +117,7 @@ export default function YouTubeFrame() {
 					src={"/images/PURNAGIRI.webp"}
 				/>
 				</div>
-									<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5'>
+					<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5'>
 						<Image
 							priority={false}
 							width={400}
