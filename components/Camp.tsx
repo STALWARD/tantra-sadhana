@@ -74,13 +74,7 @@ const Camp = () => {
           <p className="regular-14 xl:regular-16 mt-5 text-black">
             Starting from the anxiety of the common man when visiting a new challenge in life, the possibility of getting lost is very large. That's why we are here for those of you who want to be a winner. We shall enlighten your path so that you will never feel darkness.
           </p>
-          <Image 
-            src="/quote.svg"
-            alt="camp-2"
-            width={186}
-            height={219}
-            className="camp-quote"
-          />
+
         </div>
       </div>
     </section>
