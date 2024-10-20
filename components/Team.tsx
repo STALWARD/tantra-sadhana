@@ -28,7 +28,7 @@ const postData: DataType[] = [
         imgSrc: '/assets/mentor/S.Bakshi.webp',
     },
     {
-        profession: 'Aghora Kali Upasaka',
+        profession: 'Kali Upasaka',
         name: 'Pratikanand Nath',
         imgSrc: '/assets/mentor/Pratik.webp',
     },
