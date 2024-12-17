@@ -8,7 +8,7 @@ export default function Alert  ()  {
       )}
     >
         <>
-            <strong>KAULBHASKAR Guru Ji</strong> is in Raipur.{' '}
+            <strong>KAULBHASKAR Guru Ji</strong> is in Patna.{' '}
             <a
                 href={`https://wa.me/+919934418459`}
                 target="_blank" rel="noopener noreferrer"
