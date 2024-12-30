@@ -18,7 +18,7 @@ const postData: DataType[] = [
         imgSrc: '/assets/mentor/khunda.webp',
     },
     {
-        profession: 'Vastu, Palm-reader Expert',
+        profession: 'Vastu, Palm-reading Expert',
         name: 'Subhas Kaushik',
         imgSrc: '/assets/mentor/Subhas.webp',
     },
