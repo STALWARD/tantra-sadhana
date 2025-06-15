@@ -30,7 +30,7 @@ export default function Contact() {
           </div>
           <div className="mt-5 md:mt-0 text-center" >
             <h2 className="text-xl font-bold text-black">LOCATION</h2>
-            <p className="text-md md:text-lg font-semibold text-red">Mumbai, Maharastra(IN)</p>
+            <p className="text-md md:text-lg font-semibold text-red">Patna, Bihar(IN)</p>
           </div>
           <div className="mb-5 mt-5 md:mt-0 text-center" >
             <h2 className="text-xl font-bold text-black">Contact</h2>
@@ -43,7 +43,7 @@ export default function Contact() {
         <p className="flex text-xl md:text-2xl lg:text-4xl text-black font-bold ">Our Location on Map</p>
       </div>
       <div className="flex mt-5">
-        <iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=Saarthi%20Welfare%20Foundation%20Trust,%20Usgaon%20dam+(TANTRA%20SADHANA)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
+        <iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=C/40,%20Birla%20Colony%20Phulwari%20Sharif%20Patna%20Bihar%20+(TANTRA%20SADHANA)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
       </div>
       <div className=" flex-row md:flex w-full content-center m-auto bg-grey-light p-10 gap-10">
         <div className="flex flex-col sm:w-1/2 w-full">
