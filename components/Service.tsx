@@ -29,7 +29,7 @@ const postData: DataType[] = [
         heading2: 'A famous Prayoga',
         name: "Defensive and curative in abhicharas",
         imgSrc: '/assets/services/Pratyangira.png',
-        price: 60000,
+        price: 70000,
         rating: 4.8,
     },
     {
@@ -193,3 +193,4 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
