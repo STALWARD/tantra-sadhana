@@ -30,7 +30,7 @@ const postData: DataType[] = [
     {
         profession: 'Kali Upasaka',
         name: 'Pratikanand Nath',
-        imgSrc: '/assets/mentor/Pratik.webp',
+        imgSrc: '/assets/mentor/Aradhya.webp',
     },
     {
         profession: 'Yagyan Expert',
@@ -145,3 +145,4 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
