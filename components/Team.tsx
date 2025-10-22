@@ -29,7 +29,7 @@ const postData: DataType[] = [
     },
     {
         profession: 'Kali Upasaka',
-        name: 'Pratikanand Nath',
+        name: 'VAJRA YOGINI',
         imgSrc: '/assets/mentor/Aradhya.webp',
     },
     {
@@ -145,4 +145,5 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
 
