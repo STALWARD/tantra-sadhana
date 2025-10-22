@@ -117,6 +117,32 @@ export default function YouTubeFrame() {
 					src={"/images/PURNAGIRI.webp"}
 				/>
 				</div>
+				<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5'>
+				<Image
+					priority={false}
+					width={400}
+					height={400}
+					aria-label={"image of KAULBHASKAR"}
+					alt={"KAULBHASKAR"}
+					src={"/images/Vindhyachal1.webp"}
+				/>
+				<Image
+					priority={false}
+					width={400}
+					height={400}
+					aria-label={"image of KAULBHASKAR"}
+					alt={"KAULBHASKAR"}
+					src={"/images/Vindhyachal2.webp"}
+				/>
+				<Image
+					priority={false}
+					width={400}
+					height={400}
+					aria-label={"image of KAULBHASKAR"}
+					alt={"KAULBHASKAR"}
+					src={"/images/Vindhyachal3.webp"}
+				/>
+				</div>
 					<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5'>
 						<Image
 							priority={false}
@@ -147,4 +173,5 @@ export default function YouTubeFrame() {
 		</section>
 	); 
 } 
+
 
