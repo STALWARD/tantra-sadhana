@@ -28,7 +28,7 @@ const postData: DataType[] = [
         imgSrc: '/assets/mentor/S.Bakshi.webp',
     },
     {
-        profession: 'Kali Upasaka',
+        profession: 'Vajra Siddha',
         name: 'VAJRA YOGINI',
         imgSrc: '/assets/mentor/Aradhya.webp',
     },
@@ -145,5 +145,6 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
 
 
