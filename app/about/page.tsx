@@ -62,7 +62,7 @@ const About = () => {
 						height={350}
 						aria-label={"image of PRATIK"}
 						alt={"PRATIK"}
-						src={"/about/PRATIK.webp"}
+						src={"/about/Aradhya.webp"}
 						className="w-auto h-auto"/>
 					<Image
 						priority={false}
@@ -87,3 +87,4 @@ const About = () => {
 };
 
 export default About;
+
