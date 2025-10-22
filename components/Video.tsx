@@ -158,7 +158,7 @@ export default function YouTubeFrame() {
 							height={400}
 							aria-label={"image of KAULBHASKAR"}
 							alt={"KAULBHASKAR"}
-							src={"/images/mahakal-2.webp"}
+							src={"/images/Vindhyachal4.webp"}
 						/>
 						<Image
 							priority={false}
@@ -173,5 +173,6 @@ export default function YouTubeFrame() {
 		</section>
 	); 
 } 
+
 
 
