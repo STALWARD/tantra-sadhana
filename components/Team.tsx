@@ -42,6 +42,11 @@ const postData: DataType[] = [
         name: 'KIRAN SHARMA',
         imgSrc: '/assets/mentor/Kiran-2.webp',
     },
+    {
+        profession: 'Palmistry Researcher',
+        name: 'KIRAN SHARMA',
+        imgSrc: '/assets/mentor/YATAN.webp',
+    },
 ]
 
 // CAROUSEL SETTINGS
@@ -145,6 +150,7 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
 
 
 
