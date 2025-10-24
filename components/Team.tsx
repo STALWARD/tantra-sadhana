@@ -43,8 +43,8 @@ const postData: DataType[] = [
         imgSrc: '/assets/mentor/Kiran-2.webp',
     },
     {
-        profession: 'Palmistry Researcher',
-        name: 'KIRAN SHARMA',
+        profession: 'NADI ASTROLOGER',
+        name: 'YATAN SHARMA',
         imgSrc: '/assets/mentor/YATAN.webp',
     },
 ]
@@ -150,6 +150,7 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
 
 
 
