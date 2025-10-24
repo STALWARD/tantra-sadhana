@@ -80,6 +80,14 @@ const About = () => {
 						alt={"KIRAN"}
 						src={"/about/KIRAN.webp"}
 					className="w-auto h-auto"/>
+					<Image
+						priority={false}
+						width={250}
+						height={350}
+						aria-label={"image of Yatan"}
+						alt={"Yatan"}
+						src={"/about/Yatan.webp"}
+					className="w-auto h-auto"/>
 				</div>
 			</section>
 		</div>
@@ -87,4 +95,5 @@ const About = () => {
 };
 
 export default About;
+
 
