@@ -20,8 +20,8 @@ const About = () => {
           			height={580}
           			className="w-screen h-screen object-cover object-center 2xl:rounded-s-xl"
         		/>
-        		<h1 className="absolute text-4xl text-center text-black justify-center font-bold mb-60 pageHeader">About</h1>
-				<h2 className="absolute text-xl text-center text-black justify-center font-bold mt-60 p-20 pageHeader">We are experienced team of Experts in Tantra & Astrology. We offer spiritual guidance and education to those seeking to deepen their understanding of Tantric teachings. </h2>
+        		<h1 className="absolute text-4xl text-center text-white justify-center font-bold mb-60 pageHeader">About</h1>
+				<h2 className="absolute text-xl text-center text-white justify-center font-bold mt-60 p-20 pageHeader">We are experienced team of Experts in Tantra & Astrology. We offer spiritual guidance and education to those seeking to deepen their understanding of Tantric teachings. </h2>
 			</div>
 			<section className='flex-row md:flex mx-auto items-center w-full'>
 				<div className='sm:w-1/2 sm:ml-10 sm:mr-10 w-full flex justify-center mt-12'>
@@ -95,6 +95,7 @@ const About = () => {
 };
 
 export default About;
+
 
 
 
