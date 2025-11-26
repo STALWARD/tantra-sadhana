@@ -61,9 +61,11 @@ export default function Contact() {
         <div className="flex flex-col sm:w-1/2 w-full" >
           <Mailer />
         </div>
+              <Newsletter />
       </div>
-      <Newsletter />
+
     </div>
   );
 }
+
 
