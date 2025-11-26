@@ -3,6 +3,7 @@ import React from "react";
 import Mailer from "@/components/mailer";
 import { contactMeText } from "@/constants";
 import { Metadata } from "next";
+import Newsletter from "@/components/Newsletter";
 
 export const metadata:Metadata = {
   title: "Contact Us",
@@ -11,6 +12,7 @@ export const metadata:Metadata = {
 
 export default function Contact() {
   return (
+    <>
     <div className="flex flex-col w-11/12 content-center m-auto mt-10">
       <div className="flexCenter max-container relative w-full" >
       <Image
@@ -62,8 +64,11 @@ export default function Contact() {
         </div>
       </div>
     </div>
+      <Newsletter />
+    </>
   );
 }
+
 
 
 
