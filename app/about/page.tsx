@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Metadata } from "next";
 import { aboutMeData } from "@/constants";
-
+import Newsletter from "@/components/Newsletter";
 export const metadata:Metadata = {
 	title: "About Us",
 	description: `Here are our details.`,
@@ -10,7 +10,7 @@ export const metadata:Metadata = {
 
 const About = () => {
 	return (
-
+     <>
 		<div className="flex flex-col w-11/12 content-center m-auto mt-10">
 			<div className="flexCenter max-container relative w-full" >
         		<Image
@@ -91,10 +91,13 @@ const About = () => {
 				</div>
 			</section>
 	    </div>
+		 <Newsletter />
+	  </>	
     );
 };
 
 export default About;
+
 
 
 
