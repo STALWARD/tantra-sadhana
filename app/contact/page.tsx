@@ -3,6 +3,7 @@ import React from "react";
 import Mailer from "@/components/mailer";
 import { contactMeText } from "@/constants";
 import { Metadata } from "next";
+import Newsletter from "@components/Newsletter";
 
 export const metadata:Metadata = {
   title: "Contact Us",
@@ -61,6 +62,8 @@ export default function Contact() {
           <Mailer />
         </div>
       </div>
+      <Newsletter />
     </div>
   );
 }
+
