@@ -91,12 +91,13 @@ const About = () => {
 					className="w-auto h-auto"/>
 				</div>
 			</section>
+			<Newsletter />
 		</div>
-		<Newsletter />
 	);
 };
 
 export default About;
+
 
 
 
