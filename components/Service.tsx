@@ -132,7 +132,7 @@ export default class MultipleItems extends Component {
             <div id="courses">
 			<div className=" relative flex  flexCenter w-full mt-10" >
       			<video loop muted autoPlay playsInline className='relative flex h-screen w-screen object-cover'>
-      			<source src="/service2.mp4"  />
+      			<source src="/service.mp4"  />
       			</video>
                 <h1 className="absolute text-4xl text-center text-black justify-center font-bold mb-80 pageHeader">Services</h1>     		
                 <h2 className="absolute text-2xl text-center text-black justify-center font-semibold mb-40 pageHeader">Strategic Tantra advice and tailored solutions</h2>
@@ -193,6 +193,7 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
 
 
 
