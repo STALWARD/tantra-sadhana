@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Metadata } from "next";
 import { aboutMeData } from "@/constants";
+import Latest from "@/components/LatestPost";
 import Newsletter from "@/components/Newsletter";
 export const metadata:Metadata = {
 	title: "About Us",
@@ -91,12 +92,14 @@ const About = () => {
 				</div>
 			</section>
 	    </div>
+		 <Latest />
 		 <Newsletter />
 	  </>	
     );
 };
 
 export default About;
+
 
 
 
