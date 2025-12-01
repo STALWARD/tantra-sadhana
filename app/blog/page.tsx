@@ -1,6 +1,5 @@
 import getPostMetadata from "@/components/getPostMetadata";
 import PostPreview from "@/components/PostPreview";
-import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata:Metadata = {
