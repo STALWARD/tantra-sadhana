@@ -2,7 +2,6 @@
 title: "श्रीत्रिपुरा-स्तोत्र"
 author: "KAULBHASKAR GURU JI"
 date: "2024-01-02 "
-socialImage: /images/bagla.webp
 ---
 
 ## **श्रीबाला स्तवराज**
