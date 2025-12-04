@@ -27,6 +27,7 @@ const BlogPage = (props: any) => {
         <h1 className="text-2xl text-black">{post.data.title}</h1>
         <p className="text-red mt-2">{post.data.author}</p>
         <p className="text-gold mt-2">{post.data.date}</p>
+        <p className="text-black mt-2">{post.data.excerpt}</p>
       </div>
 
       <article className="lg:regular-20 m-10">
