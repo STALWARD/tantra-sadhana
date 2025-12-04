@@ -11,7 +11,6 @@ const PostPreview = (props: PostMetadata) => {
         <h2 className=" text-violet-800 hover:text-xl hover:underline hover:text-red mb-4">{props.title}</h2>
       </Link>
       <p className="text-black">{props.author}</p>
-      <p className="text-black">{props.excerpt}</p>
     </div>
   );
 };
