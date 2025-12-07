@@ -6,6 +6,8 @@ import ScrollToTop from '@/components/ScrollToTop';
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { Suspense } from 'react';
 import Alert from '@/components/Alert';
+import { Inter } from 'next/font/google';
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.tantrasadhana.org'),
