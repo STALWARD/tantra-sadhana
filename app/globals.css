@@ -1,37 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
+/* custom styles */
 body {
-  font-family: Inter;
+  font-family: sans-serif;
 }
-
 
 @layer utilities {
-  .btn_white { 
-    @apply  border-white bg-white px-8 py-3 text-green-50
+  .btn_white {
+    @apply border-white bg-white px-8 py-3 text-gray-500
   }
-  .btn_white_text  { 
-    @apply  border-white bg-white px-8 py-3 text-gray-90
+   .btn_white_text  { 
+    @apply  border-white bg-white px-8 py-3 text-gray-900
   }
-  .btn_green  { 
-    @apply  border-green-50 bg-green-50 px-8 py-5 text-white
+} .btn_green  { 
+    @apply  border-green-500 bg-green-500 px-8 py-5 text-white
   }
   .btn_dark_green { 
-    @apply  bg-green-90 px-8 py-4 text-white transition-all hover:bg-black
+    @apply  bg-green-900 px-8 py-4 text-white transition-all hover:bg-black
   }
   .btn_dark_green_outline  { 
-    @apply border-gray-20 bg-green-90 px-8 py-5 text-white
+    @apply border-gray-200 bg-green-900 px-8 py-5 text-white
   }
   .btn_blue  { 
     @apply border-black bg-blue-500 px-8 py-4 text-white 
@@ -60,119 +52,108 @@ body {
   .flexEnd {
     @apply flex items-center justify-end;
   }
-
-  /* FONTS */
+  
+ /* FONTS */
   .regular-64 {
-    @apply text-[64px] font-[400] leading-[120%];
+    @apply text-[64px] font-normal leading-[120%];
   }
-
   .regular-40 {
-    @apply text-[40px] font-[400] leading-[120%];
+    @apply text-[40px] font-normal leading-[120%];
   }
 
   .regular-32 {
-    @apply text-[32px] font-[400];
+    @apply text-[32px] font-normal;
   }
 
   .regular-24 {
-    @apply text-[24px] font-[400];
+    @apply text-[24px] font-normal;
   }
 
   .regular-20 {
-    @apply text-[20px] font-[400];
+    @apply text-[20px] font-normal;
   }
 
   .regular-18 {
-    @apply text-[18px] font-[400];
+    @apply text-[18px] font-normal;
   }
 
   .regular-16 {
-    @apply text-[16px] font-[400];
+    @apply text-[16px] font-normal;
   }
 
   .regular-14 {
-    @apply text-[14px] font-[400];
+    @apply text-[14px] font-normal;
   }
 
     .regular-12 {
-    @apply text-[12px] font-[400];
+    @apply text-[12px] font-normal;
   }
 
   .medium-14 {
-    @apply text-[14px] font-[600];
+    @apply text-[14px] font-semibold;
   }
 
   .bold-88 {
-    @apply text-[88px] font-[700] leading-[120%];
+    @apply text-[88px] font-bold leading-[120%];
   }
 
   .bold-64 {
-    @apply text-[64px] font-[700] leading-[120%];
+    @apply text-[64px] font-bold  leading-[120%];
   }
 
   .bold-52 {
-    @apply text-[52px] font-[700] leading-[120%];
+    @apply text-[52px] font-bold  leading-[120%];
   }
 
   .bold-40 {
-    @apply text-[40px] font-[700] leading-[120%];
+    @apply text-[40px] font-bold  leading-[120%];
   }
 
   .bold-32 {
-    @apply text-[32px] font-[700] leading-[120%];
+    @apply text-[32px] font-bold  leading-[120%];
   }
 
   .bold-20 {
-    @apply text-[20px] font-[700];
+    @apply text-[20px] font-bold ;
   }
 
   .bold-18 {
-    @apply text-[18px] font-[700];
+    @apply text-[18px] font-bold ;
   }
 
   .bold-16 {
-    @apply text-[16px] font-[700];
+    @apply text-[16px] font-bold ;
   }
-
-  /* Hero */
+    /* Hero */
   .hero-map {
-    @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60;
+    @apply absolute right-0 top-0 h-screen w-screen bg-[url('/path/to/pattern-2.png')] bg-cover bg-center md:-right-28 xl:-top-60;
   }
-
   /* Camp */
   .camp-quote {
-    @apply absolute -right-6 bottom-4 w-[140px] lg:bottom-10 xl:-right-8 xl:w-[186px] 3xl:right-0;
+    @apply absolute -right-6 bottom-4 w-[140px] lg:bottom-10 xl:-right-8 xl:w-[186px] 2xl:right-0;
   }
-
-  /* Feature */
+ /* Feature */
   .feature-phone {
-    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  3xl:left-20;
+    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-15 md:-left-16 lg:flex  2xl:left-20;
   }
-
   /* Get App */
   .get-app {
-    @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
+    @apply max-w-7xl mx-auto relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-[url('/path/to/pattern-2.png')] bg-green-900 bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-3xl;
   }
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
+  /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
-
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-
 .testimonialbg {
     background: linear-gradient(-60deg, #1CBEEE 29.34%, #1A21BC 107.98%);
     /* background-image: url('/assets/newsletter/bgFile.webp'); */
     clip-path: polygon(100% 0, 100% 38%, 100% 100%, 0 100%, 0 20%);
 }
-
 .clipPath {
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
 }
@@ -234,7 +215,6 @@ body {
     outline: none;
     background: transparent;
 }
-
 @media (min-width: 800px) {
     .lh-82 {
         line-height: 82px !important;
