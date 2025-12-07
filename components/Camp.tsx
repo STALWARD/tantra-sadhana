@@ -52,17 +52,19 @@ const Camp = () => {
   return (
     <section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
-        <CampSite
-          backgroundImage="bg-bg-img-1"
-          title="Chandi Yag"
-          subtitle="Trivandrum, Kerala"
-          peopleJoined="200+ Joined"
+        <Image
+          src='/img-4.webp'
+          alt='yoga'  
+          width={1440}
+          height={580}
+          className="w-screen h-screen object-cover object-center 2xl:rounded-s-xl"
         />
-        <CampSite 
-          backgroundImage="bg-bg-img-2"
-          title="Yoga Camp"
-          subtitle="Somewhere in the Wilderness"
-          peopleJoined="20+ Joined"
+        <Image
+          src='/img-2.webp'
+          alt='yoga'  
+          width={1440}
+          height={580}
+          className="w-screen h-screen object-cover object-center 2xl:rounded-s-xl"
         />
       </div>
 
