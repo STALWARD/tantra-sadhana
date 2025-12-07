@@ -13,7 +13,7 @@ export default function Faq() {
   };
 
   return (
-    <section className="flexCenter w-full flex-col pb-[40px]">
+    <section className="flexCenter w-full flex-col pb-10">
       <div className="get-app">
         <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12">
           <h2 className="bold-40 lg:bold-64 xl:max-w-[320px]">Frequently Asked Questions!</h2>
