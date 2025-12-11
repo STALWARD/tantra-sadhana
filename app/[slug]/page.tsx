@@ -18,9 +18,10 @@ export const generateStaticParams = async () => {
   }));
 };
 
-const BlogPage = (props: any) => {
-  const slug = props.params.slug;
-  const post = getPostContent(slug);
+type Params = Promise<{ slug: string }>;
+export default async function BlogPage({ params }: { params: Params }) {
+  const { slug } = await params;
+const post = await getPostContent(slug)
   return (
     <div>
       <div className="my-12 text-center">
@@ -36,4 +37,4 @@ const BlogPage = (props: any) => {
   );
 };
 
-export default BlogPage;
+
