@@ -5,7 +5,7 @@
   "requires": true,
   "packages": {
     "": {
-      "name": "my-responsive-site",
+      "name": "my-next",
       "version": "0.1.0",
       "dependencies": {
         "@headlessui/react": "^2.2.9",
