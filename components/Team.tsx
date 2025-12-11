@@ -123,7 +123,7 @@ export default class MultipleItems extends Component {
 
 
         return (
-            <div className="py-10 sm:py-24 bg-paleblue" id="mentor">
+            <div className="py-10 sm:py-24 bg-yellow-300" id="mentor">
 
                 <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 px-4 lg:px-8 relative'>
                     <h2 className="1h-82 text-6xl text-midnightblue md:text-55xl text-center md:text-start font-semibold">Meet with our <br /> Experts</h2>
@@ -135,9 +135,9 @@ export default class MultipleItems extends Component {
                                     <div className="relative">
                                         <Image src={items.imgSrc} alt="user-image" width={306} height={0} className="inline-block m-auto w-auto h-auto" />
                                     </div>
-                                    <div className="-mt-0">
-                                        <h3 className='text-2xl font-semibold text-lightblack'>{items.name}</h3>
-                                        <h4 className='text-lg font-normal text-lightblack pt-2 opacity-70'>{items.profession}</h4>
+                                    <div className="mt-0">
+                                        <h3 className='text-2xl font-semibold text-black'>{items.name}</h3>
+                                        <h4 className='text-lg font-normal text-black pt-2 opacity-80'>{items.profession}</h4>
                                     </div>
                                 </div>
                             </div>
