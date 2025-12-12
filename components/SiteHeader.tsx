@@ -46,7 +46,7 @@ const Navbar = () => {
         </ul>
       )}
 
-      <div className="lg:flexCenter">
+      <div className="hidden h-full gap-12 lg:flex">
         <ul className="regular-14 flex gap-4 text-black">
           <li>
           <Link href="https://www.facebook.com/KAULBHASKAR" target="_blank" rel="noopener noreferrer">
