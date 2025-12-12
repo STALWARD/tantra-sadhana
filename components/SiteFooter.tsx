@@ -73,22 +73,32 @@ const Footer = () => {
 
             <div className="flex flex-col gap-5">
               <FooterColumn title={SOCIALS.title}>
-                <ul className="regular-14 flex gap-4 text-gray-30">
+                <ul className="regular-14 flex gap-4 text-black">
+                  <li>
                   <Link href="https://www.facebook.com/KAULBHASKAR" target="_blank" rel="noopener noreferrer">
                     <Image src={'/facebook.svg'} alt="logo" width={24} height={24} />
                   </Link>
+                  </li>
+                  <li>
                   <Link href="https://twitter.com/KAULMARGA" target="_blank" rel="noopener noreferrer">
                     <Image src={'/twitter.svg'} alt="logo" width={24} height={24} />
                   </Link>
+                  </li>
+                  <li>
                   <Link href="https://www.youtube.com/@kaulbhaskar/videos" target="_blank" rel="noopener noreferrer">
                     <Image src={'/youtube.webp'} alt="logo" width={24} height={24} />
                   </Link>
+                  </li>
+                  <li>
                   <Link href="https://www.linkedin.com/in/kaul-bhaskar-006a12234/" target="_blank" rel="noopener noreferrer">
                     <Image src={'/Linkedin.svg'} alt="logo" width={24} height={24} />
                   </Link>
+                  </li>
+                  <li>
                   <Link href="https://t.me/Tantrasadhana" target="_blank" rel="noopener noreferrer">
                     <Image src={'/telegram.svg'} alt="logo" width={24} height={24} />
-                  </Link>   
+                  </Link>  
+                  </li> 
                 </ul>
               </FooterColumn>
             </div>
