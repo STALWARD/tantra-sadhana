@@ -91,7 +91,7 @@ export default class MultipleItems extends Component {
         };
 
         return (
-            <div className=" pt-10 pb-10 sm:pb-32 lg:py-32 bg-yellow-300" id="testimonial">
+            <div className="bg-amber-300 pt-40 pb-10 sm:pb-32 lg:py-32 " id="testimonial">
                 <div className='mx-auto max-w-7xl sm:py-4 lg:px-8'>
                 <h2 className="1h-82 text-6xl text-black md:text-55xl text-center md:text-start font-semibold"> What Our Lovely <br />Client Says ?</h2>
                     <Slider {...settings}>
@@ -106,11 +106,11 @@ export default class MultipleItems extends Component {
                                             <h4 className='text-sm font-normal text-black pb-2'>{items.profession}</h4>
                                         </div>
                                         <div className="flex">
-                                            <StarIcon width={20} className="text-yellow-300" />
-                                            <StarIcon width={20} className="text-yellow-300" />
-                                            <StarIcon width={20} className="text-yellow-300" />
-                                            <StarIcon width={20} className="text-yellow-300" />
-                                            <StarIcon width={20} className="text-lightgray" />
+                                            <StarIcon width={20} className="text-orange-300" />
+                                            <StarIcon width={20} className="text-orange-300" />
+                                            <StarIcon width={20} className="text-orange-300" />
+                                            <StarIcon width={20} className="text-orange-300" />
+                                            <StarIcon width={20} className="text-amber-500" />
                                         </div>
                                     </div>
                                 </div>
@@ -123,5 +123,3 @@ export default class MultipleItems extends Component {
         );
     }
 }
-
-
