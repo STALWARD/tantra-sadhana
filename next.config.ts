@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+ /* confiexperimental: {
+    cacheLife: 60, // Example of new caching API in Next.js 16
+  },g options here */
+  bundlePagesRouterDependencies: true /* config options here */
 };
 
 export default nextConfig;
