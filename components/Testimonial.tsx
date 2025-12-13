@@ -91,7 +91,7 @@ export default class MultipleItems extends Component {
         };
 
         return (
-            <div className="bg-amber-300 pt-40 pb-10 sm:pb-32 lg:py-32 " id="testimonial">
+            <div className="bg-[url('/feature-bg.webp')] pt-40 pb-10 sm:pb-32 lg:py-32 " id="testimonial">
                 <div className='mx-auto max-w-7xl sm:py-4 lg:px-8'>
                 <h2 className="1h-82 text-6xl text-black md:text-55xl text-center md:text-start font-semibold"> What Our Lovely <br />Client Says ?</h2>
                     <Slider {...settings}>
@@ -123,3 +123,4 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
