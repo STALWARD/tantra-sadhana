@@ -57,7 +57,7 @@ const Camp = () => {
           alt='yoga'  
           width={1440}
           height={580}
-          fetchpriority="high"
+          loading="lazy"
           className="w-screen h-screen object-cover object-center 2xl:rounded-s-xl"
         />
         <Image
@@ -65,7 +65,7 @@ const Camp = () => {
           alt='yoga'  
           width={1440}
           height={580}
-          fetchpriority="high"
+          loading="lazy"
           className="w-screen h-screen object-cover object-center 2xl:rounded-s-xl"
         />
       </div>
