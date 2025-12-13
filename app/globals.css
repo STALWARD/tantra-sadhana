@@ -6,9 +6,13 @@
 
 /* custom styles */
 body {
-  font-family: sans-serif.wwof2;
-  font-display: swap
+    max-width: 100vw;
+    overflow-x: hidden;
+    line-height: 1.5;
+    font-family: var(--rochester-font);
+    font-display: swap;
 }
+
 
 @layer utilities {
   .btn_white {
