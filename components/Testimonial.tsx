@@ -97,7 +97,7 @@ export default class MultipleItems extends Component {
                     <Slider {...settings}>
                         {postData.map((items, i) => (
                             <div key={i}>
-                                <div className={`bg-gray-300 m-4 p-5 my-40 relative ${i % 2 ? 'middleDiv' : 'testimonial-shadow'}`}>
+                                <div className={`bg-white m-4 p-5 my-40 relative ${i % 2 ? 'middleDiv' : 'testimonial-shadow'}`}>
                                     <h3 className='text-base font-normal text-black my-4'>{items.comment}</h3>
                                     <hr style={{ color: "#D7D5D5" }} />
                                     <div className="flex justify-between">
@@ -123,6 +123,7 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
 
 
 
