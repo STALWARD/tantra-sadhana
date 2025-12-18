@@ -91,18 +91,18 @@ export default class MultipleItems extends Component {
         };
 
         return (
-            <div className="bg-[url('/pattern-bg.webp')] pt-40 pb-10 sm:pb-32 lg:py-32 " id="testimonial">
+            <div className="bg-amber-300 pt-40 pb-10 sm:pb-32 lg:py-32 " id="testimonial">
                 <div className='mx-auto max-w-7xl sm:py-4 lg:px-8'>
                 <h2 className="1h-82 text-6xl text-black md:text-55xl text-center md:text-start font-semibold"> What Our Lovely <br />Client Says ?</h2>
                     <Slider {...settings}>
                         {postData.map((items, i) => (
                             <div key={i}>
-                                <div className={`bg-white m-4 p-5 my-40 relative ${i % 2 ? 'middleDiv' : 'testimonial-shadow'}`}>
+                                <div className={`bg-white m-4 p-5 my-40 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-2xl  relative ${i % 2 ? 'middleDiv' : 'testimonial-shadow '}`}>
                                     <h3 className='text-base font-normal text-black my-4'>{items.comment}</h3>
                                     <hr style={{ color: "#D7D5D5" }} />
                                     <div className="flex justify-between">
                                         <div>
-                                            <h4 className='text-lg font-medium text-darkbrown pt-4 pb-2'>{items.name}</h4>
+                                            <h4 className='text-lg font-medium text-shadow-slate-400 pt-4 pb-2'>{items.name}</h4>
                                             <h4 className='text-sm font-normal text-black pb-2'>{items.profession}</h4>
                                         </div>
                                         <div className="flex">
@@ -123,7 +123,3 @@ export default class MultipleItems extends Component {
         );
     }
 }
-
-
-
-
