@@ -148,7 +148,7 @@ export default class MultipleItems extends Component {
                             <div key={i}>
 
                                 <div className='bg-white m-3 px-3 pt-3 pb-12 my-20 shadow-courses rounded-2xl'>
-                                    <div className="relative rounded-3xl">
+                                    <div className="relative  overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-120 hover:shadow-2xl ">
                                         <Image src={items.imgSrc} alt="gaby" width={396} height={296} priority={true} className="m-auto clipPath" />
                                         <div className="absolute right-5 -bottom-2 bg-ultramarine rounded-full p-6">
                                             <h3 className="text-white uppercase text-center text-sm font-medium">best <br />wanted</h3>
@@ -193,7 +193,6 @@ export default class MultipleItems extends Component {
         );
     }
 }
-
 
 
 
