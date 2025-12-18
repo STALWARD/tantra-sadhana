@@ -25,7 +25,7 @@ const About = () => {
 				<h2 className="absolute text-xl text-center text-white justify-center font-bold mt-60 p-20 pageHeader">We are experienced team of Experts in Tantra & Astrology. We offer spiritual guidance and education to those seeking to deepen their understanding of Tantric teachings. </h2>
 			</div>
 			<section className='flex-row md:flex mx-auto items-center w-full'>
-				<div className='sm:w-1/2 sm:ml-10 sm:mr-10 w-full flex justify-center mt-12'>
+				<div className='sm:w-1/2 sm:ml-10 sm:mr-10 w-full flex justify-center mt-12 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl '>
 					<Image
 						priority={false}
 						width={940}
@@ -48,7 +48,7 @@ const About = () => {
 				<p> {aboutMeData.body2}</p>
 			</section>
 			<section className='flex flex-col mx-auto w-auto h-auto px-4 lg:px-8'>
-				<div className='flex lg:flex-row flex-col w-auto h-auto gap-5 mx-auto justify-center '>
+				<div className='flex lg:flex-row flex-col w-auto h-auto gap-5 mx-auto justify-center'>
 					<Image
 						priority={false}
 						width={250}
