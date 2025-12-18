@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 // Define the number of posts to show per page
-const POSTS_PER_PAGE = 6;
+const POSTS_PER_PAGE = 9;
 
 const Blog = async ({
   searchParams,
