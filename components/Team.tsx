@@ -132,8 +132,8 @@ export default class MultipleItems extends Component {
                         {postData.map((items, i) => (
                             <div key={i}>
                                 <div className='m-3 py-14 md:my-10 text-center'>
-                                    <div className="relative">
-                                        <Image src={items.imgSrc} alt="user-image" width={306} height={0} className="inline-block m-auto w-auto h-auto" />
+                                    <div className="relative ">
+                                        <Image src={items.imgSrc} alt="user-image" width={306} height={0} className="inline-block m-auto w-auto h-auto overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-120 hover:shadow-2xl " />
                                     </div>
                                     <div className="mt-0">
                                         <h3 className='text-2xl font-semibold text-black'>{items.name}</h3>
