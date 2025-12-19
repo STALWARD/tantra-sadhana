@@ -7,80 +7,52 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { Suspense } from 'react';
 import Alert from '@/components/Alert';
 import { Inter } from 'next/font/google';
-const inter = Inter({ subsets: ['latin'] });
+
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap', // Optimization for Core Web Vitals 2025
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.tantrasadhana.org'),
-  title: 'KAUL TANTRA SADHANA # KAULBHASKAR',
-  description: 'An Organization dedicated for spreading knowledge of real TANTRA & ASTROLOGY',
-  category: 'technology',
+  title: {
+    default: 'KAUL TANTRA SADHANA # KAULBHASKAR',
+    template: '%s | KAUL TANTRA SADHANA' // Better for SEO on sub-pages
+  },
+  description: 'An Organization dedicated to spreading knowledge of real TANTRA & ASTROLOGY',
+  category: 'education', // Changed from 'technology' to match content
 
   verification: {
-    google: 'google',
-    yandex: 'yandex',
-    yahoo: 'yahoo',
-    other: {
-      me: ['my-email', 'my-link'],
-    },
-  },
-
-  itunes: {
-    appId: 'myAppStoreID',
-    appArgument: 'myAppArgument',
-  },
-  appleWebApp: {
-    title: 'Apple Web App',
-    statusBarStyle: 'black-translucent',
-    startupImage: [
-      '/assets/startup/apple-touch-startup-image-768x1004.png',
-      {
-        url: '/assets/startup/apple-touch-startup-image-1536x2008.png',
-        media: '(device-width: 768px) and (device-height: 1024px)',
-      },
-    ],
+    google: 'your-actual-google-code',
+    yandex: 'yandex-code',
   },
 
   alternates: {
-    canonical: 'https://www.tantrasadhana.org',
+    canonical: '/',
     languages: {
-      'en-US': 'https://www.tantrasadhana.org/en-US',
-    },
-    media: {
-      'only screen and (max-width: 600px)': 'https://www.tantrasadhana.org/mobile',
-    },
-    types: {
-      'application/rss+xml': 'https://www.tantrasadhana.org/rss',
+      'en-US': '/en-US',
     },
   },
 
   twitter: {
     card: 'summary_large_image',
     title: 'KAUL TANTRA SADHANA # KAULBHASKAR',
-    description: 'An Organization dedicated for spreading knowledge of real TANTRA & ASTROLOGY',
-    images: ['https://www.tantrasadhana.org/og.png'],
+    description: 'An Organization dedicated to spreading knowledge of real TANTRA & ASTROLOGY',
+    images: ['/og.png'],
   },
   
   openGraph: {
     title: 'KAUL TANTRA SADHANA # KAULBHASKAR',
-    description: 'An Organization dedicated for spreading knowledge of real TANTRA & ASTROLOGY',
+    description: 'An Organization dedicated to spreading knowledge of real TANTRA & ASTROLOGY',
     url: 'https://www.tantrasadhana.org',
-    siteName: 'KAUL TANTRA SADHANA # KAULBHASKAR',
-    
+    siteName: 'KAUL TANTRA SADHANA',
     images: [
       {
-        url: 'https://www.tantrasadhana.org/og.png',
-        width: 800,
-        height: 600,
+        url: '/og.png',
+        width: 1200, // Updated to 1200x630 for 2025 OG standards
+        height: 630,
       },
-      {
-        url: 'https://www.tantrasadhana.org/og-alt.png',
-        width: 1800,
-        height: 1600,
-        alt: 'Og custom alt',
-      },
-
     ],
-    
     locale: 'en_US',
     type: 'website',
   },
@@ -93,19 +65,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Suspense>
-          {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
-            <GoogleAnalytics ga_id= 
-            {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
-          ) : null}
+      {/* 1. Added inter.className to apply the font */}
+      <body className={`${inter.className} antialiased`}>
+        {/* 2. Moved Analytics inside Suspense for better hydration */}
+        <Suspense fallback={null}>
+          {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
+            <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+          )}
         </Suspense>
+        
         <SiteHeader />
         <Alert />
-          <main className="relative overflow-hidden">
-            {children}
-          </main>
-          <SiteFooter />
+        
+        {/* 3. Main wrapper */}
+        <main className="relative overflow-hidden">
+          {children}
+        </main>
+        
+        <SiteFooter />
         <ScrollToTop />
       </body>
     </html>
