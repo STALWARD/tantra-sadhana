@@ -79,7 +79,7 @@ export default class MultipleItems extends Component {
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 400,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
@@ -123,3 +123,4 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
