@@ -99,7 +99,7 @@ export default class MultipleItems extends Component {
             dots: false,
             dotsClass: "slick-dots",
             infinite: true,
-            slidesToShow: 2,
+            slidesToShow: 3,
             // centerMode: true,
             slidesToScroll: 1,
             arrows: false,
@@ -193,6 +193,7 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
 
 
 
