@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2 ml-5 "> 
         
         <h1 className="bold-64 md:bold-64 lg:bold-88 text-green-400">TANTRA SADHANA</h1>
-        <p className="regular-12 md:regular-14 lg:regular-16 mt-6 text-white xl:max-w-[520px]">
+        <p className="regular-14 md:regular-14 lg:regular-16 mt-6 text-white xl:max-w-[520px]">
           देहोऽहमिति या बुद्धिर्विद्या सा प्रकीर्तिता।<br />नाहं देहश्चिदात्मेति बुद्धिर्विद्येति भण्यते।।<br />अविद्या संसृतेर्हेतु विद्या तस्या निवृत्तिका।<br />तस्माद् यत्न: सदाकार्यो विद्याभ्यासे मुमुक्षुभि:।।<br /> <br />We want to be on each of your journeys seeking the satisfaction of meeting with hidden masters of Tantra & Astrology.<br />We can help you on an adventure around the world of Tantra in just a simple way.
         </p>
 
