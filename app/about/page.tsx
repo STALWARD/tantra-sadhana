@@ -24,7 +24,7 @@ const About = () => {
         		<h1 className="absolute text-4xl text-center text-white justify-center font-bold mb-60 pageHeader">About</h1>
 				<h2 className="absolute text-xl text-center text-white justify-center font-bold mt-60 p-20 pageHeader">We are experienced team of Experts in Tantra & Astrology. We offer spiritual guidance and education to those seeking to deepen their understanding of Tantric teachings. </h2>
 			</div>
-			<section className='flex-row md:flex mx-auto items-center w-full'>
+			<section className='flex-row md:flex mx-auto items-center w-full bg-linear-to-r from-green-400 via-indigo-500 to-yellow-400'>
 				<div className='sm:w-1/2 sm:ml-10 sm:mr-10 w-full flex justify-center mt-12 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl '>
 					<Image
 						priority={false}
@@ -99,6 +99,7 @@ const About = () => {
 };
 
 export default About;
+
 
 
 
