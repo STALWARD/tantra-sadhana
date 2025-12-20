@@ -41,7 +41,7 @@ const About = () => {
 					<p className='text-lg text-simple text-justify '>Guru Ji, popularly known as <strong>KAULBHASKAR</strong>, is from the lineage of Sri <strong>Matsyendra Nath</strong> (also known as Machendra Nath) ji, one of <strong>84 Maha Siddhas</strong>. A direct disciple of esteemed KAUL of Prayag, Sri <strong>KULBHUSHANANAND NATH</strong>, Guru Ji is basically an Urdhvamanayee Upasaka of MAHATRIPURSUNDARI. Sri Kaulbhaskar Ji, an expert of <strong>KAUL MARGA</strong>, has spent more than 30 years painstakingly perfecting his practice of SRI VIDYA UPASANA of highly mysterious <strong>DAKSHINAMURTI SAMPRADAYA</strong>.</p>
 				</div>
 			</section>
-			<section className='w-full bg-black text-white p-10 h-full mt-5'>
+			<section className='w-full bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 text-black font-semibold text-xl p-10 h-full mt-5'>
 				<p> {aboutMeData.highlightedBody}</p>
 			</section>
 			<section className='w-full text-black text-4xl text-bold text-center justify-center p-10 h-full mt-5'>
@@ -99,6 +99,7 @@ const About = () => {
 };
 
 export default About;
+
 
 
 
