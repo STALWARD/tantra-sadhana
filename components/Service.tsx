@@ -138,9 +138,9 @@ export default class MultipleItems extends Component {
                 <h2 className="absolute text-2xl text-center text-white justify-center font-semibold mb-40 pageHeader">Strategic Tantra advice and tailored solutions</h2>
 				<p className="absolute text-xl text-center text-white justify-center font-semibold mt-80 p-20 pageHeader"> Through blog posts, videos and other resources, we provide an accessible platform for individuals to learn about Tantra and its various practices as well as for performing Tantric Rituals. </p>
 			</div>
-                <div className='mx-auto max-w-7xl bg-gold rounded-md sm:py-8 px-4 lg:px-8 mt-5'>
+                <div className='mx-auto max-w-7xl bg-yellow-300 rounded-md sm:py-8 px-4 lg:px-8 mt-5'>
                     <div className="sm:flex justify-between items-center">
-                        <h2 className=" text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0 ">Popular Services</h2>
+                        <h2 className=" text-shadow-blue-400 text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0 ">Popular Services</h2>
                     </div>
 
                     <Slider {...settings}>
@@ -193,6 +193,7 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
 
 
 
