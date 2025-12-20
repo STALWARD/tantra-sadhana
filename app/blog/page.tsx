@@ -37,9 +37,9 @@ const Blog = async ({
 
   return (
     <main className="max-w-6xl mx-auto">
-      <h1 className="text-4xl text-center text-black justify-center font-extrabold mt-10 font-dancing bg-linear-to-r from-pink-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
-        Blog
-      </h1>
+     <h1 className="bold-32 md:bold-40 lg:bold-64 text-center justify-center mt-10 bg-linear-to-r from-pink-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
+       BLOG
+     </h1>
       <p className="text-xl text-center text-black justify-center font-semibold mt-5">
         All the posts here are writings of Sri Kaulbhaskar Guru Ji
       </p>
