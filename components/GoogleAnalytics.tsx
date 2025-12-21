@@ -1,11 +1,7 @@
 'use client';
 import Script from 'next/script';
 
-type GoogleAnalyticsProps = {
-  ga_id: string;
-};
-
-const GoogleAnalytics = ({ ga_id }: GoogleAnalyticsProps) => (
+const GoogleAnalytics = ({ ga_id }: { ga_id: string }) => (
   <>
     <Script
       src={`https://www.googletagmanager.com/gtag/js?id=${ga_id}`}
@@ -19,9 +15,7 @@ const GoogleAnalytics = ({ ga_id }: GoogleAnalyticsProps) => (
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '${ga_id}', {
-            page_path: window.location.pathname,
-          });
+          gtag('config', '${ga_id}');
         `,
       }}
     />
