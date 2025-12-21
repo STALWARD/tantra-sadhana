@@ -7,7 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
-  },
+},
+  "browserslist": [
+  "last 2 versions",
+  "> 0.5%",
+  "not dead"
+],
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
