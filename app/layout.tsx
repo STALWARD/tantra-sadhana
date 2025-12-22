@@ -6,38 +6,12 @@ import ScrollToTop from '@/components/ScrollToTop';
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { Suspense } from 'react';
 import Alert from '@/components/Alert';
-import { Inter, Raleway, Grey_Qo, Dancing_Script, Pacifico } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
 const inter = Inter({ 
   subsets: ['latin'],
   display: 'swap', 
   variable: '--font-inter',// Optimization for Core Web Vitals 2025
-});
-
-export const raleway = Raleway({
-  subsets: ["latin"],
-  weight: ['100', '300', '400', '700', '900'],
-  display: 'swap',
-  variable: '--font-raleway',// Optimization for Core Web Vitals 2025
-});
-
-export const greyQo = Grey_Qo({
-  subsets: ["latin"],
-  display: 'swap',
-  weight: '400',
-  variable: '--font-grey-qo',// Optimization for Core Web Vitals 2025
-});
-
-const dancing = Dancing_Script({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-dancing',
-});
-
-const pacifico = Pacifico({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--font-pacifico',
 });
 
 export const metadata: Metadata = {
@@ -93,7 +67,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* 1. Added inter.className to apply the font */}
-      <body className={`${inter.variable} antialiased ${dancing.variable} ${pacifico.variable} ${raleway.variable} ${greyQo.variable}`}>
+      <body className={`${inter.className} antialiased`}>
         {/* 2. Moved Analytics inside Suspense for better hydration */}
         <Suspense fallback={null}>
           {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
