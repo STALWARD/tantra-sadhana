@@ -3,6 +3,8 @@ const nextConfig = {
     legacyBrowsers: false
   },
   swcMinify: true,
+   // Optimize for modern browsers (aligns with browserslist)
+  browsersListForSWC: true,
   transpilePackages: []
 };
 
