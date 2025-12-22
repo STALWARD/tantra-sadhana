@@ -2,9 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig = {
   experimental: {
-    legacyBrowsers: false, // Don't serve legacy JS
+    legacyBrowsers: false
   },
-  swcMinify: true, // Use SWC for faster modern JS minification
+  swcMinify: true,
+  transpilePackages: []
 };
 
 export default nextConfig;
