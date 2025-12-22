@@ -68,7 +68,7 @@ const postData: DataType[] = [
         heading: 'SHAT-CHANDI',
         heading2: 'By pure tantric method',
         name: "One of the Jack-of-all Prayoga",
-        imgSrc: '/assets/services/Shatchandi.png',
+        imgSrc: '/assets/services/Shatchandi.webp',
         price: 250000,
         rating: 4.8,
     },
@@ -193,6 +193,7 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
 
 
 
