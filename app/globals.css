@@ -5,22 +5,13 @@
 :root {
     --foreground-rgb: 0, 0, 0;
     --font-inter: var(--font-inter);
-    --font-raleway: var(--font-raleway);
-    --font-grey-qo: var(--font-grey-qo);
-    --font-dancing: var(--font-dancing);
-    --font-pacifico: var(--font-pacifico);
-    --font-rochester: var(--font-rochester);
-}
+   }
 
 @layer base {
     /* custom styles */
-    body {
-        max-width: 100vw;
-        overflow-x: hidden;
-        line-height: 1.5;
-        font-family: var(--rochester-font);
-        font-display: swap;
-    }
+   body {
+  font-family: sans-serif;
+  }
 }
 
 li {
