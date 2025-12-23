@@ -3,6 +3,7 @@ title: "श्रीविद्या-खड्गमाला के काम
 featuredImage: "/blog/KHADAGMALA.webp"
 authorName: "KAULBHASKAR GURU JI"
 authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
 excerpt: "श्रीविद्या-खड्गमाला १५ माला- मन्त्रों का समुह है। निष्काम व सकाम भेद से इन मालाओं के अलग-अलग ध्यान हैं। यहाँ सकाम ध्यान और उनके फल की चर्चा ...... । "
 date: "2022-10-16"
 ---
