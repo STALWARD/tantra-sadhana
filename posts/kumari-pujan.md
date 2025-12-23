@@ -3,6 +3,7 @@ title: "कुमारी पूजन"
 featuredImage: "/blog/kumari-puja.webp"
 authorName: "KAULBHASKAR GURU JI"
 authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
 excerpt: "कुमारी-पूजन की विधि"
 date: "2022-10-25"
 ---
