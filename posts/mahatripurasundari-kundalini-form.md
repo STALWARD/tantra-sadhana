@@ -3,6 +3,7 @@ title: "श्री महात्रिपुरसुन्दरी का 
 featuredImage: "/KUNDALINI.webp"
 authorName: "KAULBHASKAR GURU JI"
 authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
 excerpt: "श्री महात्रिपुरसुन्दरी का कुण्डलिनी स्वरूप को चित्र के रूप में दिखाया गया है ।"
 date: "2022-10-11"
 ---
