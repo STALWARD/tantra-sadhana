@@ -3,6 +3,7 @@ title: "श्रीत्रिपुरा-स्तोत्र"
 featuredImage: "/blog/BalaTripuraSundari.webp"
 authorName: "KAULBHASKAR GURU JI"
 authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
 excerpt: "श्रीत्रिपुरा के विविध स्तोत्रों का संग्रह"
 date: "2024-01-02 "
 ---
