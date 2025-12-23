@@ -3,6 +3,7 @@ title: "मातंगी मन्त्र साधना"
 featuredImage: "/blog/MATANGI.webp"
 authorName: "KAULBHASKAR GURU JI"
 authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
 excerpt: "महाविद्या मातंगी की मन्त्र साधना"
 date: "2022-09-23"
 ---
