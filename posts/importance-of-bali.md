@@ -3,6 +3,7 @@ title: "तन्त्र साधना में बलि का महत�
 featuredImage: "/blog/BALI.webp"
 authorName: "KAULBHASKAR GURU JI"
 authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
 excerpt: "साधना में बलि का महत्व"
 date: "2022-09-23"
 
