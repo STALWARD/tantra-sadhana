@@ -7,7 +7,6 @@ authorAvatar: "/KAULBHASKAR.jpg"
 excerpt: "श्रीत्रिपुरा के विविध स्तोत्रों का संग्रह"
 date: "2024-01-02 "
 ---
-![images/BalaTripuraSundari.webp](./blog/BalaTripuraSundari.webp)
 ## **श्रीबाला स्तवराज**
 
 **ध्याये निरामयं वस्तु जगत्त्रयविमोहनं**। 
