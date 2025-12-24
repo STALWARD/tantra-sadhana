@@ -7,7 +7,6 @@ authorAvatar: "/KAULBHASKAR.jpg"
 excerpt: "कलिकाल में धन की प्राप्ति के लिये तीव्र फलदायक साधना । "
 date: "2023-12-23"
 ---
-![images/Kubera.webp](/blog/KUBERA.webp)
 
 **कुबेर साधना**
 
