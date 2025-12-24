@@ -8,20 +8,15 @@
     "start": "next start",
     "lint": "eslint"
 },
-  "browserslist": {
-    "production": [
-      "last 2 Chrome versions",
-      "last 2 Firefox versions",
-      "last 2 Edge versions",
-      "last 2 Safari versions"
-    ],
-    "development": [
-      "last 1 Chrome version",
-      "last 1 Firefox version",
-      "last 1 Edge version",
-      "last 1 Safari version"
-    ]
- },
+ {
+  "browserslist": [
+    "chrome >= 64",
+    "edge >= 79",
+    "firefox >= 67",
+    "safari >= 12",
+    "not dead"
+  ]
+}
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
