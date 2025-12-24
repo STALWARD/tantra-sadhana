@@ -7,7 +7,13 @@ const nextConfig = {
   swcMinify: true,
    // Optimize for modern browsers (aligns with browserslist)
   browsersListForSWC: true,
-  transpilePackages: []
+  transpilePackages: [],
+  turbopack: {
+  resolveAlias: {
+  '../build/polyfills/polyfill-module': './src/lib/modern-polyfill.js',
+  'next/dist/build/polyfills/polyfill-module': './src/lib/modern-polyfill.js',
+ },
+ },
 };
 
 export default nextConfig;
