@@ -12,7 +12,12 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap', 
   variable: '--font-inter',// Optimization for Core Web Vitals 2025
+   weight: ['100', '200', '400', '600', '700'],
 });
+
+export const viewport = {
+  viewport: 'width=device-width, initial-scale=1',
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.tantrasadhana.org'),
@@ -33,6 +38,10 @@ export const metadata: Metadata = {
     languages: {
       'en-US': '/en-US',
     },
+  },
+
+  robots: { 
+    index: true, follow: true 
   },
 
   twitter: {
@@ -69,7 +78,7 @@ export default function RootLayout({
       {/* 1. Added inter.className to apply the font */}
       <body className={`${inter.className} antialiased`}>
         {/* 2. Moved Analytics inside Suspense for better hydration */}
-        <Suspense fallback={null}>
+        <Suspense fallback={<div className="py-16 text-center">Loading...</div>}>
           {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
             <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
           )}
