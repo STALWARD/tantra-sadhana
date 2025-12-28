@@ -37,7 +37,7 @@ export default function YouTubeFrame() {
     }
 
 	return ( 
-    	<section className="relative bg-gold z-10 py-16 md:py-20 lg:py-28">
+    	<section className="relative bg-yellow-300 z-10 py-16 md:py-20 lg:py-28">
 			<div className="item-center">
 				<SectionTitle
           			title="GALLERY"
@@ -48,7 +48,7 @@ export default function YouTubeFrame() {
         		<div className="relative flex item-center justify-center mb-20 ">
           			<Link
            				href="https://www.youtube.com/@kaulbhaskar/videos"target="_blank" rel="noopener noreferrer"
-            			className=" bg-black px-8 py-4 rounded-md text-white transition-all hover:bg-white hover:text-black"
+            			className=" bg-black px-8 py-4 rounded-md text-white transition-all hover:bg-yellow-400 hover:text-black"
             			>
             			Click for <strong>More Videos</strong>
           			</Link>
@@ -91,7 +91,7 @@ export default function YouTubeFrame() {
             		<Image onClick={onClick1} loading="lazy" src="/images/sriyantra.webp" alt="video image Thumbnail" width={500} height={390} className="shadow" />
         		</div>
 				</div>
-					<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5'>
+					<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl'>
 				<Image
 					priority={false}
 					width={400}
@@ -117,7 +117,33 @@ export default function YouTubeFrame() {
 					src={"/images/PURNAGIRI.webp"}
 				/>
 				</div>
-					<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5'>
+				<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl '>
+				<Image
+					priority={false}
+					width={400}
+					height={400}
+					aria-label={"image of KAULBHASKAR"}
+					alt={"KAULBHASKAR"}
+					src={"/images/Vindhyachal1.webp"}
+				/>
+				<Image
+					priority={false}
+					width={400}
+					height={400}
+					aria-label={"image of KAULBHASKAR"}
+					alt={"KAULBHASKAR"}
+					src={"/images/Vindhyachal2.webp"}
+				/>
+				<Image
+					priority={false}
+					width={400}
+					height={400}
+					aria-label={"image of KAULBHASKAR"}
+					alt={"KAULBHASKAR"}
+					src={"/images/Vindhyachal3.webp"}
+				/>
+				</div>
+					<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl '>
 						<Image
 							priority={false}
 							width={400}
@@ -132,7 +158,7 @@ export default function YouTubeFrame() {
 							height={400}
 							aria-label={"image of KAULBHASKAR"}
 							alt={"KAULBHASKAR"}
-							src={"/images/mahakal-2.webp"}
+							src={"/images/Vindhyachal4.webp"}
 						/>
 						<Image
 							priority={false}
@@ -147,4 +173,6 @@ export default function YouTubeFrame() {
 		</section>
 	); 
 } 
+
+
 

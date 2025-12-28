@@ -1,6 +1,10 @@
 ---
 title: "दारिद्रय-दहन व धन-प्रदायक साधन"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/kanakdhara.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "धन-प्राप्ति के लिये कनकधारा स्तोत्र और श्रीसूक्त का प्रयोग"
 date: "2023-08-10"
 ---
 

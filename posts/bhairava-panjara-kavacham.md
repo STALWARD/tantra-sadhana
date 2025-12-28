@@ -1,6 +1,10 @@
 ---
 title: "श्री भैरव पञ्जर कवचम्"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/BATUK-BHAIRAV.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "भैरव का यह कवच आयु, आरोग्य, ऐश्वर्य, कीर्ति, जय, लाभ और सुख प्रदान करने में बहुत लाभकारी है"
 date: "2023-01-07"
 ---
 

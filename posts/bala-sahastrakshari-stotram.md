@@ -1,6 +1,10 @@
 ---
 title: "श्रीबाला-सहस्राक्षरी स्तोत्रम्"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/BalaTripuraSundari.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "श्रीबालात्रिपुरसुन्दरी का यह सहस्राक्षरी स्तोत्र समस्त अरिष्टों का नाश करने में अतिप्रभावी है"
 date: "2022-11-02"
 ---
 

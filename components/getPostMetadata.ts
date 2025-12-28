@@ -14,8 +14,12 @@ const getPostMetadata = (): PostMetadata[] => {
     return {
       title: matterResult.data.title,
       date: matterResult.data.date,
-      author: matterResult.data.author,
+      authorName: matterResult.data.authorName,
+      authorBio: matterResult.data.authorBio,
+      authorAvatar: matterResult.data.authorAvatar,
+      excerpt: matterResult.data.excerpt,
       slug: fileName.replace(".md", ""),
+      featuredImage: matterResult.data.featuredImage,
     };
   });
 

@@ -1,6 +1,10 @@
 ---
 title: "परम गोपनीय व सर्वश्रेष्ठ कौल-धर्म"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/duti.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "शास्त्रों में कौल-धर्म की सर्वश्रेष्ठता"
 date: "2022-11-05"
 ---
 

@@ -1,6 +1,10 @@
 ---
 title: "श्री धन-प्रद महालक्ष्मी सिद्ध मन्त्र"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/MAHALAKSHMI.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "महालक्ष्मी की मन्त्र साधना"
 date: "2022-10-15"
 ---
 

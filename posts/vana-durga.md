@@ -1,6 +1,10 @@
 ---
 title: "श्री वनदुर्गा विधान"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/vandurga.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "भगवती दुर्गा का सबसे दयालु व त्वरित प्रसन्न होने वाला रूप "
 date: "2023-03-24"
 ---
 

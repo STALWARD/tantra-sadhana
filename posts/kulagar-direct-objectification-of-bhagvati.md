@@ -1,6 +1,10 @@
 ---
 title: "कुलागार - भगवती का प्रत्यक्ष विग्रह"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/kulagar.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "शक्ति का प्रत्यक्ष स्वरूप कुलगर का ध्यान"
 date: "2022-12-27"
 ---
 

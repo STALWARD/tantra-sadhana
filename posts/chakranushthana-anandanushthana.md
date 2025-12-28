@@ -1,6 +1,10 @@
 ---
 title: "पंचपात्रात्मक चक्रानुष्ठान / दशपात्रात्मक आनन्दानुष्ठान"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/CHAKRA.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "तन्त्र के रहस्यात्मक पूजन चक्रार्चन में गृहस्थ साधकों को पंच-पात्र की अनुमति है। विशेष योग्य साधक दश पात्र तक कर सकते हैं। दश से ज्यादा......."
 date: "2022-10-24"
 ---
 

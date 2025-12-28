@@ -1,6 +1,10 @@
 ---
 title: "चक्र-पूजा के मण्डल"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/MANDAL.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "चक्र-पूजा के मण्डलों की रचना-यह परम्परा भेद से भिन्न-भिन्न हो सकता है । "
 date: "2022-10-09"
 
 ---

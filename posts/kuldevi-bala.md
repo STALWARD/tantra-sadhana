@@ -1,6 +1,10 @@
 ---
 title: "मेरी कुलदेवी श्री बाला त्रिपुर सुन्दरी"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/BalaTripuraSundari.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "श्रीबालात्रिपुरसुन्दरी का संक्षिप्त परिचय"
 date: "2022-10-14"
 ---
 
