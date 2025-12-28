@@ -1,6 +1,10 @@
 ---
 title: "मन्त्रों के दोष"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/CULT.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "छिन्न, रुद्ध, शक्तिहीन, पराङ्गमुख आदि मन्त्रों के दोष ।"
 date: "2022-10-01"
 ---
 

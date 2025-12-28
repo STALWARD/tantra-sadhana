@@ -1,6 +1,10 @@
 ---
 title: "श्री महर्षि मार्कण्डेय प्रणीत सरस्वती साधना"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/SARSWATI.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "देवि सरस्वती की वह रहस्यमय साधना जिसे महर्षि मार्कण्डेय ने किया था"
 date: "2022-10-12"
 
 ---

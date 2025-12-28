@@ -1,7 +1,10 @@
 import React from 'react'
 import Service from '@/components/Service'
 import Faq from '@/components/Faq'
+import Latest from "@/components/LatestPost";
+import Newsletter from "@/components/Subscribe";
 import { Metadata } from 'next';
+
 
 export const metadata:Metadata = {
   title: "Services",
@@ -13,8 +16,12 @@ const services = () => {
     <>
       <Service />
       <Faq />
+      <Latest />
+      <Newsletter />
     </>
   )
 }
 
 export default services
+
+

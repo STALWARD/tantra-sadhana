@@ -1,6 +1,10 @@
 ---
 title: "षट्-पञ्चाशिका in Horary Astrology"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/ASTRO.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "प्रश्न ज्योतिष-षट्-पञ्चाशिका के सूत्र का अवलोकन"
 date: "2022-10-29"
 ---
 

@@ -28,9 +28,9 @@ const postData: DataType[] = [
         imgSrc: '/assets/mentor/S.Bakshi.webp',
     },
     {
-        profession: 'Kali Upasaka',
-        name: 'Pratikanand Nath',
-        imgSrc: '/assets/mentor/Pratik.webp',
+        profession: 'Vajra Siddha',
+        name: 'VAJRA YOGINI',
+        imgSrc: '/assets/mentor/Aradhya.webp',
     },
     {
         profession: 'Yagyan Expert',
@@ -41,6 +41,11 @@ const postData: DataType[] = [
         profession: 'Palmistry Researcher',
         name: 'KIRAN SHARMA',
         imgSrc: '/assets/mentor/Kiran-2.webp',
+    },
+    {
+        profession: 'NADI ASTROLOGER',
+        name: 'YATAN SHARMA',
+        imgSrc: '/assets/mentor/YATAN.webp',
     },
 ]
 
@@ -118,7 +123,7 @@ export default class MultipleItems extends Component {
 
 
         return (
-            <div className="py-10 sm:py-24 bg-paleblue" id="mentor">
+            <div className="py-10 sm:py-24 bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500" id="mentor">
 
                 <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 px-4 lg:px-8 relative'>
                     <h2 className="1h-82 text-6xl text-midnightblue md:text-55xl text-center md:text-start font-semibold">Meet with our <br /> Experts</h2>
@@ -127,12 +132,12 @@ export default class MultipleItems extends Component {
                         {postData.map((items, i) => (
                             <div key={i}>
                                 <div className='m-3 py-14 md:my-10 text-center'>
-                                    <div className="relative">
-                                        <Image src={items.imgSrc} alt="user-image" width={306} height={0} className="inline-block m-auto w-auto h-auto" />
+                                    <div className="relative ">
+                                        <Image src={items.imgSrc} alt="user-image" width={306} height={0} className="inline-block m-auto w-auto h-auto overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-120 hover:shadow-2xl " />
                                     </div>
-                                    <div className="-mt-0">
-                                        <h3 className='text-2xl font-semibold text-lightblack'>{items.name}</h3>
-                                        <h4 className='text-lg font-normal text-lightblack pt-2 opacity-70'>{items.profession}</h4>
+                                    <div className="mt-0">
+                                        <h3 className='text-2xl font-semibold text-black'>{items.name}</h3>
+                                        <h4 className='text-lg font-semibold text-black pt-2 opacity-80'>{items.profession}</h4>
                                     </div>
                                 </div>
                             </div>
@@ -145,3 +150,9 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
+
+
+
+
+

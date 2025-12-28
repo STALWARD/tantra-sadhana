@@ -1,6 +1,10 @@
 ---
 title: "वीर-मार्गोक्त श्मशान साधन"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/smashan.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "वीर-मार्गोक्त शमशान साधन की विधि"
 date: "2022-09-29"
 ---
 ### **श्मशान साधन**

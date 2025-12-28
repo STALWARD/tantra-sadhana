@@ -1,6 +1,10 @@
 ---
 title: "गुरु पादुका मन्त्र का पुरश्चरण"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/GURUPADUKA.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "गुरु-पादुका मन्त्र साधन विधि"
 date: "2022-10-03"
 ---
 शक्ति साधना में पूर्णाभिषेक के समय गुरु पादुका मन्त्र प्राप्त होता है और शक्ति उपासक सबसे पहले इसी गुरु पादुका मन्त्र का पुरश्चरण करता है | गुरु पादुका मन्त्र से श्रेष्ठ कोई मन्त्र नहीं है |

@@ -68,7 +68,7 @@ const postData: DataType[] = [
         heading: 'SHAT-CHANDI',
         heading2: 'By pure tantric method',
         name: "One of the Jack-of-all Prayoga",
-        imgSrc: '/assets/services/Shatchandi.png',
+        imgSrc: '/assets/services/Shatchandi.webp',
         price: 250000,
         rating: 4.8,
     },
@@ -136,11 +136,11 @@ export default class MultipleItems extends Component {
       			</video>
                 <h1 className="absolute text-4xl text-center text-white justify-center font-bold mb-80 pageHeader">Services</h1>     		
                 <h2 className="absolute text-2xl text-center text-white justify-center font-semibold mb-40 pageHeader">Strategic Tantra advice and tailored solutions</h2>
-				<p className="absolute text-xl text-center text-white justify-center font-simple mt-80 p-20 pageHeader"> Through blog posts, videos and other resources, we provide an accessible platform for individuals to learn about Tantra and its various practices as well as for performing Tantric Rituals. </p>
+				<p className="absolute text-xl text-center text-white justify-center font-semibold mt-80 p-20 pageHeader"> Through blog posts, videos and other resources, we provide an accessible platform for individuals to learn about Tantra and its various practices as well as for performing Tantric Rituals. </p>
 			</div>
-                <div className='mx-auto max-w-7xl bg-gold rounded-md sm:py-8 px-4 lg:px-8 mt-5'>
+                <div className='mx-auto max-w-7xl bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-md sm:py-8 px-4 lg:px-8 mt-5'>
                     <div className="sm:flex justify-between items-center">
-                        <h2 className=" text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0 ">Popular Services</h2>
+                        <h2 className=" text-shadow-blue-400 text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0 ">Popular Services</h2>
                     </div>
 
                     <Slider {...settings}>
@@ -148,7 +148,7 @@ export default class MultipleItems extends Component {
                             <div key={i}>
 
                                 <div className='bg-white m-3 px-3 pt-3 pb-12 my-20 shadow-courses rounded-2xl'>
-                                    <div className="relative rounded-3xl">
+                                    <div className="relative  overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-120 hover:shadow-2xl ">
                                         <Image src={items.imgSrc} alt="gaby" width={396} height={296} priority={true} className="m-auto clipPath" />
                                         <div className="absolute right-5 -bottom-2 bg-ultramarine rounded-full p-6">
                                             <h3 className="text-white uppercase text-center text-sm font-medium">best <br />wanted</h3>
@@ -167,11 +167,11 @@ export default class MultipleItems extends Component {
                                             <div className="flex gap-4">
                                                 <h3 className="text-red text-22xl font-medium">{items.rating}</h3>
                                                 <div className="flex">
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                    <StarIcon className="h-5 w-5 text-gold" />
+                                                    <StarIcon className="h-5 w-5 text-yellow-300" />
+                                                    <StarIcon className="h-5 w-5 text-yellow-300" />
+                                                    <StarIcon className="h-5 w-5 text-yellow-300" />
+                                                    <StarIcon className="h-5 w-5 text-yellow-300" />
+                                                    <StarIcon className="h-5 w-5 text-yellow-300" />
                                                 </div>
                                             </div>
                                             <div>
@@ -193,4 +193,15 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 

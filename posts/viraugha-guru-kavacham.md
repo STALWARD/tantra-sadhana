@@ -1,6 +1,10 @@
 ---
 title: "ऊर्ध्वाम्नायोक्त सिद्ध वीरौघ-गुरु-कवच"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/guru.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "ऊर्ध्वाम्नायोक्त औघ-त्रय अंतर्गत वीरौघ-गुरु का यह कवच काफी चमत्कारी है।"
 date: "2022-10-26"
 ---
 

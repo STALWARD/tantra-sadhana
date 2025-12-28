@@ -1,6 +1,10 @@
 ---
 title: "श्रीचक्र के १० आवरण "
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/SRIYANTRA.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "श्रीचक्र के १० आवरण- एक संक्षिप्त विवेचन"
 date: "2022-09-25"
 ---
 ### **श्रीचक्र के १० आवरण**

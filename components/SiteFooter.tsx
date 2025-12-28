@@ -15,7 +15,7 @@ const Footer = () => {
 
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
             {FOOTER_LINKS.map((columns) => (
-              <FooterColumn title={columns.title}>
+              <FooterColumn key={columns.title} title={columns.title}>
                 <Link
                   href="/about"
                   className=" text-black "
@@ -45,7 +45,7 @@ const Footer = () => {
 
             <div className="flex flex-col gap-5">
             {FOOTER_CONTACT_INFO.map((columns) => (
-              <FooterColumn title={columns.title}>
+              <FooterColumn key={columns.title} title={columns.title}>
                 <Link
                   href="https://wa.me/+919934418459"
                   target="_blank" rel="noopener noreferrer"
@@ -73,28 +73,38 @@ const Footer = () => {
 
             <div className="flex flex-col gap-5">
               <FooterColumn title={SOCIALS.title}>
-                <ul className="regular-14 flex gap-4 text-gray-30">
+                <ul className="regular-14 flex gap-4 text-black">
+                  <li>
                   <Link href="https://www.facebook.com/KAULBHASKAR" target="_blank" rel="noopener noreferrer">
                     <Image src={'/facebook.svg'} alt="logo" width={24} height={24} />
                   </Link>
+                  </li>
+                  <li>
                   <Link href="https://twitter.com/KAULMARGA" target="_blank" rel="noopener noreferrer">
                     <Image src={'/twitter.svg'} alt="logo" width={24} height={24} />
                   </Link>
+                  </li>
+                  <li>
                   <Link href="https://www.youtube.com/@kaulbhaskar/videos" target="_blank" rel="noopener noreferrer">
                     <Image src={'/youtube.webp'} alt="logo" width={24} height={24} />
                   </Link>
+                  </li>
+                  <li>
                   <Link href="https://www.linkedin.com/in/kaul-bhaskar-006a12234/" target="_blank" rel="noopener noreferrer">
                     <Image src={'/Linkedin.svg'} alt="logo" width={24} height={24} />
                   </Link>
+                  </li>
+                  <li>
                   <Link href="https://t.me/Tantrasadhana" target="_blank" rel="noopener noreferrer">
                     <Image src={'/telegram.svg'} alt="logo" width={24} height={24} />
-                  </Link>   
+                  </Link>  
+                  </li> 
                 </ul>
               </FooterColumn>
             </div>
           </div>
         </div>
-        <div className="border bg-gray-20" />
+        <div className="border bg-gray-200" />
         <p className=" w-full text-center regular-18 text-black pb-5">2025 TANTRA SADHANA | All rights reserved</p>
       </div>
     </footer>

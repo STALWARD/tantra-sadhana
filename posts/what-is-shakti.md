@@ -1,6 +1,10 @@
 ---
 title: "शक्ति-पदार्थ का लक्षण"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/photo.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "षट्-त्रिंशत तत्वों में से एक शक्ति-तत्व की विवेचना"
 date: "2022-10-07"
 ---
 

@@ -1,6 +1,10 @@
 ---
 title: "श्रीमद्-गुरु-कवचम् (ब्रह्म-यामले)"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/guru.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "ब्रह्म-यामल में वर्णित यह गुरु-कवच साधक को त्रैलोक्यविजयी बनाता और मन्त्र-सिद्धि प्रदान करता है।"
 date: "2022-12-07"
 ---
 
