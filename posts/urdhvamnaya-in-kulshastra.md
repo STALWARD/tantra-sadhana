@@ -1,6 +1,10 @@
 ---
 title: "Urdhvamnaya in the Kulashastra"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/URDHVA.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "What Kulshastra says about Urdhvamnaya ? "
 date: "2023-10-14"
 ---
 

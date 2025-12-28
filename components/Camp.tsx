@@ -14,7 +14,7 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
     <div className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}>
      <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
       <div className="flexCenter gap-4">
-        <div className="rounded-full bg-green-50 p-4">
+        <div className="rounded-full bg-green-500 p-4">
           <Image
             src="/folded-map.svg"
             alt="map"
@@ -52,17 +52,21 @@ const Camp = () => {
   return (
     <section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
-        <CampSite
-          backgroundImage="bg-bg-img-1"
-          title="Chandi Yag"
-          subtitle="Trivandrum, Kerala"
-          peopleJoined="200+ Joined"
+        <Image
+          src='/img-4.webp'
+          alt='yoga'  
+          width={1440}
+          height={580}
+          loading="lazy"
+          className="w-screen h-screen object-cover object-center 2xl:rounded-s-xl"
         />
-        <CampSite 
-          backgroundImage="bg-bg-img-2"
-          title="Yoga Camp"
-          subtitle="Somewhere in the Wilderness"
-          peopleJoined="20+ Joined"
+        <Image
+          src='/img-2.webp'
+          alt='yoga'  
+          width={1440}
+          height={580}
+          loading="lazy"
+          className="w-screen h-screen object-cover object-center 2xl:rounded-s-xl"
         />
       </div>
 

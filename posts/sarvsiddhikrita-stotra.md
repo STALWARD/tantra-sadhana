@@ -1,6 +1,10 @@
 ---
 title: "सर्वसिद्धिकृत स्तोत्र"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/clipart.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "यथा नाम तथा गुण- यह स्तोत्र पाठ मात्र से समस्त सिद्धियों को देता है"
 date: "2022-10-19"
 ---
 

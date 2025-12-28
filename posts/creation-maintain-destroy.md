@@ -1,6 +1,10 @@
 ---
 title: "क्या ब्रह्मा सृष्टि,विष्णु पालन, रूद्र संहार कर सकते हैं?"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/trimurti.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "ब्रह्मा का सृष्टि, विष्णु का पालन, और रूद्र के संहार कृत्य का रहस्य"
 date: "2023-01-13"
 ---
 क्या ब्रह्मा सृष्टि,विष्णु पालन, रूद्र संहार कर सकते हैं? :-

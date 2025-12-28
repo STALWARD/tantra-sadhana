@@ -21,21 +21,41 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden h-full gap-12 lg:flex">
-        {NAV_LINKS.map((link) => (
-        <Link href={link.href} key={link.key} className="regular-18 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
-        {link.label}
-        </Link>
-        ))}
-      </ul>
+  <li>
+    <a className="text-[20px] font-medium text-black flexCenter cursor-pointer pb-1.5 transi…" href="/">
+      Home
+    </a>
+  </li>
+  <li>
+    <a className="text-[20px] font-medium text-black flexCenter cursor-pointer pb-1.5 transi…" href="/about">
+      About
+    </a>
+  </li>
+  <li>
+    <a className="text-[20px] font-medium text-black flexCenter cursor-pointer pb-1.5 transi…" href="/services">
+      Services
+    </a>
+  </li>
+  <li>
+    <a className="text-[20px] font-medium text-black flexCenter cursor-pointer pb-1.5 transi…" href="/blog">
+      Blog
+    </a>
+  </li>
+  <li>
+    <a className="text-[20px] font-medium text-black flexCenter cursor-pointer pb-1.5 transi…" href="/contact">
+      Contact
+    </a>
+  </li>
+</ul>
       <div
         onClick={toggle}
-        className="cursor-pointer pr-4 z-10 text-gray-500 lg:hidden"
+        className="cursor-pointer pr-4 z-10 text-black lg:hidden"
       >
         {isOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {isOpen && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full bg-gradient-to-b from-red to-black text-white">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full bg-linear-to-b from-red to-black text-white">
           {NAV_LINKS.map(nav => (
             <li key={nav.label}>
               <a href={nav.href} onClick={toggle}>
@@ -46,29 +66,43 @@ const Navbar = () => {
         </ul>
       )}
 
-      <div className="lg:flexCenter hidden">
-        <ul className="regular-14 flex gap-4 text-gray-30">
+      <div className="hidden h-full gap-12 lg:flex">
+        <ul className="regular-14 flex gap-4 text-black">
+          <li>
           <Link href="https://www.facebook.com/KAULBHASKAR" target="_blank" rel="noopener noreferrer">
-            <Image src={'/facebook.svg'} alt="logo" width={24} height={24} />
+            <Image src="/facebook.svg" alt="logo" width={24} height={24} />
           </Link>
+          </li>
+          <li>
           <Link href="https://twitter.com/KAULMARGA" target="_blank" rel="noopener noreferrer">
-            <Image src={'/twitter.svg'} alt="logo" width={24} height={24} />
+            <Image src="/twitter.svg" alt="logo" width={24} height={24} />
           </Link>
+          </li>
+          <li>
           <Link href="https://www.youtube.com/@kaulbhaskar/videos" target="_blank" rel="noopener noreferrer">
-            <Image src={'/youtube.webp'} alt="logo" width={24} height={24} />
+            <Image src="/youtube.webp" alt="logo" width={24} height={24} />
           </Link>
+          </li>
+          <li>
           <Link href="https://www.linkedin.com/in/kaul-bhaskar-006a12234/" target="_blank" rel="noopener noreferrer">
-            <Image src={'/Linkedin.svg'} alt="logo" width={24} height={24} />
+            <Image src="/Linkedin.svg" alt="logo" width={24} height={24} />
           </Link>
+          </li>
+          <li>
           <Link href="https://t.me/Tantrasadhana" target="_blank" rel="noopener noreferrer">
-            <Image src={'/telegram.svg'} alt="logo" width={24} height={24} />
+            <Image src="/telegram.svg" alt="logo" width={24} height={24} />
           </Link>
+          </li>
+          <li>
           <Link href="https://wa.me/+919934418459" target="_blank" rel="noopener noreferrer">
-            <Image src={'/whatsapp.svg'} alt="logo" width={24} height={24} />
+            <Image src="/whatsapp.svg" alt="logo" width={24} height={24} />
           </Link>
+          </li>
+          <li>
           <Link href="mailto:kaultantra@gmail.com" target="_blank" rel="noopener noreferrer">
-            <Image src={'/email.svg'} alt="logo" width={24} height={24} />
-          </Link>      
+            <Image src="/email.svg" alt="logo" width={24} height={24} />
+          </Link>  
+          </li>    
         </ul>
       </div>
     </nav>

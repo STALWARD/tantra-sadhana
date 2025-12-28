@@ -1,6 +1,10 @@
 ---
 title: "SRI YANTRA - The Whole Universe"
-author: "KAULBHASKAR GURU JI"
+featuredImage: "/blog/sriyantra-universe.webp"
+authorName: "KAULBHASKAR GURU JI"
+authorBio: "A SRIVIDYA UPASKA"
+authorAvatar: "/KAULBHASKAR.jpg"
+excerpt: "Sri Yantra is considered to be the visual representation of the cosmos, the Divine Mother, and the ultimate reality"
 date: "2023-02-26"
 ---
 
