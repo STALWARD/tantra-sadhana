@@ -17,7 +17,7 @@ export default function Faq() {
       <div className="get-app">
         <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12">
           <h2 className="bold-40 lg:bold-64 xl:max-w-[320px]">Frequently Asked Questions!</h2>
-          <p className="regular-16 text-gray-100">Who we are? What services we provide? Are our services chargable?- Answer to the such questions are here.</p>
+          <p className="regular-16">Who we are? What services we provide? Are our services chargable?- Answer to the such questions are here.</p>
         </div>
 
         <div className="flex flex-col w-full items-center justify-center">
