@@ -98,7 +98,7 @@ export default class MultipleItems extends Component {
                         {postData.map((items, i) => (
                             <div key={i}>
                                 <div className={`bg-white m-4 p-5 my-40 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-2xl  relative ${i % 2 ? 'middleDiv' : 'testimonial-shadow '}`}>
-                                    <h3 className='text-base font-normal text-black my-4'>{items.comment}</h3>
+                                    <h3 className='text-base text-justify font-normal text-black my-4'>{items.comment}</h3>
                                     <hr style={{ color: "#D7D5D5" }} />
                                     <div className="flex justify-between">
                                         <div>
@@ -123,6 +123,7 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
 
 
 
