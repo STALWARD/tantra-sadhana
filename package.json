@@ -31,7 +31,7 @@
     "dotenv": "^17.2.3",
     "framer-motion": "^12.26.2",
     "gray-matter": "^4.0.3",
-    "markdown-to-jsx": "^9.5.1",
+    "markdown-to-jsx": "^9.5.7",
     "next": "^16.1.1",
     "nodemailer": "^7.0.12",
     "react": "^19.2.3",
