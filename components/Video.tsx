@@ -114,7 +114,7 @@ export default function YouTubeFrame() {
 					height={400}
 					aria-label={"image of KAULBHASKAR"}
 					alt={"KAULBHASKAR"}
-					src={"/images/PURNAGIRI.webp"}
+					src={"/img-2.webp"}
 				/>
 				</div>
 				<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl '>
@@ -173,6 +173,7 @@ export default function YouTubeFrame() {
 		</section>
 	); 
 } 
+
 
 
 
