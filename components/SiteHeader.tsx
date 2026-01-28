@@ -21,7 +21,6 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden h-full gap-12 lg:flex">
-       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
         <Link href={link.href} key={link.key} className="text-[20px] font-medium text-black flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
         {link.label}
@@ -75,12 +74,12 @@ const Navbar = () => {
           </Link>
           </li>
           <li>
-          <Link href="https://wa.me/+919934418459" target="_blank" rel="noopener noreferrer">
+          <Link href="https://wa.me/+918578003221" target="_blank" rel="noopener noreferrer">
             <Image src="/whatsapp.svg" alt="logo" width={24} height={24} />
           </Link>
           </li>
           <li>
-          <Link href="mailto:kaultantra@gmail.com" target="_blank" rel="noopener noreferrer">
+          <Link href="mailto:sorapatna@gmail.com" target="_blank" rel="noopener noreferrer">
             <Image src="/email.svg" alt="logo" width={24} height={24} />
           </Link>  
           </li>    
