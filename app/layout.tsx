@@ -7,6 +7,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { Suspense } from 'react';
 import Alert from '@/components/Alert';
 import { Inter } from 'next/font/google';
+import PageTransition from "@/components/PageTransition";
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -89,7 +90,7 @@ export default function RootLayout({
         
         {/* 3. Main wrapper */}
         <main className="relative overflow-hidden">
-          {children}
+          <PageTransition>{children}</PageTransition>
         </main>
         
         <SiteFooter />
