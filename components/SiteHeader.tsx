@@ -22,27 +22,27 @@ const Navbar = () => {
 
       <ul className="hidden h-full gap-12 lg:flex">
   <li>
-    <a className="text-[20px] font-medium text-black flexCenter cursor-pointer pb-1.5 transi…" href="/">
+    <a className="text-[20px] font-medium text-black flexCenter " href="/">
       Home
     </a>
   </li>
   <li>
-    <a className="text-[20px] font-medium text-black flexCenter cursor-pointer pb-1.5 transi…" href="/about">
+    <a className="text-[20px] font-medium text-black flexCenter " href="/about">
       About
     </a>
   </li>
   <li>
-    <a className="text-[20px] font-medium text-black flexCenter cursor-pointer pb-1.5 transi…" href="/services">
+    <a className="text-[20px] font-medium text-black flexCenter " href="/services">
       Services
     </a>
   </li>
   <li>
-    <a className="text-[20px] font-medium text-black flexCenter cursor-pointer pb-1.5 transi…" href="/blog">
+    <a className="text-[20px] font-medium text-black flexCenter " href="/blog">
       Blog
     </a>
   </li>
   <li>
-    <a className="text-[20px] font-medium text-black flexCenter cursor-pointer pb-1.5 transi…" href="/contact">
+    <a className="text-[20px] font-medium text-black flexCenter " href="/contact">
       Contact
     </a>
   </li>
