@@ -74,12 +74,12 @@ const Navbar = () => {
           </Link>
           </li>
           <li>
-          <Link href="https://wa.me/+918578003221" target="_blank" rel="noopener noreferrer">
+          <Link href="https://wa.me/+919934418459" target="_blank" rel="noopener noreferrer">
             <Image src="/whatsapp.svg" alt="logo" width={24} height={24} />
           </Link>
           </li>
           <li>
-          <Link href="mailto:sorapatna@gmail.com" target="_blank" rel="noopener noreferrer">
+          <Link href="mailto:kaultantra@gmail.com" target="_blank" rel="noopener noreferrer">
             <Image src="/email.svg" alt="logo" width={24} height={24} />
           </Link>  
           </li>    
