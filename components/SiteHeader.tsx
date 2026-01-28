@@ -21,32 +21,13 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden h-full gap-12 lg:flex">
-  <li>
-    <a className="text-[20px] font-medium text-black flexCenter " href="/">
-      Home
-    </a>
-  </li>
-  <li>
-    <a className="text-[20px] font-medium text-black flexCenter " href="/about">
-      About
-    </a>
-  </li>
-  <li>
-    <a className="text-[20px] font-medium text-black flexCenter " href="/services">
-      Services
-    </a>
-  </li>
-  <li>
-    <a className="text-[20px] font-medium text-black flexCenter " href="/blog">
-      Blog
-    </a>
-  </li>
-  <li>
-    <a className="text-[20px] font-medium text-black flexCenter " href="/contact">
-      Contact
-    </a>
-  </li>
-</ul>
+       <ul className="hidden h-full gap-12 lg:flex">
+        {NAV_LINKS.map((link) => (
+        <Link href={link.href} key={link.key} className="text-[20px] font-medium text-black flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
+        {link.label}
+        </Link>
+        ))}
+      </ul>
       <div
         onClick={toggle}
         className="cursor-pointer pr-4 z-10 text-black lg:hidden"
