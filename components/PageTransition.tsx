@@ -10,10 +10,10 @@ export default function PageTransition({ children }: { children: React.ReactNode
     <AnimatePresence mode="wait">
       <motion.div
         key={pathname}
-        initial={{ scale: 0.9, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        exit={{ scale: 0.9, opacity: 0 }}
-        transition={{ duration: 0.4 }}
+        initial={{ x: 100, scale: 0.9, opacity: 0 }}
+        animate={{ x: 0, scale: 1, opacity: 1 }}
+        exit={{ x: -100, scale: 0.9, opacity: 0 }}
+        transition={{ duration: 0.5 }}
       >
         {children}
       </motion.div>
