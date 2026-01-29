@@ -32,7 +32,7 @@ const Guide = () => {
           alt="Hath yoga illustration"
           width={500}
           height={500}
-          className="w-full h-auto object-cover object-center 2xl:rounded-5xl"
+          className="w-screen h-screen object-cover object-center 2xl:rounded-5xl"
         />
 
         <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[5%] lg:top-20">
