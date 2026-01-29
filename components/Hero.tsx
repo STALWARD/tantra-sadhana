@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Background Video */}
       <div className="flexCenter max-container absolute object-cover" >
       <video loop muted autoPlay playsInline className='relative flex h-screen w-screen object-cover md:mr-5'>
-      <source src="/hero-bg2.mp4"  />
+      <source src="/hero-bg2.mp4" type="video/mp4" />
       </video>
       </div>
 
