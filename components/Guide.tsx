@@ -8,9 +8,10 @@ const Guide = () => {
       <div className="padding-container max-container w-full pb-24">
         <Image 
           src="/assets/logo/logo.png" 
-          alt="logo" 
+          alt="Company logo" 
           width={50} 
           height={50} 
+          priority
         />
         <p className="uppercase -mt-1 mb-3 text-red bold-16">
           We are here for you
@@ -28,16 +29,16 @@ const Guide = () => {
       <div className="flexCenter max-container relative">
         <Image 
           src="/hath-yoga.webp"
-          alt="hath yoga"
+          alt="Hath yoga illustration"
           width={500}
           height={500}
-          className="w-screen h-screen object-cover object-center 2xl:rounded-5xl"
+          className="w-full h-auto object-cover object-center 2xl:rounded-5xl"
         />
 
         <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[5%] lg:top-20">
           <Image 
             src="/meter.svg"
-            alt="meter"
+            alt="Meter icon"
             width={16}
             height={158}
             className="h-full w-auto"
@@ -50,12 +51,12 @@ const Guide = () => {
                   Learn Sri Vidya, Kaul Tantra etc.
                 </p>
               </div>
-              <p className="bold-20 mt-2">By KAULBHASKAR GURU Ji</p>
+              <p className="bold-20 mt-2">By Kaulbhaskar Guru Ji</p>
             </div>
 
             <div className="flex w-full flex-col">
               <p className="bold-20 text-red">Tantra Puja & Rituals</p>
-              <h3 className="bold-20 mt-2 whitespace-nowrap">By real Masters</h3>
+              <h3 className="bold-20 mt-2 whitespace-nowrap">By Real Masters</h3>
             </div>
 
           </div>
