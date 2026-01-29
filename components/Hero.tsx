@@ -6,16 +6,10 @@ const Hero = () => {
     <section className="max-container padding-container flex flex-col gap-20 py-5 md:gap-28 lg:py-10 lg:flex-row">
       
       {/* Background Video */}
-      <div className="absolute inset-0 flexCenter">
-        <video 
-          loop 
-          muted 
-          autoPlay 
-          playsInline 
-          className="h-screen w-screen object-cover"
-        >
-          <source src="/hero-bg2.mp4"  />
-        </video>
+      <div className="flexCenter max-container absolute object-cover" >
+      <video loop muted autoPlay playsInline className='relative flex h-screen w-screen object-cover md:mr-5'>
+      <source src="/hero-bg2.mp4"  />
+      </video>
       </div>
 
       {/* Hero Content */}
