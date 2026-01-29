@@ -113,8 +113,86 @@ export default function YouTubeFrame() {
         </div>
 
         {/* Your image galleries remain unchanged */}
-        {/* ... */}
+        <div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl'>
+					<Image
+						priority={false}
+						width={400}
+						height={400}
+						aria-label={"image of KAULBHASKAR"}
+						alt={"KAULBHASKAR"}
+						src={"/images/bkn1.webp"}
+					/>
+					<Image
+						priority={false}
+						width={400}
+						height={400}
+						aria-label={"image of KAULBHASKAR"}
+						alt={"KAULBHASKAR"}
+						src={"/images/bkn2.webp"}
+					/>
+					<Image
+						priority={false}
+						width={400}
+						height={400}
+						aria-label={"image of KAULBHASKAR"}
+						alt={"KAULBHASKAR"}
+						src={"/img-2.webp"}
+					/>
+				</div>
+				<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl '>
+					<Image
+						priority={false}
+						width={400}
+						height={400}
+						aria-label={"image of KAULBHASKAR"}
+						alt={"KAULBHASKAR"}
+						src={"/images/Vindhyachal1.webp"}
+					/>
+					<Image
+						priority={false}
+						width={400}
+						height={400}
+						aria-label={"image of KAULBHASKAR"}
+						alt={"KAULBHASKAR"}
+						src={"/images/Vindhyachal2.webp"}
+					/>
+					<Image
+						priority={false}
+						width={400}
+						height={400}
+						aria-label={"image of KAULBHASKAR"}
+						alt={"KAULBHASKAR"}
+						src={"/images/Vindhyachal3.webp"}
+					/>
+				</div>
+				<div className='flex lg:flex-row flex-col items-center justify-center mx-5 gap-5 mt-5 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl '>
+					<Image
+						priority={false}
+						width={400}
+						height={400}
+						aria-label={"image of KAULBHASKAR"}
+						alt={"KAULBHASKAR"}
+						src={"/images/mahakal.webp"}
+					/>
+					<Image
+						priority={false}
+						width={400}
+						height={400}
+						aria-label={"image of KAULBHASKAR"}
+						alt={"KAULBHASKAR"}
+						src={"/images/Vindhyachal4.webp"}
+					/>
+					<Image
+						priority={false}
+						width={400}
+						height={400}
+						aria-label={"image of KAULBHASKAR"}
+						alt={"KAULBHASKAR"}
+						src={"/images/bagla.webp"}
+					/>
+				</div>
       </div>
     </section>
   );
 }
+
