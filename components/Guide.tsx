@@ -6,20 +6,29 @@ const Guide = () => {
   return (
     <section className="flexCenter flex-col">
       <div className="padding-container max-container w-full pb-24">
-        <Image src="/assets/logo/logo.png" alt="camp" width={50} height={50} />
+        <Image 
+          src="/assets/logo/logo.png" 
+          alt="logo" 
+          width={50} 
+          height={50} 
+        />
         <p className="uppercase -mt-1 mb-3 text-red bold-16">
           We are here for you
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
-          <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">Guide You to Easy Path</h2>
-          <p className="regular-20 text-justify text-black xl:max-w-[520px]">{guideMeText.body}</p>
+          <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">
+            Guide You to Easy Path
+          </h2>
+          <p className="regular-20 text-justify text-black xl:max-w-[520px]">
+            {guideMeText?.body}
+          </p>
         </div>
       </div>
 
       <div className="flexCenter max-container relative">
         <Image 
           src="/hath-yoga.webp"
-          alt="boat"
+          alt="hath yoga"
           width={500}
           height={500}
           className="w-screen h-screen object-cover object-center 2xl:rounded-5xl"
@@ -35,21 +44,21 @@ const Guide = () => {
           />
           <div className="flexBetween flex-col">
 
-            <div className='flex w-full flex-col'>
+            <div className="flex w-full flex-col">
               <div className="flexBetween w-full">
-
-                <p className="bold-16 text-red">Learn Sri Vidya, Kaul Tantra etc.</p>
+                <p className="bold-16 text-red">
+                  Learn Sri Vidya, Kaul Tantra etc.
+                </p>
               </div>
               <p className="bold-20 mt-2">By KAULBHASKAR GURU Ji</p>
             </div>
 
-            <div className='flex w-full flex-col'>
-              <p className="bold-20 text-red">Tantra Puja & Rituals </p>
+            <div className="flex w-full flex-col">
+              <p className="bold-20 text-red">Tantra Puja & Rituals</p>
               <h3 className="bold-20 mt-2 whitespace-nowrap">By real Masters</h3>
             </div>
 
           </div>
-          
         </div>
       </div>
     </section>
