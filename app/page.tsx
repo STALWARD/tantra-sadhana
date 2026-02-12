@@ -26,7 +26,7 @@ export default function Home() {
       <Camp />
       <Guide />
       <Features />
-     <CalendarComponent />
+
       <YouTubeFrame />
       <Mudra />
       <Mentor />
