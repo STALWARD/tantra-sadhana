@@ -28,7 +28,7 @@ const events = [
 
 export default function CalendarComponent() {
   return (
-    <div style={{ height: "100vh", width: "95vw", backgroundColor: "#f0f8ff" }}>
+    <div style={{ height: "100vh", width: "98vw", backgroundColor: "#f0f8ff" }}>
       <h1
         style={{
           textAlign: "center",
@@ -51,3 +51,4 @@ export default function CalendarComponent() {
     </div>
   );
 }
+
