@@ -45,11 +45,13 @@ export default function CalendarComponent() {
         events={events}
         startAccessor="start"
         endAccessor="end"
+        showMultiDayTimes
         style={{ height: 500 }}
         
       />
     </div>
   );
 }
+
 
 
