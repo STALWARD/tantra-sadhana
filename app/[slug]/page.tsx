@@ -27,7 +27,7 @@ const post = await getPostContent(slug)
     <div>
       <div className="my-12 text-center">
         <h1 className="text-2xl text-black">{post.data.title}</h1>
-        <p className="text-red mt-2">{post.data.author}</p>
+        <p className="text-red mt-2">{post.data.authorName}</p>
         <p className="text-gold mt-2">{post.data.date}</p>
       </div>
 
