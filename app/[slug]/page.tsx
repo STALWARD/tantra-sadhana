@@ -43,7 +43,7 @@ export default async function BlogPage({ params }: { params: Params }) {
       name: "My Blog", 
       logo: { 
         "@type": "ImageObject", 
-        url: "https://www.tantrasadhana.org/images/logo.png", 
+        url: "https://www.tantrasadhana.org/assets/logo/logo.png", 
       } , 
     }, 
   };
