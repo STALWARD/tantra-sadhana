@@ -43,7 +43,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full bg-gradient-to-b from-red-500 to-black text-white">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full bg-linear-to-b from-red-500 to-black text-white">
           {NAV_LINKS.map((nav) => (
             <li key={nav.key}>
               <Link href={nav.href} onClick={toggle}>
