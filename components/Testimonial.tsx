@@ -74,11 +74,11 @@ export default class MultipleItems extends Component {
 
     return (
       <div
-        className="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 pt-40 pb-10 sm:pb-32 lg:py-32"
+        className="bg-linear-to-r from-green-400 via-blue-500 to-purple-600 pt-40 pb-10 sm:pb-32 lg:py-32"
         id="testimonial"
       >
         <div className="mx-auto max-w-7xl sm:py-4 lg:px-8">
-          <h2 className="leading-[82px] text-6xl text-black md:text-5xl text-center md:text-start font-semibold">
+          <h2 className="leading-20.5 text-6xl text-black md:text-5xl text-center md:text-start font-semibold">
             What Our Lovely <br /> Client Says ?
           </h2>
           <Slider {...settings}>
