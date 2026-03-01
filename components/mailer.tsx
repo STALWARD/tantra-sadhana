@@ -81,7 +81,7 @@ const Mailer: FC = () => {
           </textarea>
           <label
             htmlFor="default-checkbox"
-            className="flex max-w-[425px] cursor-pointer select-none pl-5"
+            className="flex max-w-106.25 cursor-pointer select-none pl-5"
             >
             By clicking Submit button, you consent data usage in “Form” 
             And also consent cookie usage in browser.
