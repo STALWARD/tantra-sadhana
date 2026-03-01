@@ -49,7 +49,7 @@ li {
 @utility btn_dark_green_outline { @apply border-gray-200 bg-green-900 px-8 py-5 text-white; }
 @utility btn_blue { @apply border-black bg-blue-500 px-8 py-4 text-white; }
 
-@utility max-container { @apply mx-auto max-w-[1440px]; }
+@utility max-container { @apply mx-auto max-w-360; }
 @utility padding-container { @apply px-2 lg:px-10; }
 
 @utility flexCenter { @apply flex items-center justify-center; }
@@ -79,10 +79,10 @@ li {
 
 /* 4. Section Utilities */
 @utility hero-map { @apply absolute right-0 top-0 h-screen w-screen md:-right-28 xl:-top-60; }
-@utility camp-quote { @apply absolute -right-6 bottom-4 w-[140px] lg:-bottom-10 xl:-right-8 xl:w-[186px] 2xl:right-0; }
-@utility feature-phone { @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-15 md:-left-16 lg:flex 2xl:-left-20; }
+@utility camp-quote { @apply absolute -right-6 bottom-4 w-35 lg:-bottom-10 xl:-right-8 xl:w-46.5 2xl:right-0; }
+@utility feature-phone { @apply absolute top-[13%] z-10 hidden max-w-375 rotate-15 md:-left-16 lg:flex 2xl:-left-20; }
 @utility get-app { 
-    @apply max-w-7xl mx-auto relative flex w-full flex-col justify-between gap-32 overflow-hidden bg-linear-to-r from-pink-400 via-purple-500 to-indigo-500 bg-cover bg-center bg-no-repeat px-6 py-12 text-black sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-3xl; 
+    @apply max-w-7xl mx-auto relative flex w-full flex-col justify-between gap-32 overflow-hidden bg-linear-to-r from-pink-400 via-purple-500 to-indigo-500 bg-cover bg-center bg-no-repeat px-6 py-12 text-black sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-149.5 2xl:rounded-3xl; 
 }
 
 /* 5. Custom Raw CSS Styles */
