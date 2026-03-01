@@ -5,14 +5,37 @@
 :root {
     --foreground-rgb: 0, 0, 0;
     --font-inter: var(--font-inter);
-   }
+}
 
 @layer base {
     /* custom styles */
-   body {
-  font-family: sans-serif;
-  }
+    body {
+        font-family: sans-serif;
+    }
 }
+
+/* --- React Big Calendar Accessibility Fixes --- */
+/* 1. Make the "off-range" (prev/next month) date numbers darker */
+.rbc-off-range-bg .rbc-button-link {
+  color: #595959 !important; /* Darker grey for accessibility */
+}
+
+/* 2. Adjust the background color of off-month days for better visibility */
+.rbc-off-range-bg {
+  background-color: #f0f0f0 !important; /* Slightly darker background */
+}
+
+/* 3. Ensure the current month date links are also high contrast */
+.rbc-button-link {
+  color: #262626; 
+}
+
+/* 4. Fix contrast for "Show More" +x links */
+.rbc-show-more {
+  color: #005a9e !important; 
+  font-weight: 600;
+}
+/* ---------------------------------------------- */
 
 li {
     padding: 0.5rem;
@@ -35,60 +58,24 @@ li {
 @utility flexEnd { @apply flex items-center justify-end; }
 
 /* FONTS */
-@utility regular-64 {
-    @apply text-[64px] font-normal leading-[120%];
-}
-@utility regular-40 {
-    @apply text-[40px] font-normal leading-[120%];
-}
-@utility regular-32 {
-    @apply text-[32px] font-normal;
-}
-@utility regular-24 {
-    @apply text-[24px] font-normal;
-}
-@utility regular-20 {
-    @apply text-[20px] font-normal;
-}
-@utility regular-18 {
-    @apply text-[18px] font-normal;
-}
-@utility regular-16 {
-    @apply text-[16px] font-normal;
-}
-@utility regular-14 {
-    @apply text-[14px] font-normal;
-}
-@utility regular-12 {
-    @apply text-[12px] font-normal;
-}
-@utility medium-14 {
-    @apply text-[14px] font-semibold;
-}
-@utility bold-88 {
-    @apply text-[88px] font-bold leading-[120%];
-}
-@utility bold-64 {
-    @apply text-[64px] font-bold leading-[120%];
-}
-@utility bold-52 {
-    @apply text-[52px] font-bold leading-[120%];
-}
-@utility bold-40 {
-    @apply text-[40px] font-bold leading-[120%];
-}
-@utility bold-32 {
-    @apply text-[32px] font-bold leading-[120%];
-}
-@utility bold-20 {
-    @apply text-[20px] font-bold;
-}
-@utility bold-18 {
-    @apply text-[18px] font-bold;
-}
-@utility bold-16 {
-    @apply text-[16px] font-bold;
-}
+@utility regular-64 { @apply text-[64px] font-normal leading-[120%]; }
+@utility regular-40 { @apply text-[40px] font-normal leading-[120%]; }
+@utility regular-32 { @apply text-[32px] font-normal; }
+@utility regular-24 { @apply text-[24px] font-normal; }
+@utility regular-20 { @apply text-[20px] font-normal; }
+@utility regular-18 { @apply text-[18px] font-normal; }
+@utility regular-16 { @apply text-[16px] font-normal; }
+@utility regular-14 { @apply text-[14px] font-normal; }
+@utility regular-12 { @apply text-[12px] font-normal; }
+@utility medium-14 { @apply text-[14px] font-semibold; }
+@utility bold-88 { @apply text-[88px] font-bold leading-[120%]; }
+@utility bold-64 { @apply text-[64px] font-bold leading-[120%]; }
+@utility bold-52 { @apply text-[52px] font-bold leading-[120%]; }
+@utility bold-40 { @apply text-[40px] font-bold leading-[120%]; }
+@utility bold-32 { @apply text-[32px] font-bold leading-[120%]; }
+@utility bold-20 { @apply text-[20px] font-bold; }
+@utility bold-18 { @apply text-[18px] font-bold; }
+@utility bold-16 { @apply text-[16px] font-bold; }
 
 /* 4. Section Utilities */
 @utility hero-map { @apply absolute right-0 top-0 h-screen w-screen md:-right-28 xl:-top-60; }
@@ -99,29 +86,18 @@ li {
 }
 
 /* 5. Custom Raw CSS Styles */
-.hide-scrollbar::-webkit-scrollbar {
-    display: none;
-}
-.hide-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
 .testimonialbg {
     background: linear-gradient(-60deg, #1CBEEE 29.34%, #1A21BC 107.98%);
     clip-path: polygon(100% 0, 100% 38%, 100% 100%, 0 100%, 0 20%);
 }
 
-.clipPath {
-    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
-}
+.clipPath { clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%); }
 
-.space-links {
-    transition: .3s;
-}
-.space-links:hover {
-    letter-spacing: 1px;
-}
+.space-links { transition: .3s; }
+.space-links:hover { letter-spacing: 1px; }
 
 .lh-82 { line-height: 82% !important; }
 .lh-120 { line-height: 120% !important; }
