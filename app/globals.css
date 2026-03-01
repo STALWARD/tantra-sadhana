@@ -15,26 +15,34 @@
 }
 
 /* --- React Big Calendar Accessibility Fixes --- */
-/* 1. Make the "off-range" (prev/next month) date numbers darker */
-.rbc-off-range-bg .rbc-button-link {
-  color: #595959 !important; /* Darker grey for accessibility */
+/* Target the off-range background and the button link specifically */
+.rbc-month-view .rbc-off-range-bg {
+  background-color: #f4f4f4 !important; 
+}
+.rbc-month-view .rbc-off-range .rbc-button-link {
+  color: #444444 !important; 
+  opacity: 1; /* RBC sometimes lowers opacity; reset it for contrast */
 }
 
-/* 2. Adjust the background color of off-month days for better visibility */
-.rbc-off-range-bg {
-  background-color: #f0f0f0 !important; /* Slightly darker background */
+.rbc-month-view .rbc-date-cell .rbc-button-link {
+  color: #1a1a1a !important; 
+  font-weight: 500;
 }
 
-/* 3. Ensure the current month date links are also high contrast */
-.rbc-button-link {
-  color: #262626; 
-}
-
-/* 4. Fix contrast for "Show More" +x links */
 .rbc-show-more {
-  color: #005a9e !important; 
-  font-weight: 600;
+  color: #004a87 !important; /* Deeper blue for better contrast */
+  background: none !important;
+  text-decoration: underline;
 }
+
+.rbc-today {
+  background-color: #e6f7ff !important; 
+}
+.rbc-today .rbc-button-link {
+  color: #003a8c !important;
+  font-weight: bold;
+}
+
 /* ---------------------------------------------- */
 
 li {
