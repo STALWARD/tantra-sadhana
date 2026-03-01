@@ -14,11 +14,11 @@ const Hero = () => {
 
       {/* Hero Content */}
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2 ml-5"> 
-        <h1 className="bold-64 md:bold-64 lg:bold-88 bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
+        <h1 className="bold-64 md:bold-64 lg:bold-88 bg-linear-to-r from-pink-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
           TANTRA SADHANA
         </h1>
 
-        <p className="regular-14 md:regular-14 lg:regular-16 mt-6 text-white text-justify xl:max-w-[520px]">
+        <p className="regular-14 md:regular-14 lg:regular-16 mt-6 text-white text-justify xl:max-w-130">
           देहोऽहमिति या बुद्धिर्विद्या सा प्रकीर्तिता।<br />
           नाहं देहश्चिदात्मेति बुद्धिर्विद्येति भण्यते।।<br />
           अविद्या संसृतेर्हेतु विद्या तस्या निवृत्तिका।<br />
