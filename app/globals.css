@@ -60,7 +60,17 @@ li {
 @utility max-container { @apply mx-auto max-w-360; }
 @utility padding-container { @apply px-2 lg:px-10; }
 
+/* In your global.css */
+
 @utility flexCenter { @apply flex items-center justify-center; }
+
+/* Target the specific container causing the shift */
+.flexCenter.max-container {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  min-height: 400px; /* Adjust based on your design needs */
+}
+
 @utility flexBetween { @apply flex items-center justify-between; }
 @utility flexStart { @apply flex items-center justify-start; }
 @utility flexEnd { @apply flex items-center justify-end; }
