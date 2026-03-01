@@ -6,7 +6,7 @@ const Features = () => {
   return (
     <section className="flex-col flexCenter overflow-hidden bg-[url('/feature-bg.webp')] bg-center bg-no-repeat py-24">
       <div className="max-container padding-container relative w-full flex justify-end">
-        <div className="flex flex-1 lg:min-h-[900px] ">
+        <div className="flex flex-1 lg:min-h-225 ">
           <Image
             src="/Mobile.jpg"
             alt="phone"
@@ -54,7 +54,7 @@ const FeatureItem = ({ title, icon, description }: FeatureItem) => {
       <h2 className="bold-20 lg:bold-32 mt-5 capitalize">
         {title}
       </h2>
-      <p className="regular-16 text-justify mt-5 bg-white/80 text-black lg:mt-[30px] lg:bg-none">
+      <p className="regular-16 text-justify mt-5 bg-white/80 text-black lg:mt-7.5 lg:bg-none">
         {description}
       </p>
     </li>
