@@ -62,7 +62,7 @@ export default function YouTubeFrame() {
             <button
               aria-label="video play button"
               onClick={onClick}
-              className="absolute flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
+              className="absolute flex h-17.5 w-17.5 items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
             >
               <svg
                 width="16"
@@ -89,7 +89,7 @@ export default function YouTubeFrame() {
             <button
               aria-label="video play button"
               onClick={onClick1}
-              className="absolute flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
+              className="absolute flex h-17.5 w-17.5 items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
             >
               <svg
                 width="16"
