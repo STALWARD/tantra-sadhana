@@ -1,13 +1,8 @@
-const nextConfig = {
-  experimental: {
-    legacyBrowsers: false,
-    modern: true,
-    polyfillsOptimization: true
-  },
-  swcMinify: true,
-   // Optimize for modern browsers (aligns with browserslist)
-  browsersListForSWC: true,
-  transpilePackages: []
-  };
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
+  // TranspilePackages is still valid
+  transpilePackages: [] 
+};
 
 export default nextConfig;
