@@ -6,6 +6,7 @@ authorBio: "A SRIVIDYA UPASKA"
 authorAvatar: "/KAULBHASKAR.jpg"
 excerpt: "तन्त्र के रहस्यात्मक पूजन चक्रार्चन में सामान्यार्घ्य और कारण-कलश स्थापन की विधि"
 date: "2023-01-13"
+password: "my-secret-pass"
 ---
 
 सामान्यार्घ्य और कारण-कलश स्थापन :
