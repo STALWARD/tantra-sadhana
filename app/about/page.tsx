@@ -1,12 +1,28 @@
 import Image from "next/image";
-import React from "react";
 import { Metadata } from "next";
 import { aboutMeData } from "@/constants";
 import Latest from "@/components/LatestPost";
 import Newsletter from "@/components/Newsletter";
 export const metadata:Metadata = {
-	title: "About Us",
-	description: `Here are our details.`,
+	title: "About Kaulbhaskar Guru Ji | Tantra & Astrology Experts",
+	description: `Learn about Kaulbhaskar Guru Ji, a direct disciple of Sri Kulbhushananand Nath, and our team of experts in Tantra, Astrology, and Sri Vidya Upasana.`,
+	keywords: 'Tantra, Astrology, Sri Vidya, Kaulbhaskar Guru Ji',
+	alternates: {
+    	canonical: "/about", // or your actual path
+  	},
+	openGraph: {
+    	title: "About Kaulbhaskar Guru Ji | Tantra & Astrology Experts",
+    	description: "Discover the lineage of Sri Matsyendra Nath and the spiritual guidance of Sri Kaulbhaskar Guru Ji.",
+    	images: [
+      		{
+        		url: "/KAULBHASKAR.jpg",
+        		width: 800,
+        		height: 600,
+        		alt: "Kaulbhaskar Guru Ji",
+      		},
+    	],
+    	type: "profile",
+ 	},
 };
 
 const About = () => {
@@ -19,6 +35,7 @@ const About = () => {
           			alt='yoga'  
           			width={1440}
           			height={580}
+					priority={true}
           			className="w-screen h-screen object-cover object-center 2xl:rounded-s-xl"
         		/>
         		<h1 className="absolute text-4xl text-center text-white justify-center font-bold mb-60 pageHeader">About</h1>
