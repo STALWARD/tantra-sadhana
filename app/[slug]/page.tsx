@@ -6,6 +6,8 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import Link from "next/link";
+
 
 // FORCE NEXT.JS TO BYPASS THE CACHE
 export const dynamic = "force-dynamic";
@@ -97,17 +99,22 @@ export default async function BlogPage({
 
   // 3. Authenticated View
   return (
-    <div>
+    <div className=" mx-auto px-6 py-8 bg-linear-to-r from-pink-500 via-indigo-500 to-green-500">
+      <Link href="/blog" className="text-sm text-black hover:text-white mb-8 block transition-colors">
+        ← Back to Blog
+      </Link>
       <div className="my-12 text-center">
         <h1 className="text-4xl font-bold text-black px-4">{post.data.title}</h1>
-        <p className="text-red-600 mt-2 font-medium">{post.data.authorName}</p>
-        <p className="text-gray-500 mt-2">{post.data.date}</p>
+        <p className="text-white mt-2 font-medium">{post.data.authorName}</p>
+        <p className="text-black mt-2">{post.data.date}</p>
       </div>
 
       <article className="prose lg:prose-xl mx-auto px-6">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
       </article>
-
+      <footer className="mt-16 pt-8 border-t text-center text-black italic mb-12">
+        End of Post
+      </footer>
       <div className="flex items-center gap-4 bg-yellow-400 rounded-lg border border-yellow-200 p-6 mt-16 mx-10">
         {post.data.authorAvatar && (
           <div className="relative h-16 w-16 shrink-0">
@@ -119,6 +126,7 @@ export default async function BlogPage({
           {post.data.authorBio && <p className="text-sm text-gray-800">{post.data.authorBio}</p>}
         </div>
       </div>
+      
     </div>
   );
 }
