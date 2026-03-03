@@ -2,16 +2,39 @@ import fs from "fs";
 import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetadata";
 import Image from "next/image";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import CopyProtectedArticle from "@/components/CopyProtectedArticle"; // client component
+
 
 // FORCE NEXT.JS TO BYPASS THE CACHE
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-// --- Utility function ---
+// 1. Server Action: Create a very short-lived session
+async function verifyPassword(formData: FormData) {
+  "use server";
+  const password = formData.get("password");
+  const correctPassword = formData.get("correctPassword");
+  const slug = formData.get("slug");
+
+  if (password === correctPassword) {
+    const cookieStore = await cookies();
+    // maxAge: 1 means the cookie expires almost instantly. 
+    // It lasts just long enough for the following redirect/render to read it.
+    cookieStore.set(`auth_${slug}`, "true", { 
+      httpOnly: true, 
+      secure: true, 
+      sameSite: "strict",
+      maxAge: 1 
+    });
+    return; 
+  }
+  redirect(`/${slug}?error=1`);
+}
+
 const getPostContent = (slug: string) => {
   const folder = "posts/";
   const file = `${folder}${slug}.md`;
@@ -36,7 +59,7 @@ export default async function BlogPage({
   const { slug } = await params;
   const { error } = await searchParams;
   const post = getPostContent(slug);
-
+  
   const cookieStore = await cookies();
   const isAuthenticated = cookieStore.get(`auth_${slug}`)?.value === "true";
   const isProtected = !!post.data.password;
@@ -74,8 +97,9 @@ export default async function BlogPage({
     );
   }
 
+  // 3. Authenticated View
   return (
-    <div className="mx-auto px-6 py-8 bg-linear-to-r from-pink-500 via-indigo-500 to-green-500">
+    <div className=" mx-auto px-6 py-8 bg-linear-to-r from-pink-500 via-indigo-500 to-green-500">
       <Link href="/blog" className="text-sm text-black hover:text-white mb-8 block transition-colors">
         ← Back to Blog
       </Link>
@@ -85,13 +109,24 @@ export default async function BlogPage({
         <p className="text-black mt-2">{post.data.date}</p>
       </div>
 
-      {/* ✅ Protected article */}
-      <CopyProtectedArticle content={post.content} />
-
+      <article className="prose lg:prose-xl mx-auto px-6">
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
+      </article>
       <footer className="mt-16 pt-8 border-t text-center text-black italic mb-12">
         End of Post
       </footer>
-      {/* author box... */}
+      <div className="flex items-center gap-4 bg-yellow-400 rounded-lg border border-yellow-200 p-6 mt-16 mx-10">
+        {post.data.authorAvatar && (
+          <div className="relative h-16 w-16 shrink-0">
+            <Image src={post.data.authorAvatar} alt={post.data.authorName || "Author"} fill className="rounded-full object-cover" />
+          </div>
+        )}
+        <div>
+          <h3 className="font-semibold">{post.data.authorName}</h3>
+          {post.data.authorBio && <p className="text-sm text-gray-800">{post.data.authorBio}</p>}
+        </div>
+      </div>
+      
     </div>
   );
 }
