@@ -35,6 +35,10 @@ export default function Contact() {
 
   return (
     <>
+    <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactLd) }}
+    />
     <div className="flex flex-col w-11/12 content-center m-auto mt-10">
       <div className="flexCenter max-container relative w-full" >
       <Image
@@ -42,6 +46,7 @@ export default function Contact() {
           alt='telephone'  
           width={1440}
           height={580}
+          priority
           className="w-screen h-screen object-cover object-center 2xl:rounded-s-xl"
         />
         <h1 className="absolute text-4xl text-center text-black justify-center font-bold mb-80 pageHeader">Contact Us</h1>
