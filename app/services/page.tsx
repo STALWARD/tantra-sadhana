@@ -37,6 +37,10 @@ const services = () => {
   };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Service />
       <Faq />
       <Latest />
