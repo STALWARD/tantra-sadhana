@@ -1,13 +1,16 @@
 import Image from "next/image";
-import React from "react";
 import Mailer from "@/components/mailer";
 import { contactMeText } from "@/constants";
 import { Metadata } from "next";
 import Newsletter from "@/components/Newsletter";
 
 export const metadata:Metadata = {
-  title: "Contact Us",
-  description: `Here are our contact-details.`,
+  title: 'Contact Kaulbhaskar | Tantra & Astrology Guidance',
+  description: `Get in touch with Kaulbhaskar Guru Ji for Tantra and Astrology consultations.`,
+  keywords: 'Contact Kaulbhaskar, Tantra Consultation, Astrology Guidance, Sri Vidya Upasana contact',
+  alternates: {
+    canonical: '/contact',
+  }
 };
 
 export default function Contact() {
