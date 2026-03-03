@@ -41,8 +41,37 @@ export default async function BlogPage({
   const isAuthenticated = cookieStore.get(`auth_${slug}`)?.value === "true";
   const isProtected = !!post.data.password;
 
+  // 2. Access Control: If protected and the 1-second cookie is gone, show form
   if (isProtected && !isAuthenticated) {
-    // restricted access form...
+    return (
+      <div className="max-w-md mx-auto my-32 p-8 border rounded-xl bg-white shadow-xl text-center">
+        <h2 className="text-2xl font-bold mb-2">Restricted Access</h2>
+        <p className="mb-6 text-gray-600">This Sadhana requires a password for every visit.</p>
+        <form action={verifyPassword} className="flex flex-col gap-4">
+          <input type="hidden" name="slug" value={slug} />
+          <input type="hidden" name="correctPassword" value={post.data.password} />
+          <input 
+            type="password" 
+            name="password" 
+            placeholder="Enter password" 
+            className={`p-3 border rounded-lg focus:outline-none focus:ring-2 ${error ? 'border-red-500 ring-red-200' : 'border-gray-300 focus:ring-blue-200'}`}
+            autoFocus
+            required 
+          />
+          {error && <p className="text-red-500 text-sm font-medium">Incorrect password.</p>}
+          <button type="submit" className="bg-black text-white p-3 rounded-lg font-bold hover:bg-gray-800 transition-all active:scale-95">
+            Unlock Content
+          </button>
+           {/* New Back Button */}
+          <a 
+            href="/blog" 
+            className="text-sm text-gray-500 hover:text-black transition-colors underline underline-offset-4 mt-2"
+          >
+            ← Back to Blog List
+          </a>
+        </form>
+      </div>
+    );
   }
 
   return (
