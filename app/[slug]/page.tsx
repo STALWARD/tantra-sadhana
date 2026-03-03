@@ -2,8 +2,6 @@ import fs from "fs";
 import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetadata";
 import Image from "next/image";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import Link from "next/link";
@@ -109,7 +107,8 @@ export default async function BlogPage({
         <p className="text-white mt-2 font-medium">{post.data.authorName}</p>
         <p className="text-black mt-2">{post.data.date}</p>
       </div>
-
+      
+       {/* ✅ Protected article */}
       <article className="prose lg:prose-xl mx-auto px-6">
         <CopyProtectedArticle content={post.content} />
       </article>
