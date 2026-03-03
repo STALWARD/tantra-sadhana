@@ -109,9 +109,7 @@ export default async function BlogPage({
       </div>
       
        {/* ✅ Protected article */}
-      <article className="prose lg:prose-xl mx-auto px-6">
-        <CopyProtectedArticle content={post.content} />
-      </article>
+         <CopyProtectedArticle content={post.content} />
       <footer className="mt-16 pt-8 border-t text-center text-black italic mb-12">
         End of Post
       </footer>
