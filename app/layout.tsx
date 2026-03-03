@@ -17,8 +17,10 @@ const inter = Inter({
 });
 
 export const viewport = {
-  viewport: 'width=device-width, initial-scale=1',
+  width: 'device-width',
+  initialScale: 1,
 }
+
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.tantrasadhana.org'),
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: '/',
+    canonical: 'https://www.tantrasadhana.org',
     languages: {
       'en-US': '/en-US',
     },
@@ -74,10 +76,29 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Tantra Sadhana",
+    url: "https://www.tantrasadhana.org",
+    logo: "https://www.tantrasadhana.org",
+    sameAs: [
+      "https://www.facebook.com",
+      "https://www.instagram.com",
+      "https://www.youtube.com",
+    ],
+  };
+
   return (
     <html lang="en">
       {/* 1. Added inter.className to apply the font */}
       <body className={`${inter.className} antialiased`}>
+        {/* Insert JSON-LD directly into the body or head */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
         {/* 2. Moved Analytics inside Suspense for better hydration */}
         <Suspense fallback={<div className="py-16 text-center">Loading...</div>}>
           {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
