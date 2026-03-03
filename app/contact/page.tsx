@@ -14,6 +14,25 @@ export const metadata:Metadata = {
 };
 
 export default function Contact() {
+  const contactLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "mainEntity": {
+    "@type": "LocalBusiness",
+    "name": "Tantra Sadhana",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C-40 Birla Colony, Phulwarisharif",
+      "addressLocality": "Patna",
+      "addressRegion": "Bihar",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91-9934418459",
+    "email": "kaultantra@gmail.com",
+    "openingHours": "Mo-Sa 10:00-20:00, Su 10:00-16:00"
+  }
+};
+
   return (
     <>
     <div className="flex flex-col w-11/12 content-center m-auto mt-10">
