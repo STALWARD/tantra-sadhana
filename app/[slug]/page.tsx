@@ -137,8 +137,8 @@ export default async function BlogPage({
           <button type="submit" className="bg-black text-white p-3 rounded-lg font-bold hover:bg-gray-800 transition-all active:scale-95">
             Unlock Content
           </button>
-          <a href="/blog" className="text-sm text-gray-500 hover:text-black transition-colors underline underline-offset-4 mt-2">
-            ← Back to Blog List
+          <a href="/blog" className="text-md text-gray-500 hover:text-black transition-colors underline underline-offset-4 mt-2">
+            ← Back to Blog 
           </a>
         </form>
       </div>
@@ -153,7 +153,7 @@ export default async function BlogPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <div className="mx-auto px-6 py-8 bg-linear-to-r from-pink-500 via-indigo-500 to-green-500">
-        <Link href="/blog" className="text-sm text-black hover:text-white mb-8 block transition-colors">
+        <Link href="/blog" className="text-md text-black hover:text-white mb-8 block transition-colors">
           ← Back to Blog
         </Link>
         <div className="my-12 text-center">
