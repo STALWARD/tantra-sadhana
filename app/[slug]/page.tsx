@@ -77,7 +77,7 @@ async function verifyPassword(formData: FormData) {
     });
     return;
   }
-  redirect(`/blog/${slug}?error=1`);
+  redirect(`/${slug}?error=1`);
 }
 
 export const generateStaticParams = async () => {
