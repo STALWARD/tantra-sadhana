@@ -90,36 +90,23 @@ export default class MultipleItems extends Component {
             prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />,
             autoplaySpeed: 5000,
             cssEase: "linear",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                },
-                {
-                    breakpoint: 1000,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                },
-                {
-                    breakpoint: 530,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                }
-            ]
-        };
+           responsive: [
+        {
+            breakpoint: 1024, // Tablets
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 640, // Mobile
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+    ]
+};
 
 
         return (
@@ -150,6 +137,7 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
 
 
 
