@@ -36,18 +36,31 @@ export default class MultipleItems extends Component {
             autoplaySpeed: 5000,
             cssEase: "linear",
             responsive: [
-                {
-                    breakpoint: 1024, // Laptop/Tablet
+                
+                    breakpoint: 1200,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 3,
                         slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
                     }
                 },
                 {
-                    breakpoint: 640, // Mobile
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 530,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
                     }
                 }
             ]
@@ -87,3 +100,4 @@ export default class MultipleItems extends Component {
         );
     }
 }
+
