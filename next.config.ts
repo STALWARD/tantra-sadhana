@@ -6,15 +6,20 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/blog/:slug", // applies to all blog pages
+        source: "/_next/static/:path*", // Next.js build output
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=3600, must-revalidate",
+            value: "public, max-age=31536000, immutable", // 1 year
           },
+        ],
+      },
+      {
+        source: "/images/:path*", // your custom images folder
+        headers: [
           {
-            key: "Expires",
-            value: new Date(Date.now() + 3600 * 1000).toUTCString(),
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },
