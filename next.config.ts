@@ -6,7 +6,8 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/_next/static/:path*", // Next.js build output
+        // This matches your [slug] routes specifically
+        source: "/:slug((?!api|_next/static|_next/image|favicon.ico).*)", 
         headers: [
           {
             key: "Cache-Control",
