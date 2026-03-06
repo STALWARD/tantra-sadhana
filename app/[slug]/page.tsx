@@ -7,10 +7,6 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import CopyProtectedArticle from "@/components/CopyProtectedArticle";
 
-// FORCE NEXT.JS TO BYPASS THE CACHE
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
-
 /**
  * 1. Helper function to read markdown content
  */
@@ -25,7 +21,6 @@ const getPostContent = (slug: string) => {
 
 /**
  * 2. Dynamic Metadata
- * Maps your requested fields to Next.js Metadata API
  */
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -36,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: data.excerpt || `Read ${data.title} by ${data.authorName}`,
     keywords: data.keywords || "Tantra, Astrology, Spiritual Blog, Kaulbhaskar",
     alternates: {
-      canonical: `https://www.tantrasadhana.org{slug}`,
+      canonical: `https://www.tantrasadhana.org/${slug}`,
     },
     authors: [{ name: data.authorName }],
     openGraph: {
@@ -73,21 +68,28 @@ async function verifyPassword(formData: FormData) {
       httpOnly: true,
       secure: true,
       sameSite: "strict",
-      maxAge: 1, // Short-lived for immediate redirect/render
+      maxAge: 1,
     });
     return;
   }
   redirect(`/${slug}?error=1`);
 }
 
+/**
+ * 4. Static Params for ISR
+ */
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
   return posts.map((post) => ({ slug: post.slug }));
 };
 
 /**
- * 4. Page Component
+ * 5. Hybrid Caching Strategy
+ * - Public posts: ISR (revalidate = 3600)
+ * - Protected posts: Dynamic (revalidate = 0)
  */
+export const revalidate = 3600; // default for public posts
+
 export default async function BlogPage({
   params,
   searchParams,
@@ -104,14 +106,19 @@ export default async function BlogPage({
   const isAuthenticated = cookieStore.get(`auth_${slug}`)?.value === "true";
   const isProtected = !!data.password;
 
+  // If protected, disable ISR and force dynamic rendering
+  if (isProtected) {
+    (BlogPage as any).revalidate = 0;
+  }
+
   // JSON-LD for Breadcrumbs
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tantrasadhana.org" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.tantrasadhana.org" },
-      { "@type": "ListItem", "position": 3, "name": data.title, "item": `https://www.tantrasadhana.org{slug}` },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.tantrasadhana.org/blog" },
+      { "@type": "ListItem", "position": 3, "name": data.title, "item": `https://www.tantrasadhana.org/${slug}` },
     ],
   };
 
