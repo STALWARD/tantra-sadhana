@@ -18,6 +18,7 @@ const Hero = () => {
         playsInline 
         preload="auto"
         className='h-screen w-screen object-cover'
+        style={{ aspectRatio: '16/9' }} // Helps browser reserve space before download
       >
         <source src="/hero-bg2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
