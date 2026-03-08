@@ -12,8 +12,8 @@ import PageTransition from "@/components/PageTransition";
 const inter = Inter({ 
   subsets: ['latin'],
   display: 'swap', 
-  variable: '--font-inter',// Optimization for Core Web Vitals 2025
-   weight: ['100', '200', '400', '600', '700'],
+  variable: '--font-inter',
+  weight: ['100', '200', '400', '600', '700'],
 });
 
 export const viewport = {
@@ -21,39 +21,33 @@ export const viewport = {
   initialScale: 1,
 }
 
-
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.tantrasadhana.org'),
   title: {
     default: 'KAUL TANTRA SADHANA # KAULBHASKAR',
-    template: '%s | KAUL TANTRA SADHANA' // Better for SEO on sub-pages
+    template: '%s | KAUL TANTRA SADHANA'
   },
   description: 'An Organization dedicated to spreading knowledge of real TANTRA & ASTROLOGY',
-  category: 'education', // Changed from 'technology' to match content
-
+  category: 'education',
   verification: {
     google: '5tYRdplDPwWDy3P-eL_LKSjatRo6LvoC_qD-bkG_UHY',
     yandex: 'yandex-code',
   },
-
   alternates: {
     canonical: 'https://www.tantrasadhana.org',
     languages: {
       'en-US': '/en-US',
     },
   },
-
   robots: { 
     index: true, follow: true 
   },
-
   twitter: {
     card: 'summary_large_image',
     title: 'KAUL TANTRA SADHANA # KAULBHASKAR',
     description: 'An Organization dedicated to spreading knowledge of real TANTRA & ASTROLOGY',
     images: ['/og.png'],
   },
-  
   openGraph: {
     title: 'KAUL TANTRA SADHANA # KAULBHASKAR',
     description: 'An Organization dedicated to spreading knowledge of real TANTRA & ASTROLOGY',
@@ -62,7 +56,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/og.png',
-        width: 1200, // Updated to 1200x630 for 2025 OG standards
+        width: 1200,
         height: 630,
       },
     ],
@@ -82,7 +76,7 @@ const orgJsonLd = {
     "@type": "Organization",
     name: "Tantra Sadhana",
     url: "https://www.tantrasadhana.org",
-    logo: "https://www.tantrasadhana.org",
+    logo: "https://www.tantrasadhana.org", // Ensure this URL is correct
     sameAs: [
       "https://www.facebook.com",
       "https://www.instagram.com",
@@ -92,15 +86,26 @@ const orgJsonLd = {
 
   return (
     <html lang="en">
-      {/* 1. Added inter.className to apply the font */}
-      <body className={`${inter.className} antialiased`}>
-        {/* Insert JSON-LD directly into the body or head */}
+      <head>
+        {/* 1. Preload the Hero Video to shorten the Critical Request Chain */}
+        <link 
+          rel="preload" 
+          href="/hero-bg2.mp4" 
+          as="video" 
+          type="video/mp4" 
+        />
+        
+        {/* 2. Preconnect to external domains (e.g., Google Analytics or Fonts) */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        
+        {/* 3. Inject SEO Schema in Head for faster indexing */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
         />
-        {/* 2. Moved Analytics inside Suspense for better hydration */}
-        <Suspense fallback={<div className="py-16 text-center">Loading...</div>}>
+      </head>
+      <body className={`${inter.className} antialiased`}>
+        <Suspense fallback={null}>
           {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
             <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
           )}
@@ -109,8 +114,7 @@ const orgJsonLd = {
         <SiteHeader />
         <Alert />
         
-        {/* 3. Main wrapper */}
-        <main className="relative overflow-hidden">
+        <main className="relative overflow-hidden min-h-screen">
           <PageTransition>{children}</PageTransition>
         </main>
         
