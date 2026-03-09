@@ -92,6 +92,10 @@ const orgJsonLd = {
 
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+      </head>
       {/* 1. Added inter.className to apply the font */}
       <body className={`${inter.className} antialiased`}>
         {/* Insert JSON-LD directly into the body or head */}
