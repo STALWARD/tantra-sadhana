@@ -8,6 +8,7 @@ import { Suspense } from 'react';
 import Alert from '@/components/Alert';
 import { Inter } from 'next/font/google';
 import PageTransition from "@/components/PageTransition";
+import CriticalStyles from '@/components/CriticalStyles';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -95,6 +96,7 @@ const orgJsonLd = {
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <CriticalStyles />
       </head>
       {/* 1. Added inter.className to apply the font */}
       <body className={`${inter.className} antialiased`}>
