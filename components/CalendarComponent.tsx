@@ -21,8 +21,8 @@ const localizer = dateFnsLocalizer({
 const events = [
   {
     title: "Shat-Chandi Yag",
-    start: new Date(2026, 2, 12, 10, 0),
-    end: new Date(2026, 2, 17, 11, 0),
+    start: new Date(2026, 2, 19, 8, 0),
+    end: new Date(2026, 2, 28, 17, 0),
   },
 ];
 
@@ -52,6 +52,7 @@ export default function CalendarComponent() {
     </div>
   );
 }
+
 
 
 
