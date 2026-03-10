@@ -5,11 +5,11 @@ const GoogleAnalytics = ({ ga_id }: { ga_id: string }) => (
   <>
     <Script
       src={`https://www.googletagmanager.com/gtag/js?id=${ga_id}`}
-      strategy="afterInteractive"
+      strategy="lazyOnload"
     />
     <Script
       id="google-analytics"
-      strategy="afterInteractive"
+      strategy="lazyOnload"
       dangerouslySetInnerHTML={{
         __html: `
           window.dataLayer = window.dataLayer || [];
@@ -23,3 +23,4 @@ const GoogleAnalytics = ({ ga_id }: { ga_id: string }) => (
 );
 
 export default GoogleAnalytics;
+
