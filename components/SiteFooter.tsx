@@ -105,7 +105,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border bg-gray-200" />
-        <p className=" w-full text-center bold-18 text-black pb-5">2026 TANTRA SADHANA | All rights reserved</p>
+        <p className=" w-full text-center bold-18 text-black pb-5">Copyright © {2026}| All rights reserved by KAULBHASKAR</p>
       </div>
     </footer>
   )
