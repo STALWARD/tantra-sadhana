@@ -24,7 +24,7 @@ const Guide = () => {
       <div className="padding-container max-container w-full pb-24">
         {/* Logo: unoptimized for small static assets to reduce server overhead */}
         <Image 
-          src="/assets/logo/logo.png" 
+          src="/assets/logo/LOGO.png" 
           alt="Company logo" 
           width={50} 
           height={50} 
