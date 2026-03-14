@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "browserslist": [
-  "baseline widely available",
+  "baseline widely available with downstream",
   "not dead"
 ],
 
