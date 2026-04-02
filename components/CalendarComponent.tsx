@@ -71,10 +71,7 @@ export default function CalendarComponent() {
             defaultDate={defaultDate} // Automatically set to first event’s start
             showMultiDayTimes
             style={{ height: "100%" }}
-            eventPropGetter={(event) => {
-              const backgroundColor = event.title.includes("Festival") ? "#FFD700" : "#87CEFA";
-              return { style: { backgroundColor } };
-            }}
+            
           />
         ) : (
           <div style={{ textAlign: "center", paddingTop: "100px" }}>Loading Calendar...</div>
