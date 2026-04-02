@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react"; // Added hooks
+import React, { useState, useEffect } from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import { format, parse, startOfWeek, getDay } from "date-fns";
 import { enUS } from "date-fns/locale";
@@ -24,14 +24,28 @@ const events = [
     start: new Date(2026, 2, 19, 8, 0),
     end: new Date(2026, 2, 28, 17, 0),
   },
+  {
+    title: "Guru Purnima and Diksha Mahotsava",
+    start: new Date(2026, 6, 29, 6, 0),
+    end: new Date(2026, 6, 29, 17, 30),
+  },
 ];
 
 export default function CalendarComponent() {
   const [isClient, setIsClient] = useState(false);
+  const [defaultDate, setDefaultDate] = useState<Date | null>(null);
 
-  // Set isClient to true only after the component mounts in the browser
   useEffect(() => {
     setIsClient(true);
+
+    if (events.length > 0) {
+      // Find the earliest event start date
+      const earliest = events.reduce(
+        (min, e) => (e.start < min ? e.start : min),
+        events[0].start
+      );
+      setDefaultDate(earliest);
+    }
   }, []);
 
   return (
@@ -48,16 +62,19 @@ export default function CalendarComponent() {
       </h1>
       
       <div style={{ height: 600, backgroundColor: "white", padding: "15px", borderRadius: "10px", boxShadow: "0 4px 6px rgba(0,0,0,0.1)" }}>
-        {/* Only render the Calendar if we are on the client side */}
-        {isClient ? (
+        {isClient && defaultDate ? (
           <Calendar
             localizer={localizer}
             events={events}
             startAccessor="start"
             endAccessor="end"
-            defaultDate={new Date(2026, 2, 19)} // Opens to your specific event date
+            defaultDate={defaultDate} // Automatically set to first event’s start
             showMultiDayTimes
             style={{ height: "100%" }}
+            eventPropGetter={(event) => {
+              const backgroundColor = event.title.includes("Festival") ? "#FFD700" : "#87CEFA";
+              return { style: { backgroundColor } };
+            }}
           />
         ) : (
           <div style={{ textAlign: "center", paddingTop: "100px" }}>Loading Calendar...</div>
