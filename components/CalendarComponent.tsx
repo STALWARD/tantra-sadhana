@@ -20,11 +20,6 @@ const localizer = dateFnsLocalizer({
 
 const events = [
   {
-    title: "Shat-Chandi Yag",
-    start: new Date(2026, 2, 19, 8, 0),
-    end: new Date(2026, 2, 28, 17, 0),
-  },
-  {
     title: "Guru Purnima and Diksha Mahotsava",
     start: new Date(2026, 6, 29, 6, 0),
     end: new Date(2026, 6, 29, 17, 30),
