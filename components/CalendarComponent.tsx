@@ -53,7 +53,7 @@ export default function CalendarComponent() {
           margin: "30px 0 20px",
         }}
       >
-        Event Calendar
+        Upcoming Event 
       </h1>
       
       <div style={{ height: 600, backgroundColor: "white", padding: "15px", borderRadius: "10px", boxShadow: "0 4px 6px rgba(0,0,0,0.1)" }}>
