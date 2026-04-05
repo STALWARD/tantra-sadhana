@@ -65,7 +65,7 @@ const Hero = () => {
         {/* CTA Button */}
         <div className="flex flex-col w-full gap-3 sm:flex-row">
           <Link
-            href="https://www.kaulbhaskar.com/profile"
+            href="https://vite-one-psi.vercel.app/about#guru-ji"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white px-8 py-4 rounded-xl text-black transition-all hover:bg-yellow-400 text-center font-bold"
