@@ -1,9 +1,11 @@
-"use client"
+"use client";
 import Slider from "react-slick";
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-// CAROUSEL DATA
+// Styles
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 interface DataType {
     profession: string;
@@ -12,130 +14,70 @@ interface DataType {
 }
 
 const postData: DataType[] = [
-    {
-        profession: 'Bala Siddha Upasaka',
-        name: 'G. Vyas',
-        imgSrc: '/assets/mentor/khunda.webp',
-    },
-    {
-        profession: 'Vastu, Palm-reading Expert',
-        name: 'Subhas Kaushik',
-        imgSrc: '/assets/mentor/Subhas.webp',
-    },
-    {
-        profession: 'Astro Guru',
-        name: 'S. Bakshi',
-        imgSrc: '/assets/mentor/S.Bakshi.webp',
-    },
-    {
-        profession: 'Vajra Siddha',
-        name: 'VAJRA YOGINI',
-        imgSrc: '/assets/mentor/Aradhya.webp',
-    },
-    {
-        profession: 'Yagyan Expert',
-        name: 'Siddharth Maharaj',
-        imgSrc: '/assets/mentor/Siddharth.webp',
-    },
-        {
-        profession: 'Palmistry Researcher',
-        name: 'KIRAN SHARMA',
-        imgSrc: '/assets/mentor/Kiran-2.webp',
-    },
-    {
-        profession: 'NADI ASTROLOGER',
-        name: 'YATAN SHARMA',
-        imgSrc: '/assets/mentor/YATAN.webp',
-    },
-]
+    { profession: 'Bala Siddha Upasaka', name: 'G. Vyas', imgSrc: '/assets/mentor/khunda.webp' },
+    { profession: 'Vastu, Palm-reading Expert', name: 'Subhas Kaushik', imgSrc: '/assets/mentor/Subhas.webp' },
+    { profession: 'Astro Guru', name: 'S. Bakshi', imgSrc: '/assets/mentor/S.Bakshi.webp' },
+    { profession: 'Vajra Siddha', name: 'VAJRA YOGINI', imgSrc: '/assets/mentor/Aradhya.webp' },
+    { profession: 'Yagyan Expert', name: 'Siddharth Maharaj', imgSrc: '/assets/mentor/Siddharth.webp' },
+    { profession: 'Palmistry Researcher', name: 'KIRAN SHARMA', imgSrc: '/assets/mentor/Kiran-2.webp' },
+    { profession: 'NADI ASTROLOGER', name: 'YATAN SHARMA', imgSrc: '/assets/mentor/YATAN.webp' },
+];
 
-// CAROUSEL SETTINGS
+const MultipleItems: React.FC = () => {
+    const [slidesToShow, setSlidesToShow] = useState(3);
 
-function SampleNextArrow(props: { className: any; style: any; onClick: any; }) {
-    const { className, style, onClick } = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: "flex", justifyContent: "center", position: 'absolute', alignItems: "center" , background: "#000000", padding: "28px", borderRadius: "30px", border: "2px solid #FFFFFF" }}
-            onClick={onClick}
-        />
-    );
-}
-
-function SamplePrevArrow(props: { className: any; style: any; onClick: any; }) {
-    const { className, style, onClick } = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: "flex", justifyContent: "center", alignItems: "center" , background: "#000000", padding: "28px", borderRadius: "30px", border: "2px solid #FFFFFF" }}
-            onClick={onClick}
-        />
-    );
-}
-
-export default class MultipleItems extends Component {
-
-    render() {
-        const settings = {
-            dots: false,
-            dotsClass: "slick-dots",
-            infinite: true,
-            slidesToShow: 3,
-            // centerMode: true,
-            slidesToScroll: 1,
-            arrows: false,
-            autoplay: true,
-            speed: 500,
-            nextArrow: <SampleNextArrow className={undefined} style={undefined} onClick={undefined} />,
-            prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />,
-            autoplaySpeed: 5000,
-            cssEase: "linear",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                },
-                {
-                    breakpoint: 1000,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                },
-                {
-                    breakpoint: 530,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                }
-            ]
+    useEffect(() => {
+        const handleResize = () => {
+            const width = window.innerWidth;
+            if (width >= 1200) {
+                setSlidesToShow(3);
+            } else if (width >= 700) {
+                setSlidesToShow(2);
+            } else {
+                setSlidesToShow(1); // Force 1 image on mobile
+            }
         };
 
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
-        return (
-            <div className="py-10 sm:py-24 bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500" id="mentor">
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: slidesToShow,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        speed: 500,
+        autoplaySpeed: 5000,
+        cssEase: "linear",
+    };
 
-                <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 px-4 lg:px-8 relative'>
-                    <h2 className="1h-82 text-6xl text-midnightblue md:text-55xl text-center md:text-start font-semibold">Meet with our <br /> Experts</h2>
+    return (
+        <div className="py-10 sm:py-24 bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500" id="mentor">
+            <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 px-4 lg:px-8 relative'>
+                <h2 className="text-4xl md:text-6xl text-midnightblue text-center md:text-start font-semibold mb-8">
+                    Meet with our <br className="hidden md:block" /> Experts
+                </h2>
 
-                    <Slider {...settings}>
+                {/* Container fix for mobile width bugs */}
+                <div className="w-full overflow-hidden min-w-0">
+                    <Slider {...settings} key={slidesToShow}>
                         {postData.map((items, i) => (
-                            <div key={i}>
-                                <div className='m-3 py-14 md:my-10 text-center'>
-                                    <div className="relative ">
-                                        <Image src={items.imgSrc} alt="user-image" width={306} height={0} className="inline-block m-auto w-auto h-auto overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-120 hover:shadow-2xl " />
+                            <div key={i} className="outline-none">
+                                <div className='mx-2 py-10 text-center'>
+                                    <div className="relative flex justify-center">
+                                        <Image 
+                                            src={items.imgSrc} 
+                                            alt={items.name} 
+                                            width={306} 
+                                            height={350} 
+                                            className="rounded-lg shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-2xl object-cover" 
+                                        />
                                     </div>
-                                    <div className="mt-0">
+                                    <div className="mt-6">
                                         <h3 className='text-2xl font-semibold text-black'>{items.name}</h3>
                                         <h4 className='text-lg font-semibold text-black pt-2 opacity-80'>{items.profession}</h4>
                                     </div>
@@ -143,16 +85,10 @@ export default class MultipleItems extends Component {
                             </div>
                         ))}
                     </Slider>
-
                 </div>
             </div>
+        </div>
+    );
+};
 
-        );
-    }
-}
-
-
-
-
-
-
+export default MultipleItems;
