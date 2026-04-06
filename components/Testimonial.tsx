@@ -48,7 +48,7 @@ const Testimonials: React.FC = () => {
                   <hr className="mb-4" />
                   <div className="flex justify-between items-end">
                     <div>
-                      <h4 className="text-lg font-bold text-slate-800">{item.name}</h4>
+                      <h3 className="text-lg font-bold text-slate-800">{item.name}</h3>
                       <p className="text-sm text-gray-600">{item.profession}</p>
                     </div>
                     <div className="flex text-amber-500">
