@@ -45,7 +45,7 @@ export default function CalendarComponent() {
 
   return (
     <div style={{ minHeight: "100vh", width: "100%", backgroundColor: "#f0f8ff", padding: "10px" }}>
-      <h1
+      <h2
         style={{
           textAlign: "center",
           fontSize: "2.5rem",
@@ -54,7 +54,7 @@ export default function CalendarComponent() {
         }}
       >
         Upcoming Event 
-      </h1>
+      </h2>
       
       <div style={{ height: 600, backgroundColor: "white", padding: "15px", borderRadius: "10px", boxShadow: "0 4px 6px rgba(0,0,0,0.1)" }}>
         {isClient && defaultDate ? (
