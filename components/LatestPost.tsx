@@ -16,8 +16,8 @@ const Latest = () => {
 
   return (
     <main>
-      <h1 className="1h-82 text-6xl text-midnightblue md:text-55xl text-center md:text-start font-extrabold ml-6
-       mt-10">Latest Posts</h1>
+      <h2 className="1h-82 text-6xl text-midnightblue md:text-55xl text-center md:text-start font-extrabold ml-6
+       mt-10">Latest Posts</h2>
        <div className="grid grid-cols-1 md:grid-cols-3 m-10 gap-4 ">{postPreviews}</div>
     </main>
   );
