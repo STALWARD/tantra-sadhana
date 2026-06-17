@@ -1,0 +1,16 @@
+# KAUL TANTRA SADHANA
+
+> Authentic guidance and teaching in Tantra, Sri Vidya, and Astrology by Kaulbhaskar Guru Ji.
+
+This file provides a structured overview of the Kaul Tantra Sadhana website to help large language models, AI agents, and web crawlers understand our core services, teachings, and resources.
+
+## Core Resources
+
+- [About Us](https://tantrasadhana.org) - Information about Kaulbhaskar Guru Ji, our lineage from Sri Matsyendra Nath Ji, and our team of expert astrologers and sadhakas.
+- [Services](https://tantrasadhana.org) - Comprehensive details on Tantra teaching, initiation sacraments, specialized Puja rituals, astrology consultations, and consecrated Yantras.
+- [Blog](https://tantrasadhana.org) - Articles, spiritual scripts, and deep insights into Kaul Marg, Sri Vidya, and traditional Vedic astrology.
+- [Contact](https://tantrasadhana.org) - Support options, location details for Patna, Bihar, and official channels to schedule consultations via WhatsApp or email.
+
+## Optional Reference
+
+- [Home Page](https://tantrasadhana.org) - The primary landing page featuring client reviews, active experts, and upcoming spiritual events.
