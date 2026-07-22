@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
           },
+          {
+            key: "Vary",
+            value: "Accept-Encoding", // Forces proxy caches to respect gzip/brotli splits
+          },
         ],
       },
     ];
