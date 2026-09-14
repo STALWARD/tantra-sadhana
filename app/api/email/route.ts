@@ -3,70 +3,50 @@ import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 
 export async function POST(request: NextRequest) {
-  try {
-    // 1. Extract the captchaToken along with form values
-    const { email, name, message, captchaToken } = await request.json();
+  const { email, name, message } = await request.json();
 
-    // 2. Validate that the token exists
-    if (!captchaToken) {
-      return NextResponse.json(
-        { error: 'Missing reCAPTCHA token.' },
-        { status: 400 }
-      );
-    }
+  const transport = nodemailer.createTransport({
+    service: 'gmail',
+    /* 
+      setting service as 'gmail' is same as providing these setings:
 
-    // 3. Verify the token with Google APIs
-    const secretKey = process.env.RECAPTCHA_SECRET_KEY;
-    const verifyUrl = `https://google.com{secretKey}&response=${captchaToken}`;
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true
 
-    const captchaResponse = await fetch(verifyUrl, { method: 'POST' });
-    const captchaValidation = await captchaResponse.json();
+      If you want to use a different email provider other than gmail, you need to provide these manually.
+      Or you can go use these well known services and their settings at
+      https://github.com/nodemailer/nodemailer/blob/master/lib/well-known/services.json
+  */
+    auth: {
+      user: process.env.MY_EMAIL,
+      pass: process.env.MY_PASSWORD,
+    },
+  });
 
-    // 4. Block execution if Google reports verification failure
-    if (!captchaValidation.success) {
-      return NextResponse.json(
-        { error: 'reCAPTCHA validation failed.' },
-        { status: 400 }
-      );
-    }
+  const mailOptions: Mail.Options = {
+    from: process.env.MY_EMAIL,
+    to: process.env.MY_EMAIL,
+    // cc: email, (uncomment this line if you want to send a copy to the sender)
+    subject: `Message from ${name} (${email})`,
+    text: message,
+  };
 
-    // 5. Setup your Nodemailer transporter if verification succeeds
-    const transport = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.MY_EMAIL,
-        pass: process.env.MY_PASSWORD,
-      },
-    });
-
-    const mailOptions: Mail.Options = {
-      from: process.env.MY_EMAIL,
-      to: process.env.MY_EMAIL,
-      subject: `Message from ${name} (${email})`,
-      text: message,
-    };
-
-    // 6. Promisify and send the mail
-    const sendMailPromise = () =>
-      new Promise<string>((resolve, reject) => {
-        transport.sendMail(mailOptions, (err) => {
-          if (!err) {
-            resolve('Thanks! Email received. We shall contact you soon.');
-          } else {
-            reject(err);
-          }
-        });
+  const sendMailPromise = () =>
+    new Promise<string>((resolve, reject) => {
+      transport.sendMail(mailOptions, function (err) {
+        if (!err) {
+          resolve('Thanks! Email received. We shall contact you soon.');
+        } else {
+          reject(err.message);
+        }
       });
-
-    await sendMailPromise();
-    
-    return NextResponse.json({
-      message: 'Thanks! Email received. We shall contact you soon.',
     });
-  } catch (err: any) {
-    return NextResponse.json(
-      { error: err.message || 'Internal Server Error' },
-      { status: 500 }
-    );
+
+  try {
+    await sendMailPromise();
+    return NextResponse.json({ message: 'Thanks! Email received. We shall contact you soon.' });
+  } catch (err) {
+    return NextResponse.json({ error: err }, { status: 500 });
   }
 }
