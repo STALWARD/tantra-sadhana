@@ -1,17 +1,22 @@
 import { FormData } from '@/components/mailer';
 
-export function sendEmail(data: FormData) {
+export async function sendEmail(data: FormData) {
   const apiEndpoint = '/api/email';
 
-  fetch(apiEndpoint, {
+  const response = await fetch(apiEndpoint, {
     method: 'POST',
-    body: JSON.stringify(data),
-  })
-    .then((res) => res.json())
-    .then((response) => {
-      alert(response.message);
-    })
-    .catch((err) => {
-      alert(err);
-    });
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data), // This automatically packages and ships gRecaptchaToken
+  });
+
+  const result = await response.json();
+
+  if (!response.ok) {
+    throw new Error(result.error || 'Failed to send email.');
+  }
+
+  alert(result.message);
+  return result;
 }
