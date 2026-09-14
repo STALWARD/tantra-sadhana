@@ -19,23 +19,30 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Server environment misconfiguration error.' }, { status: 500 });
     }
 
-    // 3. Robust verification using URLSearchParams (Google's native preferred payload format)
-    const verifyUrl = 'https://google.com';
+       // 3. Robust verification using direct query concatenation
+    const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+    if (!secretKey) {
+      console.error("CRITICAL CONFIGURATION ERROR: RECAPTCHA_SECRET_KEY environment variable is not defined!");
+      return NextResponse.json({ error: 'Server environment misconfiguration error.' }, { status: 500 });
+    }
+
+    // Google's siteverify endpoint supports reading configurations passed natively as URL query parameters
+    const verifyUrl = `https://google.com{secretKey}&response=${gRecaptchaToken}`;
     
     const captchaResponse = await fetch(verifyUrl, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({
-        secret: secretKey,
-        response: gRecaptchaToken,
-      }).toString(),
+      headers: {
+        'Accept': 'application/json'
+      }
     });
 
     if (!captchaResponse.ok) {
+      console.error(`Google API Error Status: ${captchaResponse.status}`);
       return NextResponse.json({ error: 'Failed communicating with Google authorization servers.' }, { status: 502 });
     }
 
     const captchaData = await captchaResponse.json();
+
 
     // 4. Reject submissions from malicious scripts/failed tokens
     if (!captchaData.success) {
