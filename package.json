@@ -9,9 +9,10 @@
     "lint": "eslint"
   },
   "browserslist": [
-    "baseline widely available with downstream",
-    "not dead"
-  ],
+  "baseline widely available with downstream",
+  "not dead"
+],
+
   "dependencies": {
     "@headlessui/react": "^2.2.10",
     "@heroicons/react": "^2.2.0",
@@ -27,7 +28,6 @@
     "react": "^19.2.8",
     "react-big-calendar": "^1.20.0",
     "react-dom": "^19.2.8",
-    "react-google-recaptcha": "^3.1.0",
     "react-hook-form": "^7.86.0",
     "react-icons": "^5.7.0",
     "react-markdown": "^10.1.0",
@@ -41,11 +41,10 @@
     "@types/react": "^19",
     "@types/react-big-calendar": "^1.16.3",
     "@types/react-dom": "^19",
-    "@types/react-google-recaptcha": "^2.1.9",
     "autoprefixer": "^10.5.4",
-    "eslint": "^9.37.0",
+    "eslint": "^10.9.1",
     "eslint-config-next": "^16.3.4",
     "tailwindcss": "^4.3.3",
-    "typescript": "^5.9.0"
+    "typescript": "^6"
   }
 }
