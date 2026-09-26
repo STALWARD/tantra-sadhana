@@ -61,7 +61,7 @@ const About = () => {
                         href="/profile"
                         className="inline-flex items-center gap-2 bg-black hover:bg-blue-700 text-white px-5 py-2.5 rounded-full text-md font-bold transition-transform active:scale-95 shadow-md"
                         >
-                        Know More about Kaulbhaskar < className="text-lg" aria-hidden="true" />
+                        Know More about Kaulbhaskar 
                       </a>
                     </div>
 				</div>
