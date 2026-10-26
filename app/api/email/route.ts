@@ -3,50 +3,93 @@ import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 
 export async function POST(request: NextRequest) {
-  const { email, name, message } = await request.json();
+  try {
+    const body = await request.json();
+    const { email, name, phone, message, gRecaptchaToken } = body;
 
-  const transport = nodemailer.createTransport({
-    service: 'gmail',
-    /* 
-      setting service as 'gmail' is same as providing these setings:
+    if (!gRecaptchaToken) {
+      return NextResponse.json({ error: 'Missing reCAPTCHA token.' }, { status: 400 });
+    }
 
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true
+    // 1. Clean the key to remove extra spaces/quotes
+    let secretKey = process.env.RECAPTCHA_SECRET_KEY || '';
+    secretKey = secretKey.replace(/['"]+/g, '').trim(); 
 
-      If you want to use a different email provider other than gmail, you need to provide these manually.
-      Or you can go use these well known services and their settings at
-      https://github.com/nodemailer/nodemailer/blob/master/lib/well-known/services.json
-  */
-    auth: {
-      user: process.env.MY_EMAIL,
-      pass: process.env.MY_PASSWORD,
-    },
-  });
+    if (!secretKey) {
+      return NextResponse.json({ error: 'Server misconfiguration: Secret key is completely blank.' }, { status: 500 });
+    }
 
-  const mailOptions: Mail.Options = {
-    from: process.env.MY_EMAIL,
-    to: process.env.MY_EMAIL,
-    // cc: email, (uncomment this line if you want to send a copy to the sender)
-    subject: `Message from ${name} (${email})`,
-    text: message,
-  };
-
-  const sendMailPromise = () =>
-    new Promise<string>((resolve, reject) => {
-      transport.sendMail(mailOptions, function (err) {
-        if (!err) {
-          resolve('Thanks! Email received. We shall contact you soon.');
-        } else {
-          reject(err.message);
-        }
-      });
+    // 2. Use the fallback alternative reCAPTCHA endpoint (safer routing path)
+    const verifyUrl = 'https://recaptcha.google.com/recaptcha/api/siteverify';
+    
+    const captchaResponse = await fetch(verifyUrl, {
+      method: 'POST',
+      headers: { 
+        'Content-Type': 'application/x-www-form-urlencoded' 
+      },
+      body: new URLSearchParams({
+        secret: secretKey,
+        response: gRecaptchaToken,
+      }).toString(),
     });
 
-  try {
+    if (!captchaResponse.ok) {
+      // Log the exact error code to your terminal so you can see why it dropped
+      console.error(`NETWORK ERROR CODE FROM GOOGLE: ${captchaResponse.status}`);
+      return NextResponse.json({ error: `Google server responded with error code: ${captchaResponse.status}` }, { status: 502 });
+    }
+
+    const captchaData = await captchaResponse.json();
+    console.log("GOOGLE RESPONSE DATA:", captchaData);
+
+    if (!captchaData.success) {
+      // If the keys are swapped, Google returns success: false with an error-codes array
+      const errorCodes = captchaData['error-codes'] ? captchaData['error-codes'].join(', ') : 'unknown';
+      return NextResponse.json({ error: `reCAPTCHA failed. Reason: ${errorCodes}` }, { status: 400 });
+    }
+
+    // 3. Nodemailer SMTP Execution
+    const transport = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.MY_EMAIL,
+        pass: process.env.MY_PASSWORD,
+      },
+    });
+
+    const mailOptions: Mail.Options = {
+      from: process.env.MY_EMAIL,
+      to: process.env.MY_EMAIL,
+      subject: `Tantra Sadhana: Message from ${name}`,
+      text: `
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+
+Message:
+${message}
+      `,
+    };
+
+    const sendMailPromise = () =>
+      new Promise<string>((resolve, reject) => {
+        transport.sendMail(mailOptions, function (err) {
+          if (!err) {
+            resolve('Email sent.');
+          } else {
+            reject(err);
+          }
+        });
+      });
+
     await sendMailPromise();
     return NextResponse.json({ message: 'Thanks! Email received. We shall contact you soon.' });
-  } catch (err) {
-    return NextResponse.json({ error: err }, { status: 500 });
+
+  } catch (err: any) {
+    console.error("CRITICAL API RUNTIME ERROR:", err);
+    return NextResponse.json(
+      { error: `Internal connection issue: ${err?.message || 'timeout'}` },
+      { status: 500 }
+    );
   }
 }

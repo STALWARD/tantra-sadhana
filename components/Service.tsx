@@ -78,7 +78,7 @@ const MultipleItems: React.FC = () => {
             </div>
 
             {/* Slider Section */}
-            <div className='mx-auto max-w-7xl bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-md sm:py-8 px-4 lg:px-8 mt-5'>
+            <div className='mx-auto max-w-7xl bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-md sm:py-8 px-4 lg:px-8 mt-5 mb-5'>
                 <div className="sm:flex justify-between items-center py-6">
                     <h2 className="text-white text-shadow-blue-400 text-4xl lg:text-5xl font-semibold mb-5 sm:mb-0 ">Popular Services</h2>
                 </div>
