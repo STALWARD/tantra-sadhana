@@ -8,7 +8,7 @@ export default function BackButton({ className = "" }: { className?: string }) {
   return (
     <button
       onClick={() => router.back()}
-      className={`text-lg text-black hover:text-yellow-500 transition-colors underline underline-offset-4 mt-2 block cursor-pointer bg-transparent border-none text-left ${className}`}
+      className={`text-lg text-black hover:text-white transition-colors underline underline-offset-4 mt-2 block cursor-pointer bg-transparent border-none text-left ${className}`}
     >
       ← Back to Blog
     </button>
