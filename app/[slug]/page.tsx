@@ -6,6 +6,7 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import CopyProtectedArticle from "@/components/CopyProtectedArticle";
+import BackButton from "@/components/BackButton"; // 1. IMPORT BACK BUTTON
 
 /**
  * 1. Helper function to read markdown content
@@ -144,9 +145,9 @@ export default async function BlogPage({
           <button type="submit" className="bg-black text-white p-3 rounded-lg font-bold hover:bg-gray-800 transition-all active:scale-95">
             Unlock Content
           </button>
-          <a href="/blog" className="text-lg text-black hover:text-yellow-500 transition-colors underline underline-offset-4 mt-2">
-            ← Back to Blog 
-          </a>
+          
+          {/* 2. REPLACED LINK WITH BACK BUTTON HERE */}
+          <BackButton /> 
         </form>
       </div>
     );
@@ -160,9 +161,10 @@ export default async function BlogPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <div className="mx-auto px-6 py-8 bg-linear-to-r from-pink-500 via-indigo-500 to-green-500">
-        <Link href="/blog" className="text-lg text-black hover:text-white mb-8 block transition-colors">
-          ← Back to Blog
-        </Link>
+        
+        {/* 3. REPLACED LINK WITH BACK BUTTON HERE (WITH CUSTOM TAILWIND HOVER TEXT COLOR) */}
+        <BackButton className="hover:text-white mb-8" />
+
         <div className="my-12 text-center">
           <h1 className="text-4xl font-bold text-black px-4">{data.title}</h1>
           <p className="text-white mt-2 font-medium">{data.authorName}</p>
