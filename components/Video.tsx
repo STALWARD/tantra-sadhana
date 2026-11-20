@@ -37,7 +37,7 @@ export default function YouTubeFrame() {
   };
 
   return (
-    <section className="relative bg-yellow-300 z-10 py-16 md:py-20 lg:py-28">
+    <section className="relative bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 z-10 py-16 md:py-20 lg:py-28">
       <div className="items-center">
         <SectionTitle
           title="GALLERY"
