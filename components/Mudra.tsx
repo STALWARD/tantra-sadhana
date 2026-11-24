@@ -88,7 +88,7 @@ const MultipleItems: React.FC = () => {
             ))}
           </Slider>
         </div>
-        <hr className="mt-10" />
+        
       </div>
     </div>
   );
